@@ -1,0 +1,4 @@
+- Mandar clientes sem tipo de documento (Pagar.me)
+- Next steps:
+	- Botmaker Bronze
+	- IAM!
