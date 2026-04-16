@@ -8,13 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f70d903fc413f6d1",
+            "id": "3f0aa578db6061f4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Deep Learning/Introduction.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Introduction"
             }
           }
         ]
@@ -74,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -179,11 +183,14 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "f70d903fc413f6d1",
+  "active": "3f0aa578db6061f4",
   "lastOpenFiles": [
+    "_assets/IDL_perception.png",
+    "Computer Science/Deep Learning/Deep Learning 1.md",
+    "Computer Science/Deep Learning/Introduction.md",
+    "Home.md",
     "Work/Fundação Estudar",
     "Computer Science/Embedded/Rust HAL.md",
-    "Home.md",
     "Private Notes",
     "_assets/PP10 solution.png",
     "Work/Sanii/Dashboard de Profissionais.md",
@@ -210,7 +217,6 @@
     "Stone onboarding week.md",
     "Work/Stone",
     "Work/Sanii",
-    "Computer Science/Web Apps",
     "Untitled.canvas",
     "Tools/React/React (Deep).md",
     "Tools/Next/Next.js - 1.md",
@@ -218,8 +224,6 @@
     "Computer Science/Computer Networks/Beej's notes.md",
     "Work/Latent Intelligence/AI Startup.md",
     "Psychology/Research Methods/310.md",
-    "Psychology/Psychology of Sleep/Psychology of Sleep - Week 4 Notes (pt. 1).md",
-    "Psychology/Psychology of Sleep/Psychology of Sleep - Week 4 Notes.md",
     "_assets/Pasted image 20260405031406.png",
     "_assets/Pasted image 20260312004046.png",
     "_assets/Pasted image 20260312003845.png",
