@@ -15,3 +15,10 @@ Rosenblatt: Perceptron
 - Can be extended with **real valued** inputs and thresholds
 - An activation $\theta(z)$ operates on the weighted sum plus a bias
 - **Universal classifiers** for any decision boundary
+
+$z=\sum_i w_ix_i + b$
+Sigmoid function: $\frac{1}{1+\exp(-z)}$
+
+**Depth:** longest path from a source to a sink
+**Layer:** set of neurons that are at same depth with respect to the input
+
