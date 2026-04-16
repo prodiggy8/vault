@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f7ff9819ac3c21a8",
+        "id": "3c6cb429f9e411f1",
         "type": "tabs",
         "children": [
           {
-            "id": "844ab2c150e125ab",
+            "id": "f70d903fc413f6d1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -162,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,10 +175,11 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "card-board:CardBoard": false
     }
   },
-  "active": "efb38fc531253df3",
+  "active": "f70d903fc413f6d1",
   "lastOpenFiles": [
     "Work/Fundação Estudar",
     "Computer Science/Embedded/Rust HAL.md",
