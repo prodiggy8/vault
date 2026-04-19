@@ -5,7 +5,7 @@
 
 - [ ] Perception homework and notes (TONIGHT)
 	- [ ] Chapter 2 Part 1
-	- [ ] Chapter 2 Part 2
+	- [x] Chapter 2 Part 2
 	- [ ] Chapter 3 Part 1
 	- [ ] Chapter 6
 	- [x] Chapter 9 LO and Comprehension Questions
@@ -30,3 +30,12 @@
 - [x] Create Git repository for Obsidian
 
 - [ ] Figure out Claude persistent memory
+
+# Hi
+## Hi
+### Hi
+#### Hi
+##### Hi
+*Hi*
+**Hi**
+***Hi***
