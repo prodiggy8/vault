@@ -30,12 +30,3 @@
 - [x] Create Git repository for Obsidian
 
 - [ ] Figure out Claude persistent memory
-
-# Hi
-## Hi
-### Hi
-#### Hi
-##### Hi
-*Hi*
-**Hi**
-***Hi***
