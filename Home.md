@@ -1,11 +1,12 @@
-- [ ] Create new UI for Latent Intelligence Watcher (FRIDAY)
-- [ ] Create server architecture for Latent Intelligence Watcher (FRIDAY)
 
-- [ ] Finish Estudar evaluations (TONIGHT)
+- [x] Create new UI for Latent Intelligence Watcher
+- [ ] Create server architecture for Latent Intelligence Watcher
 
-- [ ] Perception homework and notes (TONIGHT)
+- [ ] Finish Estudar evaluations
+
+- [ ] Perception homework and notes 
 	- [ ] Chapter 2 Part 1
-	- [x] Chapter 2 Part 2
+	- [ ] Chapter 2 Part 2
 	- [ ] Chapter 3 Part 1
 	- [ ] Chapter 6
 	- [x] Chapter 9 LO and Comprehension Questions
@@ -15,13 +16,13 @@
 	- [ ] Chapter 14 - Olfaction
 	- [ ] Final Paper - April 23 (SATURDAY)
 
-- [ ] Eduardo's Research Progress, see Colab, do 3D model (AI if possible) (SATURDAY, SUNDAY)
+- [x] Eduardo's Research Progress
 
 - [x] Grading PP 10
-- [ ] Grading check-in 12 (not done yet, SUNDAY)
-- [ ] Grading PP 11 (not done yet, SUNDAY)
+- [x] Grading check-in 12
+- [x] Grading PP 11
 
-- [ ] Psychology of Sleep - Final Paper (SATURDAY)
+- [ ] Psychology of Sleep - Final Paper
 
 - [x] Pay or solve housing for registration purposes
 
@@ -30,3 +31,10 @@
 - [x] Create Git repository for Obsidian
 
 - [ ] Figure out Claude persistent memory
+
+- [ ] Study for Calculus
+- [ ] Take home exam
+- [ ] Do Jamovi analysis for paper
+- [ ] Fix WebApps project
+- [ ] Finish and print 3d model
+
