@@ -32,9 +32,8 @@
 
 - [ ] Figure out Claude persistent memory
 
-- [ ] Study for Calculus
-- [ ] Take home exam
-- [ ] Do Jamovi analysis for paper
-- [ ] Fix WebApps project
-- [ ] Finish and print 3d model
-
+- [ ] Study Calculus
+- [x] Take-Home Exam II
+- [ ] Jamovi Analysis
+- [ ] WebApps project
+- [ ] 3D model
