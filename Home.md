@@ -13,7 +13,7 @@
 	- [x] Chapter 9 and 10 Applying
 	- [x] Chapter 12
 	- [ ] Somatosensory Receptors
-	- [ ] Chapter 14 - Olfaction
+	- [x] Chapter 14 - Olfaction
 	- [x] Final Paper
 
 - [x] Eduardo's Research Progress
