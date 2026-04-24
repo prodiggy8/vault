@@ -5,16 +5,16 @@
 - [ ] Finish Estudar evaluations
 
 - [ ] Perception homework and notes 
-	- [ ] Chapter 2 Part 1
-	- [ ] Chapter 2 Part 2
-	- [ ] Chapter 3 Part 1
+	- [x] Chapter 2 Part 1
+	- [x] Chapter 2 Part 2
+	- [x] Chapter 3 Part 1
 	- [ ] Chapter 6
 	- [x] Chapter 9 LO and Comprehension Questions
 	- [ ] Chapter 9 and 10 Applying
 	- [x] Chapter 12
 	- [ ] Somatosensory Receptors
 	- [ ] Chapter 14 - Olfaction
-	- [ ] Final Paper - April 23 (SATURDAY)
+	- [x] Final Paper
 
 - [x] Eduardo's Research Progress
 
@@ -35,5 +35,5 @@
 - [ ] Study Calculus
 - [x] Take-Home Exam II
 - [ ] Jamovi Analysis
-- [ ] WebApps project
+- [x] WebApps project
 - [ ] 3D model

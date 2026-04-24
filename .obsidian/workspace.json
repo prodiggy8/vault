@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5ff80b1beca7d780",
+        "id": "a1b9381abb5e4c07",
         "type": "tabs",
         "children": [
           {
-            "id": "6fed8782fc6e4cfc",
+            "id": "95c083b36d47e4c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,9 +183,16 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "6fed8782fc6e4cfc",
+  "active": "95c083b36d47e4c6",
   "lastOpenFiles": [
+    "Psychology/Perception/Perception - Prosthetic Eye.md",
+    "Computer Science/Embedded/Rust HAL.md",
     "Home.md",
+    "Computer Science/Embedded/Analog to Digital.md",
+    "Psychology/Perception/Perception - Vestibular System.md",
+    "Psychology/Perception/Perception Chapter 3.md",
+    "Psychology/Perception/Perception Chapter 2.md",
+    "Psychology/Perception/Perception Chapter 4.md",
     "Work/Sanii/Sanii Week 5 - Dashboard de Clientes.md",
     "Work/Sanii/Dashboard de Profissionais.md",
     "Computer Science/Deep Learning/IDL/Introduction.md",
@@ -195,7 +202,6 @@
     "_assets/IDL_perception.png",
     "Computer Science/Deep Learning/IDL/Deep Learning 1.md",
     "Work/Fundação Estudar",
-    "Computer Science/Embedded/Rust HAL.md",
     "Private Notes",
     "_assets/PP10 solution.png",
     "_assets/Sem entrevista x Sem alocacao por data.png",
@@ -219,12 +225,6 @@
     "Psychology/Psychology of Sleep/Diaries",
     "Stone onboarding week.md",
     "Untitled.canvas",
-    "Tools/React/React (Deep).md",
-    "Tools/Next/Next.js - 1.md",
-    "Psychology/Foundations of Brain and Behavior/Index.md",
-    "Computer Science/Computer Networks/Beej's notes.md",
-    "Work/Latent Intelligence/AI Startup.md",
-    "Psychology/Research Methods/310.md",
     "_assets/Pasted image 20260405031406.png",
     "_assets/Pasted image 20260312004046.png",
     "_assets/Pasted image 20260312003845.png",
