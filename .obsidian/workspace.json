@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Integration and Approximation/Trigonometric Integrals.md",
+                "file": "Math/Integration and Approximation/Sequences and Series I.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Trigonometric Integrals"
+              "title": "Sequences and Series I"
             }
           }
         ]
@@ -186,8 +186,8 @@
   },
   "active": "83e8d5577c43c593",
   "lastOpenFiles": [
-    "arc length.md",
     "Math/Integration and Approximation/Trigonometric Integrals.md",
+    "arc length.md",
     "_assets/Trigonometric Integrals.png",
     "Math/Integration and Approximation/Parametric Equations and Polar Coordinates.md",
     "Math/Integration and Approximation/Sequences and Series II.md",
