@@ -29,4 +29,6 @@ $$sinx\cdot cosx=\frac{sin2x}{2}$$
 **Core identity: $tan^2x+1=sec^2x$**
 
 $$I=\int{}{tan^mx \cdot sec^nx \; dx}$$
-**Case 1: n is even**
+
+
+![[Trigonometric Integrals.png]]
