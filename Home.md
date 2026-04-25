@@ -2,7 +2,7 @@
 - [x] Create new UI for Latent Intelligence Watcher
 - [ ] Create server architecture for Latent Intelligence Watcher
 
-- [ ] Finish Estudar evaluations
+- [ ] Finish Estudar evaluations TODAY
 
 - [ ] Perception homework and notes 
 	- [x] Chapter 2 Part 1
@@ -12,7 +12,7 @@
 	- [x] Chapter 9 LO and Comprehension Questions
 	- [x] Chapter 9 and 10 Applying
 	- [x] Chapter 12
-	- [ ] Somatosensory Receptors
+	- [ ] Somatosensory Receptors TODAY
 	- [x] Chapter 14 - Olfaction
 	- [x] Final Paper
 
@@ -32,7 +32,7 @@
 
 - [ ] Figure out Claude persistent memory
 
-- [ ] Study Calculus
+- [ ] Study Calculus TODAY
 - [x] Take-Home Exam II
 - [ ] Jamovi Analysis
 - [x] WebApps project
