@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Integration and Approximation/Parametric Equations and Polar Coordinates.md",
+                "file": "Computer Science/Web Apps/Final Project.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Parametric Equations and Polar Coordinates"
+              "title": "Final Project"
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -186,6 +185,8 @@
   },
   "active": "3cf1aa4005a5c819",
   "lastOpenFiles": [
+    "Home.md",
+    "Computer Science/Web Apps/Final Project.md",
     "Math/Integration and Approximation/Power Series.md",
     "Math/Integration and Approximation/Sequences and Series I.md",
     "Math/Integration and Approximation/Taylor and Maclaurin Series.md",
@@ -196,7 +197,6 @@
     "Math/Integration and Approximation/Parametric Equations and Polar Coordinates.md",
     "Math/Integration and Approximation/Integration and Approximation.md",
     "Parametric Equations and Polar Coordinates.md",
-    "Home.md",
     "Psychology/Perception/Perception - Prosthetic Eye.md",
     "Computer Science/Embedded/Rust HAL.md",
     "Computer Science/Embedded/Analog to Digital.md",
@@ -220,7 +220,6 @@
     "Untitled Kanban.md",
     "Untitled",
     "Math/Probability/Probability.md",
-    "Math/Probability/Notes Probability.md",
     "Integration and Approximation.base",
     "Math/Integration and Approximation/Integration and Approximation.base",
     "Math/Integration and Approximation/Untitled.base",

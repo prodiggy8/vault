@@ -1,6 +1,6 @@
 
 - [x] Create new UI for Latent Intelligence Watcher
-- [ ] Create server architecture for Latent Intelligence Watcher
+- [x] Create server architecture for Latent Intelligence Watcher
 
 - [ ] Finish Estudar evaluations TODAY
 
@@ -32,8 +32,8 @@
 
 - [ ] Figure out Claude persistent memory
 
-- [ ] Study Calculus TODAY
+- [x] Study Calculus TODAY
 - [x] Take-Home Exam II
-- [ ] Jamovi Analysis
+- [x] Jamovi Analysis
 - [x] WebApps project
 - [ ] 3D model
