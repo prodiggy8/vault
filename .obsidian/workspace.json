@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Web Apps/Final Project.md",
+                "file": "Computer Science/Web Apps/Web Apps Exam Review.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Final Project"
+              "title": "Web Apps Exam Review"
             }
           }
         ]
@@ -185,8 +185,10 @@
   },
   "active": "3cf1aa4005a5c819",
   "lastOpenFiles": [
-    "Home.md",
+    "Computer Science/Web Apps/WebApps - AJAX.md",
+    "Computer Science/Web Apps/Web Apps Exam Review.md",
     "Computer Science/Web Apps/Final Project.md",
+    "Home.md",
     "Math/Integration and Approximation/Power Series.md",
     "Math/Integration and Approximation/Sequences and Series I.md",
     "Math/Integration and Approximation/Taylor and Maclaurin Series.md",
@@ -217,9 +219,7 @@
     "_assets/PP10 solution.png",
     "_assets/Sem entrevista x Sem alocacao por data.png",
     "Work/Fundação Estudar/Fundação Estudar - Avaliação Líderes.md",
-    "Untitled Kanban.md",
     "Untitled",
-    "Math/Probability/Probability.md",
     "Integration and Approximation.base",
     "Math/Integration and Approximation/Integration and Approximation.base",
     "Math/Integration and Approximation/Untitled.base",
