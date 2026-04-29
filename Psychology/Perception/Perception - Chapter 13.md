@@ -47,12 +47,63 @@ Larger gives more coverage.
 
 *Adaptation:* how fast the neurons stop firing giving continued stimuli. Slow keeps firing as long as the stimulus is there.
 
-**SA I** measures static forces.
-	e.g. coarse texture and pattern
-**SA II** measures skin stretch.
-	e.g. finger position
-**FA I** measures object slip, edges, and fine features.
-	e.g. grasp stability, low-frequency vibration
-**FA II** measures vibrations.
-	e.g. high-frequency vibration, fine texture
+**SA I** for *texture and pattern*
+	Merkel
+	Fibers TERMINATE in endings
+	
+**SA II** measures *skin stretch, finger position*
+	Ruffini
+	
+**FA I** measures object slip, edges, and fine features, grasp stability, *low-frequency vibration*
+	Meissner
+	
+**FA II** measures *high-frequency vibrations*, fine features
+	Pacinian
 
+
+SA1 and FA1 are analogous to CONES AND RODS -> one gives acuity and other gives sensitivity to low-intensity stimulation, **respectively**.
+
+**Kinesthetic receptors**
+- Muscle spindle: senses *muscle tension*, which are flexed and which are relaxed? *Angle between joints as well.*
+
+*Ian Waterman*: mechanoreceptors destroyed by viral infection, can only locate himself in space via vision.
+
+##### Thermoreceptors
+
+- Signal information about temperature CHANGE
+	- Only outside the range of 30 and 36 degrees (normal skin temperature)
+- **30 cold fibers for every warmth fiber.**
+- C-fibers (warm) and A-delta fibers (cold). This is only valid for NON PAINFUL temperature. 
+- They get mixed for painful temperature (sharp vs throbbing pain, both activate)
+
+![[Thermoceptors.png]]
+
+##### Nociceptors
+
+Like thermoception, two groups: A-delta and C fibers.
+
+Painful events have two stages:
+- quick sharp pain (A-delta)
+- followed by a throbbing sensation (C fibers)
+
+How do they detect chemical and thermal stimulation that produces pain?
+- thermoTRP ion channels, *regulate flow of atoms and molecules across the membrane of a cell*
+- Pepper and wasabi cause pain. Feels hot because activate thermoTRP which also responds to intense heat.
+- Mint feels cold because activate TRP that responds to cold.
+
+
+#### Pleasant Touch
+
+C-fiber type CT afferents
+- CT afferents are not related to pain or itch
+- Only in hairy skin
+- Slowly moving lightly applied forces
+- processed in frontal cortex instead of S1 or S2
+
+
+
+## Pathway!
+
+- Similar to other senses, receptors are combined in nerve trunks. However there are various of them, from hands, arms, legs, etc! Messages also go much farther, up to 2 meters!
+
+Information moves up the *spinal chord*.
