@@ -13,32 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Research/Brainstorm.md",
+                "file": "Computer Science/GTI/Number Theory.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Brainstorm"
+              "title": "Number Theory"
             }
           },
           {
             "id": "d38dd68f6c20bf17",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Work/Startups Feli.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Startups Feli"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -200,11 +193,16 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "d38dd68f6c20bf17",
+  "active": "1bcce42bde998dbf",
   "lastOpenFiles": [
+    "Computer Science/GTI/GTI.md",
+    "Computer Science/GTI/Group Theory.md",
+    "Computer Science/GTI/Graphs.md",
+    "Computer Science/GTI/Automata Theory.md",
     "Home.md",
-    "Work/Startups Feli.md",
     "Work/Research/Brainstorm.md",
+    "Computer Science/Web Apps/Final Project.md",
+    "Work/Startups Feli.md",
     "ewan.my.md",
     "Work/Research",
     "Psychology/Foundations of Brain and Behavior/FBB Chapter 14.md",
@@ -215,7 +213,6 @@
     "Work/Latent Intelligence/AI Startup.md",
     "Computer Science/Web Apps/WebApps - AJAX.md",
     "Computer Science/Web Apps/Web Apps Exam Review.md",
-    "Computer Science/Web Apps/Final Project.md",
     "Math/Integration and Approximation/Power Series.md",
     "Math/Integration and Approximation/Sequences and Series I.md",
     "Math/Integration and Approximation/Taylor and Maclaurin Series.md",
@@ -227,10 +224,6 @@
     "Math/Integration and Approximation/Integration and Approximation.md",
     "Parametric Equations and Polar Coordinates.md",
     "Psychology/Perception/Perception - Prosthetic Eye.md",
-    "Computer Science/Embedded/Rust HAL.md",
-    "Computer Science/Embedded/Analog to Digital.md",
-    "Psychology/Perception/Perception - Vestibular System.md",
-    "Psychology/Perception/Perception Chapter 3.md",
     "Computer Science/Deep Learning/IDL",
     "Computer Science/Deep Learning/CS230",
     "_assets/IDL_perception.png",
