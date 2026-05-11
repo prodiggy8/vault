@@ -26,10 +26,15 @@
             "id": "d38dd68f6c20bf17",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Work/Startups Feli.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Startups Feli"
             }
           }
         ],
@@ -90,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -196,9 +202,10 @@
   },
   "active": "d38dd68f6c20bf17",
   "lastOpenFiles": [
+    "Home.md",
+    "Work/Startups Feli.md",
     "Work/Research/Brainstorm.md",
     "ewan.my.md",
-    "Home.md",
     "Work/Research",
     "Psychology/Foundations of Brain and Behavior/FBB Chapter 14.md",
     "_assets/Thermoceptors.png",
@@ -224,7 +231,6 @@
     "Computer Science/Embedded/Analog to Digital.md",
     "Psychology/Perception/Perception - Vestibular System.md",
     "Psychology/Perception/Perception Chapter 3.md",
-    "Psychology/Perception/Perception Chapter 2.md",
     "Computer Science/Deep Learning/IDL",
     "Computer Science/Deep Learning/CS230",
     "_assets/IDL_perception.png",
