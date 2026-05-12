@@ -13,23 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/GTI/Number Theory.md",
+                "file": "Work/Sanii/Dashboard de Profissionais.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Number Theory"
-            }
-          },
-          {
-            "id": "d38dd68f6c20bf17",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Dashboard de Profissionais"
             }
           }
         ]
@@ -195,11 +185,11 @@
   },
   "active": "1bcce42bde998dbf",
   "lastOpenFiles": [
+    "Home.md",
     "Computer Science/GTI/GTI.md",
     "Computer Science/GTI/Group Theory.md",
     "Computer Science/GTI/Graphs.md",
     "Computer Science/GTI/Automata Theory.md",
-    "Home.md",
     "Work/Research/Brainstorm.md",
     "Computer Science/Web Apps/Final Project.md",
     "Work/Startups Feli.md",
