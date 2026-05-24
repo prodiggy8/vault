@@ -90,5 +90,39 @@ Some other theorists (Thurstone, 1938; Carroll, 1993) looked at correlations bet
 		- Not correlated with CRT, though.
 	- We do not yet know the direction of causation here.
 
-### Genes
+### Genes & Environment
+
+Active or reactive genotype-environment correlation: topic for future studies
+
+**Overall results:**
+$h^2=.5$ c + expressed anew
+$c^2=.25$ family portion
+
+Above results are from studies with children. h^2 goes up and c^2 goes down from infancy to adulthood. For late adolescence: $h^2=.75$ and $c^2$ is virtually 0.
+
+How? 
+> "One possibility is that as individuals grow older their transactions with their environments are increasingly influenced by the characteristics that they bring to those environments themselves, decreasingly by the conditions imposed by family life and social origins."
+
+Need to review environment section later.
+
+##### Interventions
+
+Such as Head Start or Venezuelan Intelligence Project
+
+**By the end of elementary school there are no significant difference between children who took part in such programs and those who didn't**
+
+They learn how to study, other skills, etc, however. Less likely to fail a grade or take part in special classes.
+
+*Family environment in early childhood:* no significant difference by adulthood.
+*Nutrition:* only one study available, no effect found.
+Lead and Alcohol for prenatal causes intellectual disabilities.
+
+**Continuously Rising Test Scores**
+
+- Increase in complexity of life
+- Modern improvements in nutrition
+- Re-standardization makes the effect invisible most of the time.
+
+
+**Test Bias** in African Americans
 
