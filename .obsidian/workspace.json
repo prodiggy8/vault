@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Algorithms/Jeff Erickson's Book/Introduction.md",
+                "file": "Computer Science/Algorithms/Jeff Erickson's Book/Introduction and Recursion.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "Introduction and Recursion"
             }
           }
         ]
@@ -185,12 +185,12 @@
   },
   "active": "72503d7d50977b3b",
   "lastOpenFiles": [
+    "Home.md",
     "Computer Science/Algorithms/Jeff Erickson's Book",
-    "Computer Science/Algorithms/Jeff Erickson's Book/Introduction.md",
+    "Computer Science/Algorithms/Jeff Erickson's Book/Introduction and Recursion.md",
     "Computer Science/Algorithms",
     "Computer Science/Deep Learning/IDL/Deep Learning 1.md",
     "Computer Science/Deep Learning/CS230/Course 1.md",
-    "Home.md",
     "Psychology/Human Intelligence/Intelligence A Very Short Introduction.md",
     "Psychology/Human Intelligence/Intelligence Knowns and Unknowns.md",
     "Psychology/Human Intelligence",
@@ -225,7 +225,6 @@
     "_assets/PP10 solution.png",
     "_assets/Sem entrevista x Sem alocacao por data.png",
     "Untitled",
-    "Integration and Approximation.base",
     "Untitled.canvas",
     "_assets/Pasted image 20260405031406.png",
     "_assets/Pasted image 20260312004046.png",
