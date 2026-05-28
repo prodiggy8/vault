@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Psychology/Human Intelligence/Intelligence A Very Short Introduction/01.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "01"
             }
           }
         ]
@@ -183,11 +183,12 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "efb38fc531253df3",
+  "active": "72503d7d50977b3b",
   "lastOpenFiles": [
-    "Psychology/Human Intelligence/Untitled",
-    "Psychology/Human Intelligence/Untitled.md",
     "Home.md",
+    "Psychology/Human Intelligence/Intelligence A Very Short Introduction/01.md",
+    "Psychology/Human Intelligence/Intelligence A Very Short Introduction",
+    "Psychology/Human Intelligence/Untitled.md",
     "Computer Science/Algorithms/Jeff Erickson's Book",
     "Computer Science/Algorithms/Jeff Erickson's Book/Introduction and Recursion.md",
     "Computer Science/Algorithms",
@@ -225,7 +226,6 @@
     "Private Notes",
     "_assets/PP10 solution.png",
     "_assets/Sem entrevista x Sem alocacao por data.png",
-    "Untitled",
     "Untitled.canvas",
     "_assets/Pasted image 20260405031406.png",
     "_assets/Pasted image 20260312004046.png",
