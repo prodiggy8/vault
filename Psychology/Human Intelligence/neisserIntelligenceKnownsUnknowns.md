@@ -1,4 +1,35 @@
-Neisser, U., Boodoo, G., Bouchard Jr., T.J., Boykin, A.W., Brody, N., Ceci, S.J., Halpern, D.E., Loehlin, J.C., Perloff, R., Sternberg, R.J. , & Urbina, S. (1996). Intelligence: Knowns and Unknowns. American Psychologist, 51, 77-101.
+---
+source: ""
+description:
+title: "Intelligence: Knowns and Unknowns"
+citekey: neisserIntelligenceKnownsUnknowns
+author:
+  - Ulric Neisser
+  - Gwyneth Boodoo
+  - Thomas J Bouchard
+  - A Wade Boykin
+  - Nathan Brody
+  - Stephen J Ceci
+  - Diane E Halpern
+  - John C Loehlin
+  - Robert Perloff
+  - Robert J Sternberg
+  - Susana Urbina
+year:
+aliases:
+  - "Intelligence: Knowns and Unknowns"
+tags:
+  - papers
+  - intelligence
+  - psychology
+  - psychometrics
+zotero: zotero://select/library/items/DGYI5IWG
+status: done
+date created: Thursday, May 28th 2026, 4:38:09 pm
+date modified: Thursday, May 28th 2026, 4:53:59 pm
+---
+
+> [!abstract]
 
 About The Bell Curve: 
 
@@ -8,7 +39,6 @@ Given the fuss, the APA established a task force to produce an authoritative rep
 
 Sternberg & Detterman's "What is intelligence?" asked 24 researchers to define intelligence, fairly different responses.
 
-
 ### Psychometric Approach
 
 *To investigate:* article claims "test scores are converted to a scale with mean 100, standard deviation 15, and normal". **How and why force normality?**
@@ -16,6 +46,7 @@ Sternberg & Detterman's "What is intelligence?" asked 24 researchers to define i
 - *Possible explanation:* intelligence is known to be polygenic and due to central limit theorem, many the sum of many random variables will be normal regardless of individual distributions.
 
 Individuals rarely perform equally well on all different kinds of items included in a test of intelligence. Nevertheless, sub tests are **generally positively correlated**.
+
 - Spearman (1927) attributes to *g* which represents what all tests have in common.
 - Others such as Thurstone (1938) focus on group factors such as memory, verbal comprehension, or number facility.
 
@@ -60,6 +91,7 @@ Tests done when subjects were 18 show $r=.77$ with tests done at age 6 and $r=.8
 The correlations were even higher when successive scores were averaged to remove short-term fluctuations. Ages 17 and 18 averaged had $r=.86$ with ages 5, 6, and 7 averaged and $r=.96$ with ages 11, 12, and 13 averaged.
 
 Yet the authors cite another study showing change (average 7.1 points of change between ages 12 and 17). *This can be explained in two ways (own investigation):*
+
 - Correlation merely shows rank, not absolute values. Rank can be stable while growth happens uniformly (later acknowledged in paper).
 - Averaged scores remove noise, change can be due to noise.
 
@@ -95,12 +127,15 @@ Some other theorists (Thurstone, 1938; Carroll, 1993) looked at correlations bet
 Active or reactive genotype-environment correlation: topic for future studies
 
 **Overall results:**
+
 $h^2=.5$ c + expressed anew
+
 $c^2=.25$ family portion
 
 Above results are from studies with children. h^2 goes up and c^2 goes down from infancy to adulthood. For late adolescence: $h^2=.75$ and $c^2$ is virtually 0.
 
 How? 
+
 > "One possibility is that as individuals grow older their transactions with their environments are increasingly influenced by the characteristics that they bring to those environments themselves, decreasingly by the conditions imposed by family life and social origins."
 
 Need to review environment section later.
@@ -114,7 +149,9 @@ Such as Head Start or Venezuelan Intelligence Project
 They learn how to study, other skills, etc, however. Less likely to fail a grade or take part in special classes.
 
 *Family environment in early childhood:* no significant difference by adulthood.
+
 *Nutrition:* only one study available, no effect found.
+
 Lead and Alcohol for prenatal causes intellectual disabilities.
 
 **Continuously Rising Test Scores**
@@ -123,6 +160,4 @@ Lead and Alcohol for prenatal causes intellectual disabilities.
 - Modern improvements in nutrition
 - Re-standardization makes the effect invisible most of the time.
 
-
 **Test Bias** in African Americans
-

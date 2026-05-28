@@ -10,5 +10,5 @@
   "attachmentFolderPath": "_assets",
   "alwaysUpdateLinks": true,
   "openBehavior": "file:Home",
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "visible"
 }
