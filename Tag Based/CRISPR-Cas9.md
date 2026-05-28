@@ -31,7 +31,11 @@ When viruses infect a cell, they inject their DNA. It allows that DNA to be pluc
 
 Diamonds are repeats and squares are fragments of bacteriophage DNA.
 
+![[CRISPR-Cas9-2.png]]
+
 It's a mechanism that allows cells to record the viruses they have been exposed to. *It is passed on to cells' progeny.*
+
+![[CRISPR-Cas9-4.png]]
 
 The cell then transcribes RNA out of it. The RNA binds to a protein called Cas9 and functions like a sentinel in the cell. It searches through all of the DNA to find sites that match the sequences in the bound RNA. When they are found, the **complex binds to the DNA and allows Cas9 to cut up the viral DNA.**
 
