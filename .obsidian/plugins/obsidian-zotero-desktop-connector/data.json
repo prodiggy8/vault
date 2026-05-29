@@ -7,7 +7,14 @@
   "citeFormats": [],
   "exportFormats": [
     {
-      "name": "Standard",
+      "name": "Book",
+      "outputPathTemplate": "{{citekey}}.md",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "Templates/Books.md"
+    },
+    {
+      "name": "Paper",
       "outputPathTemplate": "{{citekey}}.md",
       "imageOutputPathTemplate": "{{citekey}}/",
       "imageBaseNameTemplate": "image",

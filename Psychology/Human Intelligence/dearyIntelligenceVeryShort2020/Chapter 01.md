@@ -44,7 +44,7 @@ Notably, [[Louis Thurstone]] suggested there were in fact 7 separate human abili
 
 ### Dissidents
 
-[[Howard Gardner's]] *[[multiple intelligences]]* theory suggests there are many unrelated forms of mental ability.
+[[Howard Gardner's]] *[[gardnerIntelligenceReframedMultiple1999|Multiple Intelligences]]* theory suggests there are many unrelated forms of mental ability.
 
 The facts are the some of his factors are **well known to be correlated with g**. Some other of his so-called intelligences, **though valued human attributes, are not considered to be mental abilities**, for instance physical intelligence is a set of motor skills and interpersonal intelligence involves personality traits.
 
