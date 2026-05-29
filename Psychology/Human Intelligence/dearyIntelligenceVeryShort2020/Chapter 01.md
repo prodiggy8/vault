@@ -38,8 +38,13 @@ First person to describe *g* was [[Charles Spearman]] in a famous paper from 190
 
 Notably, [[Louis Thurstone]] suggested there were in fact 7 separate human abilities. However, **it became clear by the 1940s that there is in fact a general factor** that shows up every time we measure people on a collection of mental tests.
 
-[[John Carroll]] analyzed all noteworthy studies on human mental abilities using the same statistical methods in his 1993 book [[Human Cognitive Abilities: A Survey of Factor Analytic Studies]]. The following is a synthesis of his findings, the *three stratum model*.
+[[John Carroll]] analyzed all noteworthy studies on human mental abilities using the same statistical methods in his 1993 book [[Human Cognitive Abilities: A Survey of Factor Analytic Studies]]. The following is a synthesis of his findings, the *three stratum model*. More sub-groups appeared because Carroll worked with a wider range of tests.
 
 ![[Chapter 01-1.png]]
 
-dsad
+### Dissidents
+
+[[Howard Gardner's]] *[[multiple intelligences]]* theory suggests there are many unrelated forms of mental ability.
+
+The facts are the some of his factors are **well known to be correlated with g**. Some other of his so-called intelligences, **though valued human attributes, are not considered to be mental abilities**, for instance physical intelligence is a set of motor skills and interpersonal intelligence involves personality traits.
+
