@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gardnerIntelligenceReframedMultiple1999.md",
-                "mode": "preview",
-                "source": true,
+                "file": "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
+                "mode": "source",
+                "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
@@ -186,7 +186,7 @@
   "active": "637f2bc481ffa84d",
   "lastOpenFiles": [
     "Untitled.md",
-    "gardnerIntelligenceReframedMultiple1999.md",
+    "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
     "Templates/Books.md",
     "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
     "Psychology/Biology/Lecture 4.md",
