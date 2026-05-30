@@ -1,4 +1,5 @@
 ---
+type: paper
 source: ""
 description:
 title: "Intelligence: Knowns and Unknowns"
@@ -25,8 +26,8 @@ tags:
   - psychometrics
 zotero: zotero://select/library/items/DGYI5IWG
 status: read
-date created: Thursday, May 28th 2026, 4:38:09 pm
-date modified: Thursday, May 28th 2026, 4:53:59 pm
+date created: Thursday, May 28th 2026, 4:51:04 pm
+date modified: Saturday, May 30th 2026, 9:25:04 pm
 ---
 
 > [!abstract]

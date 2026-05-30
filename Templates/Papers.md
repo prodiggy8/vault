@@ -1,4 +1,5 @@
 ---
+type: paper
 source: "{{url}}"
 description:
 title: "{{title}}" 
@@ -10,8 +11,8 @@ aliases:
 tags: [papers]
 zotero: "{{desktopURI}}"
 status: to-read
-date created: Thursday, May 28th 2026, 4:38:09 pm
-date modified: Thursday, May 28th 2026, 4:44:56 pm
+date created:
+date modified:
 ---
 
 > [!abstract]

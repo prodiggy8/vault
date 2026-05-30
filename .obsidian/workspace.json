@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "9cd6f9c32f1bd7dc",
+        "id": "f525057be6621931",
         "type": "tabs",
         "children": [
           {
-            "id": "e13c50f0d94fb550",
+            "id": "e8295931eb3c4085",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
+                "file": "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "dearyIntelligenceVeryShort2020"
+              "title": "dearyIntelligenceVeryShort2020_04"
             }
           }
         ]
@@ -184,21 +184,24 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "e13c50f0d94fb550",
+  "active": "e8295931eb3c4085",
   "lastOpenFiles": [
-    "Templates/Templater",
-    "Templates/Templater",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
     "Templates/Templater/Chapters.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
-    "Psychology/Human Intelligence/null - null.md",
-    "Psychology/Human Intelligence/01 - 1.md",
     "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
-    "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
-    "Templates/Papers.md",
-    "01 - das.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020/Chapter 01.md",
     "Templates/Books.md",
+    "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
     "Psychology/Human Intelligence/sternbergTriarchicTheoryHuman1984.md",
+    "test.md",
+    "Templates/Papers.md",
+    "Home.md",
+    "Psychology/Human Intelligence/null - null.md",
+    "Templates/Templater",
+    "Templates/Templater",
+    "Psychology/Human Intelligence/01 - 1.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020/Chapter 01.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020/Untitled.md",
     "Psychology/Talks/Susanne Ferber on Working Memory.md",
     "Psychology/Behavior",
@@ -211,9 +214,6 @@
     "Psychology/Brain and Behavior/FBB 8 - Neural Development.md",
     "Psychology/Brain and Behavior/FBB 6.md",
     "Psychology/Brain and Behavior/FBB 5.md",
-    "Psychology/Brain and Behavior/FBB 4.md",
-    "Psychology/Brain and Behavior/Index.md",
-    "Psychology/Biology/Lecture 4.md",
     "_assets/Chapter 01-1.png",
     "_assets/Chapter 01.png",
     "_assets/CRISPR-Cas9-4.png",
@@ -228,7 +228,6 @@
     "Computer Science/Algorithms/Jeff Erickson's Book",
     "Computer Science/Algorithms",
     "Psychology/Human Intelligence",
-    "Psychology/Biology",
     "_assets/Thermoceptors.png",
     "_assets/Trigonometric Integrals.png",
     "_assets/IDL_perception.png",

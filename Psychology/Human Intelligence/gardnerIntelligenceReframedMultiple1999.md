@@ -1,4 +1,5 @@
 ---
+type: book
 source: ""
 description:
 title: "Intelligence Reframed: Multiple Intelligences For The 21st Century"
@@ -18,8 +19,8 @@ zotero: zotero://select/library/items/EGZPSKE7
 status: read
 isbn: 978-0-465-02610-4
 publisher: Basic Books
-date created: Thursday, May 28th 2026, 4:38:09 pm
-date modified: Friday, May 29th 2026, 10:25:27 pm
+date created: Friday, May 29th 2026, 7:57:08 pm
+date modified: Saturday, May 30th 2026, 9:25:06 pm
 ---
 
 ## Chapter 3

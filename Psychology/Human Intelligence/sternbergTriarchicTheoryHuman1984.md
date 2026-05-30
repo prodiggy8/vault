@@ -1,4 +1,5 @@
 ---
+type: paper
 source: https://www.cambridge.org/core/product/identifier/S0140525X00044629/type/journal_article
 description:
 title: Toward a triarchic theory of human intelligence
@@ -16,8 +17,8 @@ tags:
   - intelligence
 zotero: zotero://select/library/items/AYVZ2JWH
 status: to-read
-date created: Thursday, May 28th 2026, 4:38:09 pm
-date modified: Saturday, May 30th 2026, 1:03:25 pm
+date created: Friday, May 29th 2026, 10:28:47 pm
+date modified: Saturday, May 30th 2026, 9:25:01 pm
 ---
 
 > [!abstract]

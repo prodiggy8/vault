@@ -1,4 +1,5 @@
-\- [ ] Document sleep articles on Obsidian
+
+- [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
 - [x] Create Git repository for Obsidian
 

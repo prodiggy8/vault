@@ -1,4 +1,5 @@
 ---
+type: book
 source: "{{url}}"
 description:
 title: "{{title}}" 
@@ -13,7 +14,6 @@ zotero: "{{desktopURI}}"
 status: to-read
 isbn: "{{ISBN}}"
 publisher: "{{publisher}}"
-date created: Thursday, May 28th 2026, 4:38:09 pm
-date modified: Thursday, May 28th 2026, 4:44:56 pm
+date created: 
+date modified: 
 ---
-
