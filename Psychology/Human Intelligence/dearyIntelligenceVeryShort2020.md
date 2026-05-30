@@ -19,7 +19,7 @@ status: read
 isbn: 978-0-19-879620-6
 publisher: Oxford University Press
 date created: Thursday, May 28th 2026, 4:38:09 pm
-date modified: Saturday, May 30th 2026, 1:12:01 pm
+date modified: Saturday, May 30th 2026, 6:18:29 pm
 ---
 
 # Chapter 1
@@ -59,3 +59,4 @@ Notably, [[Louis Thurstone]] suggested there were in fact 7 separate human abili
 The facts are the some of his factors are **well known to be correlated with g**. Some other of his so-called intelligences, **though valued human attributes, are not considered to be mental abilities**, for instance physical intelligence is a set of motor skills and interpersonal intelligence involves personality traits.
 
 # Chapter 4
+
