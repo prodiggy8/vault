@@ -11,15 +11,10 @@
             "id": "1fb9fee248d1a41f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "gardnerIntelligenceReframedMultiple1999"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -185,6 +180,11 @@
   },
   "active": "1fb9fee248d1a41f",
   "lastOpenFiles": [
+    "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
+    "Psychology/Human Intelligence/sternbergTriarchicTheoryHuman1984.md",
+    "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020/Chapter 01.md",
+    "TriarchicTheoryHuman.md",
     "Psychology/Foundations of Brain and Behavior/FBB Functional Neuroanatomy.md",
     "Psychology/Foundations of Brain and Behavior/FBB Chapter 14.md",
     "Psychology/Foundations of Brain and Behavior/FBB Chapter 12.md",
@@ -195,12 +195,9 @@
     "Psychology/Foundations of Brain and Behavior/FBB 5.md",
     "Psychology/Foundations of Brain and Behavior/FBB 4.md",
     "Psychology/Foundations of Brain and Behavior/Index.md",
-    "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020/Chapter 01.md",
     "Untitled.md",
     "Templates/Books.md",
     "Psychology/Biology/Lecture 4.md",
-    "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
     "Math/Integration and Approximation/Integration and Approximation.md",
     "Math/Integration and Approximation/Sequences and Series I.md",
     "multiple intelligences.md",
@@ -218,8 +215,6 @@
     "Papers",
     "dearyIntelligenceVeryShort2020.md",
     "Psychology/Human Intelligence/Intelligence A Very Short Introduction/dearyIntelligenceVeryShort2020.md",
-    "Lecture 2.md",
-    "Psychology/Human Intelligence/Intelligence Knowns and Unknowns.md",
     "Templates",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020",
     "Computer Science/Algorithms/Jeff Erickson's Book",
