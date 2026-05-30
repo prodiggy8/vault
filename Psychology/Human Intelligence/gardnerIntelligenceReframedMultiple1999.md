@@ -8,6 +8,7 @@ author:
 year: 1999
 aliases:
   - "Intelligence Reframed: Multiple Intelligences For The 21st Century"
+  - Multiple Intelligences
 tags:
   - books
   - intelligence
@@ -36,7 +37,7 @@ There are a number of counterexamples for the proposition. Localization tells yo
 
 First good insight—Gardner defines intelligence in his 1983 Frames of Mind as **”the ability to solve problems or to create products that are valued within** one or more **cultural settings.”**
 
-- In this book, he offers a new definition: **”intelligence is the potential to do all of the above.”** Hence, it wouldn't be at all measurable. Here Gardner shields his theory from falsifiability — violating a core tenet of science — and from operationalization, a core tenet of psychology.
+- In this book, he offers a new definition: **”intelligence is the potential to do all of the above.”** Hence, it wouldn't be at all measurable. Here Gardner shields his theory from falsifiability and from operationalization.
 
 ##### Criteria for accepting a faculty as an intelligence
 
@@ -50,7 +51,7 @@ First good insight—Gardner defines intelligence in his 1983 Frames of Mind as 
 	- He mentions studies with simultaneous tasks. If they don't interfere with each other, they are separate capabilities in the brain.
 8. Support from psychometric findings
 	- ?
-	- In this item he invokes yet another pseudo-construct, [[emotional intelligence]], and claims it to be independent from everything.
+	- In this item he invokes yet another pseudo-construct, Goleman’s [[emotional intelligence]], and claims it to be independent from everything known to date.
 
 Two things rightly pointed out:
 

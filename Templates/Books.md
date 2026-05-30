@@ -7,7 +7,8 @@ author: [{{authors}}]
 {% if date %}year: {{ date | format("YYYY") }} {% endif %}
 aliases:
 - "{{title}}"
-tags: [books, "{{title}}", "{{shortTitle}}"]
+- "{{shortTitle}}"
+tags: [books]
 zotero: "{{desktopURI}}"
 status: to-read
 isbn: "{{ISBN}}"

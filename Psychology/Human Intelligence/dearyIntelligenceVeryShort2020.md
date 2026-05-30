@@ -1,18 +1,28 @@
 ---
+source: ""
+description:
+title: "Intelligence: A Very Short Introduction"
+citekey: dearyIntelligenceVeryShort2020
+author:
+  - Ian J. Deary
+year: 2020
 aliases:
-  - To see 'g' or not to see 'g'
+  - "Intelligence: A Very Short Introduction"
+  - Intelligence
 tags:
-  - book/intelligence
+  - books
+  - intelligence
   - psychology
   - psychometrics
-  - intelligence
-source:
-author:
-description:
-date created: Thursday, May 28th 2026, 4:24:25 pm
-date modified: Thursday, May 28th 2026, 11:41:17 pm
+zotero: zotero://select/library/items/35CZN67Z
+status: read
+isbn: 978-0-19-879620-6
+publisher: Oxford University Press
+date created: Thursday, May 28th 2026, 4:38:09 pm
+date modified: Saturday, May 30th 2026, 1:12:01 pm
 ---
 
+# Chapter 1
 ## How many types of intelligence are there?
 
 Massive study done by The Psychological Corporation (now Pearson) in collaboration with [[David Wechsler]]. Tested representative sample of the US on the Wechsler Adult Intelligence Scale.
@@ -44,7 +54,8 @@ Notably, [[Louis Thurstone]] suggested there were in fact 7 separate human abili
 
 ### Dissidents
 
-[[Howard Gardner's]] *[[gardnerIntelligenceReframedMultiple1999|Multiple Intelligences]]* theory suggests there are many unrelated forms of mental ability.
+[[Howard Gardner]]'s *[[gardnerIntelligenceReframedMultiple1999|Multiple Intelligences]]* theory suggests there are many unrelated forms of mental ability.
 
 The facts are the some of his factors are **well known to be correlated with g**. Some other of his so-called intelligences, **though valued human attributes, are not considered to be mental abilities**, for instance physical intelligence is a set of motor skills and interpersonal intelligence involves personality traits.
 
+# Chapter 4

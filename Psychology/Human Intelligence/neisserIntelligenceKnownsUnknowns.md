@@ -47,12 +47,12 @@ Sternberg & Detterman's "What is intelligence?" asked 24 researchers to define i
 
 Individuals rarely perform equally well on all different kinds of items included in a test of intelligence. Nevertheless, sub tests are **generally positively correlated**.
 
-- Spearman (1927) attributes to *g* which represents what all tests have in common.
-- Others such as Thurstone (1938) focus on group factors such as memory, verbal comprehension, or number facility.
+- [[Charles Spearman]] (1927) attributes to *g* which represents what all tests have in common.
+- Others such as [[Louis Thurstone]] (1938) focus on group factors such as memory, verbal comprehension, or number facility.
 
 No full agreement on what g actually means: statistical regularity (Thomson, 1939); mental energy (Spearman, 1927); generalized abstract reasoning ability (Gustafsson, 1984); index measure of neural processing speed (Reed & Jensen, 1992).
 
-Theorists are generally critical or in favor of psychometrics as a whole. H. J. Eysenck is among the supporters. Gardner is among the critics. However, **no critic questions the stability of scores or the fact that they predict achievement effectively**.
+Theorists are generally critical or in favor of psychometrics as a whole. H. J. Eysenck is among the supporters. [[Howard Gardner]] is among the critics. However, **no critic questions the stability of scores or the fact that they predict achievement effectively**.
 
 ###### Multiple Forms of Intelligence
 
@@ -60,7 +60,7 @@ Theorists are generally critical or in favor of psychometrics as a whole. H. J. 
 
 Critics argue none of this has to do with intelligence, they're talents instead. The stability and validity of tests of such constructs are too low. The authors recognize that in a very subtle way, defining it as "unclear". This is likely due to academia politics.
 
-*Stenberg's* (1985) *triarchic theory* proposes three dimensions-analytic, creative, and practical. **Neisser himself (paper's first author) proposed something similar.**
+[[Stenberg]]'s (1985) *[[sternbergTriarchicTheoryHuman1984|Triarchic Theory]]* proposes three dimensions-analytic, creative, and practical. **Neisser himself (paper's first author) proposed something similar.**
 
 Sternberg also proposed *tacit knowledge* defined as "action-oriented knowledge that allows individuals to achieve goals". This is the construct measured in business-related tests where participants rank options for dealing with work-related situations. **These showed to be independent from g.**
 
