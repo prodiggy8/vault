@@ -11,24 +11,10 @@
             "id": "ef38a431ec74d012",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Psychology/Perception/Perception Chapter 2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Perception Chapter 2"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -195,23 +181,24 @@
   },
   "active": "ef38a431ec74d012",
   "lastOpenFiles": [
+    "Concepts/Minimum Spanning Trees.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
+    "Home.md",
     "Psychology/Perception/Perception - Chapter 13.md",
     "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
     "Psychology/Human Intelligence/sternbergTriarchicTheoryHuman1984.md",
     "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
-    "Home.md",
     "_assets/dearyIntelligenceVeryShort2020_04-3.png",
     "_assets/Pasted image 20260530234124.png",
     "_assets/dearyIntelligenceVeryShort2020_04-2.png",
-    "Tag Based/Genetic confounding of the SES–IQ correlation.md",
+    "Concepts/Genetic confounding of the SES–IQ correlation.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_03.md",
     "Templates/Templater/Chapters.md",
     "Templates/Books.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_02.md",
-    "Tag Based/Mental Ability.md",
+    "Concepts/Mental Ability.md",
     "_assets/dearyIntelligenceVeryShort2020_04-1.png",
     "_assets/dearyIntelligenceVeryShort2020_04.png",
     "test.md",
@@ -228,13 +215,12 @@
     "Psychology/Brain and Behavior/FBB Functional Neuroanatomy.md",
     "Psychology/Brain and Behavior/FBB Chapter 14.md",
     "Psychology/Brain and Behavior/FBB Chapter 12.md",
-    "Psychology/Brain and Behavior/FBB Chapter 11.md",
     "_assets/Chapter 01-1.png",
     "_assets/Chapter 01.png",
     "_assets/CRISPR-Cas9-4.png",
     "_assets/CRISPR-Cas9-3.png",
     "_assets/CRISPR-Cas9-2.png",
-    "Tag Based",
+    "Concepts",
     "Papers",
     "Templates",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020",
