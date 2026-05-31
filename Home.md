@@ -1,9 +1,13 @@
 
+- [ ] Buy ticket
+- [ ] Take cat to veterinary
+- [ ] Send 3D model to store
+- [ ] Do adjustments for Sanii
+- [ ] Send charges to Sanii
+
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
 - [x] Create Git repository for Obsidian
-
-- [ ] Figure out Claude persistent memory
 
 ### Past Tasks
 - [x] Study Calculus TODAY

@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "3a0fea36cd694b69",
+        "id": "0551f30f7c4c0b52",
         "type": "tabs",
         "children": [
           {
-            "id": "3b6f06bf3fec8630",
+            "id": "ef38a431ec74d012",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Psychology/Perception/Perception Chapter 2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Perception Chapter 2"
             }
           }
         ]
@@ -179,28 +193,29 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "3b6f06bf3fec8630",
+  "active": "ef38a431ec74d012",
   "lastOpenFiles": [
+    "Psychology/Perception/Perception - Chapter 13.md",
+    "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
+    "Psychology/Human Intelligence/sternbergTriarchicTheoryHuman1984.md",
+    "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
+    "Home.md",
     "_assets/dearyIntelligenceVeryShort2020_04-3.png",
     "_assets/Pasted image 20260530234124.png",
     "_assets/dearyIntelligenceVeryShort2020_04-2.png",
     "Tag Based/Genetic confounding of the SES–IQ correlation.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_03.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
     "Templates/Templater/Chapters.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
     "Templates/Books.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_02.md",
     "Tag Based/Mental Ability.md",
     "_assets/dearyIntelligenceVeryShort2020_04-1.png",
     "_assets/dearyIntelligenceVeryShort2020_04.png",
-    "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
-    "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
-    "Psychology/Human Intelligence/sternbergTriarchicTheoryHuman1984.md",
     "test.md",
     "Templates/Papers.md",
-    "Home.md",
     "Psychology/Human Intelligence/null - null.md",
     "Templates/Templater",
     "Templates/Templater",
