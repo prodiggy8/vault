@@ -7,6 +7,8 @@ chapter: "1"
 chapter title: To see ‘g’ or not to see ‘g’
 citekey: dearyIntelligenceVeryShort2020_01
 aliases:
+  - Chapter 1
+  - "Intelligence: A Very Short Introduction Chapter 1"
 tags:
   - books
   - intelligence

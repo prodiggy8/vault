@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f525057be6621931",
+        "id": "3a0fea36cd694b69",
         "type": "tabs",
         "children": [
           {
-            "id": "e8295931eb3c4085",
+            "id": "3b6f06bf3fec8630",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mental Ability.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Mental Ability"
+              "title": "New tab"
             }
           }
         ]
@@ -184,17 +179,23 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "e8295931eb3c4085",
+  "active": "3b6f06bf3fec8630",
   "lastOpenFiles": [
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
-    "Mental Ability.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
+    "_assets/dearyIntelligenceVeryShort2020_04-3.png",
+    "_assets/Pasted image 20260530234124.png",
+    "_assets/dearyIntelligenceVeryShort2020_04-2.png",
+    "Tag Based/Genetic confounding of the SES–IQ correlation.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_03.md",
     "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
     "Templates/Templater/Chapters.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
+    "Templates/Books.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_02.md",
+    "Tag Based/Mental Ability.md",
     "_assets/dearyIntelligenceVeryShort2020_04-1.png",
     "_assets/dearyIntelligenceVeryShort2020_04.png",
     "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
-    "Templates/Books.md",
     "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
     "Psychology/Human Intelligence/sternbergTriarchicTheoryHuman1984.md",
     "test.md",
@@ -213,17 +214,11 @@
     "Psychology/Brain and Behavior/FBB Chapter 14.md",
     "Psychology/Brain and Behavior/FBB Chapter 12.md",
     "Psychology/Brain and Behavior/FBB Chapter 11.md",
-    "Psychology/Brain and Behavior/FBB 9 - Vision.md",
-    "Psychology/Brain and Behavior/FBB 8 - Neural Development.md",
-    "Psychology/Brain and Behavior/FBB 6.md",
-    "Psychology/Brain and Behavior/FBB 5.md",
     "_assets/Chapter 01-1.png",
     "_assets/Chapter 01.png",
     "_assets/CRISPR-Cas9-4.png",
     "_assets/CRISPR-Cas9-3.png",
     "_assets/CRISPR-Cas9-2.png",
-    "_assets/CRISPR-Cas9-1.png",
-    "_assets/CRISPR-Cas9.png",
     "Tag Based",
     "Papers",
     "Templates",
@@ -231,7 +226,6 @@
     "Computer Science/Algorithms/Jeff Erickson's Book",
     "Computer Science/Algorithms",
     "Psychology/Human Intelligence",
-    "_assets/Thermoceptors.png",
     "Untitled.canvas"
   ]
 }

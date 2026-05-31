@@ -1,12 +1,14 @@
 ---
 type: chapter
-description:
+description: Intelligence is a result of genes and unique environment; the family one grows up with has zero causal effect on intelligence.
 title: "Intelligence: A Very Short Introduction"
 author: Ian J. Deary
 chapter: "4"
 chapter title: They f—— you up, your mum and dad
 citekey: dearyIntelligenceVeryShort2020_04
 aliases:
+  - Chapter 4
+  - "Intelligence: A Very Short Introduction Chapter 4"
 tags:
   - books
   - intelligence
@@ -14,7 +16,7 @@ tags:
   - psychometrics
 status: to-read
 date created: Saturday, May 30th 2026, 9:36:07 pm
-date modified: Saturday, May 30th 2026, 10:28:44 pm
+date modified: Saturday, May 30th 2026, 11:41:59 pm
 ---
 
 Book: [[dearyIntelligenceVeryShort2020|Intelligence: A Very Short Introduction]]
@@ -55,6 +57,7 @@ graph TD
 We look at the [[Minnesota Study of Twins Reared Apart]] with $n=137$ pairs.
 
 $r=0.69$ for identical twins raised apart.
+
 $r=0.88$ for identical twins raised together.
 
 >[!reminder]
@@ -65,6 +68,7 @@ Particularly for Raven’s Progressive Matrices, **twins raised apart had a high
 ![[dearyIntelligenceVeryShort2020_04-1.png]]
 
 *Interpretation from the graph:*
+
 - Testing twins on IQ is almost the same as measuring the same person on IQ twice.
 - Time spent with each other throughout their lives was not correlated with the score difference.
 
@@ -86,10 +90,21 @@ graph TD
 	AM --> G1((G)) --> OC
     
 ```
+
 We examine the [[Texas Adoption Project]] with $n=300$ families.
 
 $r=0.1$ between adoptive parents and adopted children.
+
 $r=0.2$ between adoptive parents and own children.
+
 $r=0.3$ between adopted children and birth mothers.
 
 ### Dataset 9
+
+We examine the [[OctoTwin Project]], which analyzed twins over 80 years of age. 
+
+![[dearyIntelligenceVeryShort2020_04-3.png]]
+
+The bolder the line and the more pluses, the stronger the association is.
+
+How come IQ and SES are correlated as per [[dearyIntelligenceVeryShort2020_01|Chapter 1]] but the studies analyzed here prove family environment has no causal effect on IQ? See [[Genetic confounding of the SES–IQ correlation]].

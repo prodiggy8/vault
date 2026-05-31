@@ -23,7 +23,7 @@ const citekey_b = fm.citekey ?? parent?.basename;
 const citekey = `${citekey_b}_${padded}`
 
 const year = fm.year ?? "";
-const alias = `${fm.title} - ${ch}`
+const alias = `"${fm.title} Chapter ${ch}","Chapter ${ch}"`
 const folder = parent?.parent?.path ?? "";
 const newPath = folder ? `${folder}/${citekey}` : citekey;
 await tp.file.move(newPath);
@@ -43,6 +43,6 @@ date created:
 date modified:
 ---
 
-Book: [[<% citekey_b %>|<% title %>]]
+Book: <% "[" + "[" + citekey_b %>|<% title + "]" + "]" %>
 
 # Chapter <% ch %>
