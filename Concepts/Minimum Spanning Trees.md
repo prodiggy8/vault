@@ -18,4 +18,3 @@ Given a connected, undirected, *weighted* graph with a function $w: E \rightarro
 
 $$w(T):=\sum_{e \in T} w(e)$$
 
-sa
