@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Concepts/Learning.md",
+                "file": "Work/Latent Intelligence/Updates.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Learning"
+              "title": "Updates"
             }
           }
         ]
@@ -186,10 +186,10 @@
   },
   "active": "ef38a431ec74d012",
   "lastOpenFiles": [
+    "Home.md",
     "Work/Latent Intelligence/Updates.md",
     "Concepts/Learning.md",
     "Concepts/Minimum Spanning Trees.md",
-    "Home.md",
     "Concepts/CRISPR-Cas9.md",
     "Psychology/Psychology of Sleep/Psychology of Sleep - Exam Review.md",
     "Psychology/Psychology of Sleep/Psychology of Sleep - Dream Presentation 2.md",
