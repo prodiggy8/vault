@@ -5,8 +5,9 @@ author:
 description:
 aliases:
 date created: Wednesday, June 3rd 2026, 5:36:56 pm
-date modified: Wednesday, June 3rd 2026, 5:37:06 pm
+date modified: Thursday, June 4th 2026, 1:13:02 am
 ---
+
 Operações
 
 - Kanban em vez de filtros
@@ -23,4 +24,11 @@ Operações
 
 - Calcular automaticamente
 - Voltar (1.5k clicks; next + previous; submeter/salvar -> volta pro kanban ou tela de operações)
-- Desenhar kanban, voltar, tela comitê fora, comentários, etc
+- Desenhar kanban, voltar, tela comitê fora, comentários, etc]
+
+**New:** Bookmark operations! Vira um Kanban board
+
+### Nova versão do app
+- Precisamos de query arguments!!!
+- Precisamos pegar mais elementos de UI, estamos deixando texto vazar
+- Precisamos TRATAR
