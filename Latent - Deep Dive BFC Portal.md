@@ -7,7 +7,6 @@ aliases:
 date created: Wednesday, June 3rd 2026, 5:36:56 pm
 date modified: Thursday, June 4th 2026, 1:13:02 am
 ---
-
 Operações
 
 - Kanban em vez de filtros
@@ -32,3 +31,5 @@ Operações
 - Precisamos de query arguments!!!
 - Precisamos pegar mais elementos de UI, estamos deixando texto vazar
 - Precisamos TRATAR
+- (x, y) para hovers
+
