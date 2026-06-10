@@ -28,8 +28,9 @@ Operações
 **New:** Bookmark operations! Vira um Kanban board
 
 ### Nova versão do app
-- Precisamos de query arguments!!!
-- Precisamos pegar mais elementos de UI, estamos deixando texto vazar
-- Precisamos TRATAR
-- (x, y) para hovers
+- [x] Precisamos de query arguments!!!
+- [ ] Precisamos pegar mais elementos de UI, estamos deixando texto vazar
+- [ ] Precisamos TRATAR dados
+- [x] (x, y) para hovers
+- [x] Org ID
 
