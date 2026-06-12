@@ -7,6 +7,8 @@ aliases:
 date created: Friday, June 5th 2026, 11:21:30 am
 date modified: Friday, June 5th 2026, 11:21:36 am
 ---
+Airbag is a software company helping logistics companies protect and monitor their drivers.
+
 SaaS: Software as a Service -> Software (app, program, website, computer stuff) that is paid monthly, subscription.
 
 **200 clients and 8,000 users**
