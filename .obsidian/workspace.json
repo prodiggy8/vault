@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Sanii/Fixes.md",
+                "file": "Work/Latent Intelligence/Certificates.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Fixes"
+              "title": "Certificates"
             }
           }
         ]
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -186,36 +187,36 @@
   },
   "active": "2865331d25aad426",
   "lastOpenFiles": [
+    "Templates/Books.md",
+    "Templates/Books_01.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
+    "Next Steps.md",
+    "Work/Latent Intelligence/Certificates.md",
+    "Work/Latent Intelligence/Updates.md",
+    "Work/Latent Intelligence/Post-mortem BFC.md",
+    "Home.md",
     "Work/Sanii/Sanii Week 5 - Dashboard de Clientes.md",
     "Work/Sanii/Fixes.md",
-    "Home.md",
     "Concepts/Airbag Tech.md",
-    "Work/Latent Intelligence/Certificates.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
     "Concepts/Bioethics.md",
     "Concepts/Genetic confounding of the SES–IQ correlation.md",
     "Concepts/Untitled",
     "Work/Sanii/Dashboard de Profissionais.md",
     "Math/Integration and Approximation/Power Series.md",
     "Latent - Deep Dive BFC Portal.md",
-    "Work/Latent Intelligence/Updates.md",
     "Concepts/Learning.md",
     "Concepts/Minimum Spanning Trees.md",
     "Concepts/CRISPR-Cas9.md",
     "Psychology/Psychology of Sleep/Psychology of Sleep - Exam Review.md",
     "Psychology/Psychology of Sleep/Psychology of Sleep - Dream Presentation 2.md",
     "Psychology/Psychology of Sleep/Psychology of Sleep - Dream Presentation.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
     "Psychology/Perception/Perception - Chapter 13.md",
     "Psychology/Human Intelligence/neisserIntelligenceKnownsUnknowns.md",
     "Psychology/Human Intelligence/sternbergTriarchicTheoryHuman1984.md",
-    "Psychology/Human Intelligence/gardnerIntelligenceReframedMultiple1999.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
     "_assets/dearyIntelligenceVeryShort2020_04-3.png",
     "_assets/Pasted image 20260530234124.png",
     "_assets/dearyIntelligenceVeryShort2020_04-2.png",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_03.md",
-    "Templates/Templater/Chapters.md",
     "_assets/dearyIntelligenceVeryShort2020_04-1.png",
     "_assets/dearyIntelligenceVeryShort2020_04.png",
     "Templates/Templater",
