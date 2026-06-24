@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -186,6 +187,7 @@
   },
   "active": "2865331d25aad426",
   "lastOpenFiles": [
+    "Work/Sanii/Dashboard de Profissionais.md",
     "Home.md",
     "Templates/Books.md",
     "Templates/Books_01.md",
@@ -201,7 +203,6 @@
     "Concepts/Bioethics.md",
     "Concepts/Genetic confounding of the SES–IQ correlation.md",
     "Concepts/Untitled",
-    "Work/Sanii/Dashboard de Profissionais.md",
     "Math/Integration and Approximation/Power Series.md",
     "Latent - Deep Dive BFC Portal.md",
     "Concepts/Learning.md",
