@@ -2,6 +2,13 @@
 - [ ] Find previous notes and port them over
 - [x] Create Git repository for Obsidian
 
+
+- Perguntas dos condôminos: posso pintar minha parede de azul?
+- Redigir mudanças: quantos votos? 
+- Documentos são inter-relacionados, documento x tem os poderes de fazer y, articles of incorporation supersede todos os outros documentos 
+
+
+
 ### Past Tasks
 - [x] Study Calculus TODAY
 - [x] Take-Home Exam II
