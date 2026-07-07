@@ -11,10 +11,15 @@
             "id": "6480d6e4f010cd5a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Work/Sanii/Fixes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Fixes"
             }
           }
         ]
@@ -182,9 +187,9 @@
   },
   "active": "6480d6e4f010cd5a",
   "lastOpenFiles": [
+    "Home.md",
     "Work/US Visa.md",
     "Work/Latent Intelligence/Meeting with Ana (02.07).md",
-    "Home.md",
     "Work/Sanii/Fixes.md",
     "Work/Investir em Mineração.md",
     "Next Steps.md",
