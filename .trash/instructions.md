@@ -1,6 +1,17 @@
+---
+tags:
+type:
+author:
+description:
+aliases:
+date created: Friday, July 10th 2026, 12:07:25 am
+date modified: Friday, July 10th 2026, 12:08:55 am
+---
+
 # DevSecOps Project
 
 Components:
+
   - spring-petclinic (application)
   - Jenkings (CI)
   - SonarQube (static analysis)
@@ -49,6 +60,7 @@ vagrant status
 ### Routed-network
 
 libvirt's network blocks traffic coming from the Docker subnet, `libvirt__forward_mode: "route"`
+
 in the Vagrantfile fixes that but you need to recreate the network:
 
 ```
@@ -62,7 +74,9 @@ docker run --rm busybox ping -c1 192.168.56.10
 ## Docker stack
 
 All services are defined in `devsecops/docker-compose.yml` on the `devsecops-net`
+
 bridge network. Jenkins is a custom image (`devsecops/jenkins/Dockerfile`) that
+
 adds the Docker CLI, Ansible, blueocean, sonar, prometheus, etc. 
 
 ```
@@ -73,43 +87,54 @@ docker compose up -d sonarqube
 ```
 
 Endpoints:
+
 Jenkins `:8080`
+
 SonarQube `:9000`
+
 Prometheus `:9090`
+
 Grafana `:3000`
+
 Registry `:5000`
 
 ## Configure Jenkins
 
-1. Open `http://localhost:8080`. Run:
+1. Open `http://localhost:8080`. Also run:
+
    ```
    docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
    ```
+
 2. On Customize Jenkins, choose `Select plugins to install → None` (plugins
    are already there), then create your admin user.
 
 ## Configure SonarQube
 
 1. Wait for SonarQube: 
+
    ```
    curl -s http://localhost:9000/api/system/status   # needs to say UP
    ```
+
 2. Create the project and an analysis token, change the admin password as well.
+
    ```
    curl -s -u admin:admin -X POST "http://localhost:9000/api/projects/create?project=petclinic&name=petclinic"
    curl -s -u admin:admin -X POST "http://localhost:9000/api/user_tokens/generate?name=jenkins-petclinic"
    ```
+
 3. In Jenkins: `Manage Jenkins → Credentials → System → Global → Add Credentials`
    - Kind: Secret text
    - Secret: the `squ_...` token
    - ID: `sonar-token`
 
-The pipeline passes `-Dsonar.host.url=http://sonarqube:9000 -Dsonar.token=$SONAR_TOKEN`
-so no secret is committed to the repo.
+The pipeline passes `-Dsonar.host.url=http://sonarqube:9000 -Dsonar.token=$SONAR_TOKEN` so no secret is committed to the repo.
 
 ## Prometheus + Grafana 
 
 Both are provisioned from files:
+
 - `devsecops/prometheus/prometheus.yml` - job `jenkins` at `/prometheus`
 - `devsecops/grafana/provisioning/datasources/datasource.yml` - Prometheus datasource
 - `devsecops/grafana/provisioning/dashboards/json/jenkins.json` - Jenkins dashboard
@@ -117,6 +142,7 @@ Both are provisioned from files:
 ## Add the Ansible SSH credential
 
 The Ansible deploy stage needs the VM's SSH. Add in `Manage Jenkins → Credentials → Add Credentials`.
+
 - Kind: SSH Username with private key
 - ID: `petclinic-vm-ssh`, Username: `vagrant`
 - Private key: paste the contents of
@@ -141,12 +167,14 @@ sh 'docker run --rm -v zap_wrk:/zap/wrk busybox cat /zap/wrk/zap-report.html > z
 ### Other details: 
 
 These were changes we have to make in the petclinic repo:
+
 - nohttp policy: scans the whole repo and rejects `http://` URLs. Need to manually ignore the
   infra files and generated ZAP report from that check
 - Docker-compose integration tests can't run in this CI and are
   out of scope, need to delete them 
 
 Commit and push all pipeline files:
+
 ```
 git add .
 git commit -m "any message"
@@ -171,4 +199,5 @@ Open in browser: http://192.168.56.10:8080
 ## Demonstrate the SCM trigger 
 
 Change something in the repo (maybe a title?) and then push the changes.
+
 The pipeline in Jenkins should immediately be triggered.
