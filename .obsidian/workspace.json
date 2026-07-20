@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Sanii/Fixes.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Fixes"
+              "title": "Home"
             }
           }
         ]
@@ -186,6 +186,8 @@
   },
   "active": "6480d6e4f010cd5a",
   "lastOpenFiles": [
+    "Math/Integration and Approximation/Parametric Equations and Polar Coordinates.md",
+    "Math/Integration and Approximation/Integration and Approximation.md",
     "Home.md",
     "Work/Sanii/Dashboard de Profissionais.md",
     "Work/Sanii/Sanii Week 5 - Dashboard de Clientes.md",
@@ -211,8 +213,6 @@
     "Math/Integration and Approximation/Power Series.md",
     "Work/Latent Intelligence/Latent - Deep Dive BFC Portal.md",
     "Concepts/Learning.md",
-    "Concepts/Minimum Spanning Trees.md",
-    "Concepts/CRISPR-Cas9.md",
     "_assets/dearyIntelligenceVeryShort2020_04-3.png",
     "_assets/Pasted image 20260530234124.png",
     "_assets/dearyIntelligenceVeryShort2020_04-2.png",
