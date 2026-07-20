@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Work/Sanii/Fixes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Fixes"
             }
           }
         ]
@@ -186,9 +186,9 @@
   },
   "active": "6480d6e4f010cd5a",
   "lastOpenFiles": [
+    "Home.md",
     "Math/Integration and Approximation/Parametric Equations and Polar Coordinates.md",
     "Math/Integration and Approximation/Integration and Approximation.md",
-    "Home.md",
     "Work/Sanii/Dashboard de Profissionais.md",
     "Work/Sanii/Sanii Week 5 - Dashboard de Clientes.md",
     "Work/Sanii/Fixes.md",
