@@ -1,3 +1,8 @@
+### Daily Tasks
+- [ ] Do a few LangChain lessons
+- [ ] Do one LeetCode problem
+
+### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
 - [ ] Learn how to work with sessions in Vim and Tmux
