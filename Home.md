@@ -1,6 +1,7 @@
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
 - [ ] Learn how to work with sessions in Vim and Tmux
+- [ ] Write scripts to change Git and GCP credentials
 - [x] Create Git repository for Obsidian
 ### Past Tasks
 - [x] Study Calculus TODAY
