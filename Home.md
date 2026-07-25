@@ -1,6 +1,3 @@
-### Daily Tasks
-- [ ] Do a few LangChain lessons
-- [ ] Do one LeetCode problem
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian

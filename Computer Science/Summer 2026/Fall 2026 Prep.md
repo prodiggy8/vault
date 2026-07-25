@@ -11,7 +11,10 @@ semester-start: 2026-08-24
 
 **Goal:** cut in-semester load from ~15h → ~10h/wk on [[15-451 Prep|15-451]] and ~10h → ~7h/wk on [[21-259 Prep|21-259]].
 
-**Budget:** ~4.5 weeks × 10h ≈ **45h**, split ~70/30 toward 451. That's break-even math — you're trying to save ~70h and ~42h respectively over the semester.
+**Budget:** ~46h total — **~27h on 451, ~19h on 21-259**. That's break-even math: you're trying to save ~70h and ~42h respectively over the semester.
+
+> [!warning] Rebalanced for a known prerequisite gap
+> Polar and parametric from 21-122 are shaky. Calc went from 15h to 19h and 451 absorbed the cut — correct even though 451 is the harder course, because prerequisite gaps compound while 451's units are modular. See [[21-259 Prep#Known gap — read this first|the gap note]].
 
 > [!info] Why the two plans look nothing alike
 > **21-259 is throughput-limited.** You know what to do, it just takes too long. Prep = drill.
@@ -26,11 +29,14 @@ semester-start: 2026-08-24
 
 | Week | Dates | Focus |
 |---|---|---|
-| [[Week 1 - DP to Reflex]] | Jul 27 – Aug 2 | DP shapes · integration diagnostic |
-| [[Week 2 - Data Structures and Amortized]] | Aug 3 – 9 | Segment trees · amortized · vectors |
+| [[Week 1 - DP to Reflex]] | Jul 27 – Aug 2 | DP shapes · **polar + parametric repair** (12h, heaviest) |
+| [[Week 2 - Data Structures and Amortized]] | Aug 3 – 9 | Segment trees · amortized · ch. 12–13 · cyl/sph orientation |
 | [[Week 3 - Hashing and Probability]] | Aug 10 – 16 | Hashing · indicator RVs · partials |
-| [[Week 4 - Greedy Proofs and Flow Modeling]] | Aug 17 – 23 | Exchange args · flows · integral setup |
+| [[Week 4 - Greedy Proofs and Flow Modeling]] | Aug 17 – 23 | Exchange args · flows · integral setup (polar-heavy) |
 | [[Week 5 - Calibration]] | Aug 24 – start | Timed midterm · build the index |
+
+> [!important] If a week runs short
+> Slip 451 work, never the [[Week 1 - DP to Reflex|Week 1]] polar repair. Everything in the back half of 21-259 sits on top of it.
 
 ## Living notes
 

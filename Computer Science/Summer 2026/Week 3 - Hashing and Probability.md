@@ -5,7 +5,7 @@ tags:
   - course/21-259
 week: 3
 dates: 2026-08-10 → 2026-08-16
-hours: 10
+hours: 8
 status: not-started
 ---
 
@@ -13,16 +13,18 @@ status: not-started
 
 Up: [[Fall 2026 Prep]] · Prev: [[Week 2 - Data Structures and Amortized]] · Next: [[Week 4 - Greedy Proofs and Flow Modeling]]
 
-## 15-451 — Hashing + the probability toolkit, 7h
+## 15-451 — Hashing + the probability toolkit, 5h
 
-- [ ] Universal hashing, perfect hashing (1.5h) #course/15-451
+- [ ] Universal hashing, perfect hashing (1h) #course/15-451
 - [ ] String hashing / fingerprinting, Rabin–Karp (1h) #course/15-451
 - [ ] Linearity of expectation + indicator random variables (2h) #course/15-451
-- [ ] Union bound, Markov, Chebyshev, Chernoff (1.5h) #course/15-451
+- [ ] Union bound, Markov, Chebyshev, Chernoff (1h) #course/15-451
 - [ ] 6 problems that count something using indicators (1h) #course/15-451
 
 > [!important] Highest *hidden* ROI in the plan
 > Students who haven't internalized indicator random variables bleed hours on every randomized-analysis problem for the rest of the semester, and never diagnose why. Linearity of expectation is the single most reusable trick in the course — it works without independence, which is exactly why it feels like cheating the first ten times.
+
+Trimmed from 7h to 5h to fund the 21-259 polar repair. The hashing *mechanics* are crisply presented in lecture and don't compound — the probability toolkit does, so protect those three hours.
 
 Source: Erickson's randomization chapter, or Mitzenmacher & Upfal ch. 1–4 if you want it properly rigorous.
 
