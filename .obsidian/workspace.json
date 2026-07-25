@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Sanii/Fixes.md",
+                "file": "Work/Latent Intelligence/DecGPT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Fixes"
+              "title": "DecGPT"
             }
           }
         ]
@@ -184,10 +184,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "6480d6e4f010cd5a",
+  "active": "efb38fc531253df3",
   "lastOpenFiles": [
-    "Work/Latent Intelligence/DecGPT.md",
     "Work/Sanii/Fixes.md",
+    "Work/Latent Intelligence/DecGPT.md",
     "Work/Latent Intelligence/Latent - Deep Dive BFC Portal.md",
     "Home.md",
     "Math/Integration and Approximation/Parametric Equations and Polar Coordinates.md",
