@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Summer 2026/Week 1 - DP to Reflex.md",
+                "file": "Work/Latent Intelligence/DecGPT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Week 1 - DP to Reflex"
+              "title": "DecGPT"
             }
           }
         ]
@@ -186,8 +186,8 @@
   },
   "active": "d0d4a6e2a65c0285",
   "lastOpenFiles": [
-    "Computer Science/Summer 2026/15-451 Prep.md",
     "Home.md",
+    "Computer Science/Summer 2026/15-451 Prep.md",
     "Computer Science/Summer 2026/Resources.md",
     "Computer Science/Summer 2026/Fall 2026 Prep.md",
     "Computer Science/Summer 2026/DP Problem Log.md",
