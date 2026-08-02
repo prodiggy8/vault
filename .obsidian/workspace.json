@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0e6c960a0da48d64",
+        "id": "8cc92607b9d9aefd",
         "type": "tabs",
         "children": [
           {
-            "id": "d0d4a6e2a65c0285",
+            "id": "b5e58a8202b3e6fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Fundação Estudar/1st Semester 2026.md",
+                "file": "Computer Science/Algorithms/Erickson/Momselect.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "1st Semester 2026"
+              "title": "Momselect"
             }
           }
         ]
@@ -42,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -184,9 +186,29 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "d0d4a6e2a65c0285",
+  "active": "b5e58a8202b3e6fc",
   "lastOpenFiles": [
+    "Computer Science/Algorithms/Erickson/Recursion Trees.md",
+    "Computer Science/Algorithms/Erickson/Momselect.md",
+    "Computer Science/Algorithms/Erickson/Quickselect.md",
+    "Computer Science/Algorithms/Erickson/Quicksort.md",
+    "Computer Science/Algorithms/Erickson/Tower of Hanoi.md",
+    "Computer Science/Algorithms/Erickson/Mergesort.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
+    "Templates/Templater/Untitled.md",
+    "Templates/Templater/Chapters.md",
+    "Templates/Papers.md",
+    "Templates/Books.md",
+    "Computer Science/Algorithms/Tower of Hanoi.md",
+    "Computer Science/Algorithms/Erickson",
+    "Computer Science/Algorithms/Untitled_01.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_01.md",
+    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020_04.md",
+    "Computer Science/Algorithms/Erikson's Book/Untitled.md",
     "Home.md",
+    "Computer Science/Algorithms/Erikson's Book",
+    "Computer Science/Algorithms/Jeff Erickson's Book/Recursion.md",
+    "Computer Science/Summer 2026/Untitled",
     "Work/Fundação Estudar/1st Semester 2026.md",
     "Computer Science/Summer 2026/15-451 Prep.md",
     "Computer Science/Summer 2026/Resources.md",
@@ -194,14 +216,7 @@
     "Computer Science/Summer 2026/DP Problem Log.md",
     "Computer Science/Summer 2026/Week 1 - DP to Reflex.md",
     "Work/Latent Intelligence/DecGPT.md",
-    "Psychology/Human Intelligence/dearyIntelligenceVeryShort2020.md",
     "Computer Science/Summer 2026/Week 5 - Calibration.md",
-    "Computer Science/Summer 2026/Week 4 - Greedy Proofs and Flow Modeling.md",
-    "Computer Science/Summer 2026/Week 3 - Hashing and Probability.md",
-    "Computer Science/Summer 2026/Week 2 - Data Structures and Amortized.md",
-    "Computer Science/Summer 2026/Technique Index.md",
-    "Computer Science/Summer 2026/Semester Process.md",
-    "Computer Science/Summer 2026/21-259 Prep.md",
     "Tools/LangChain",
     "Tools/TypeScript",
     "Tools/Go",
@@ -209,19 +224,6 @@
     "Tools/Jenkins",
     "Tools/Grafana",
     "Tools/Vagrant",
-    "Computer Science/Summer 2026",
-    "Computer Science/2026",
-    "Computer Science/Fall",
-    "Resources.md",
-    "Semester Process.md",
-    "DP Problem Log.md",
-    "Technique Index.md",
-    "Week 5 - Calibration.md",
-    "Week 4 - Greedy Proofs and Flow Modeling.md",
-    "Week 3 - Hashing and Probability.md",
-    "Week 2 - Data Structures and Amortized.md",
-    "Week 1 - DP to Reflex.md",
-    "21-259 Prep.md",
     "_assets/dearyIntelligenceVeryShort2020_04-3.png",
     "_assets/Pasted image 20260530234124.png",
     "_assets/dearyIntelligenceVeryShort2020_04-2.png",
