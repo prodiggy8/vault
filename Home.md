@@ -1,3 +1,9 @@
+People I need to see
+- [ ] Luisa
+- [ ] Tio Mauro
+- [ ] Tio Beto
+- [ ] Gaby?
+
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
