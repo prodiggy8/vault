@@ -1,3 +1,10 @@
+Tasks for next two days:
+- [x] Transfer Richard
+- [ ] Transfer Deposit
+- [ ] Purchase tickets with Copa, check pet availability with Delta
+- [ ] Fill out health and housing forms for CMU
+- [ ] Send invoice to Joyce
+
 People I need to see
 - [ ] Luisa
 - [ ] Tio Mauro
