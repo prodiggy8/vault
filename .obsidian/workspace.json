@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Latent Intelligence/DecGPT.md",
+                "file": "Work/Sanii/Fixes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DecGPT"
+              "title": "Fixes"
             }
           }
         ]
@@ -189,8 +189,8 @@
   },
   "active": "379c09f56c1c9412",
   "lastOpenFiles": [
-    "Home.md",
     "Work/Latent Intelligence/DecGPT.md",
+    "Home.md",
     "Computer Science/Algorithms/Erickson/Momselect.md",
     "Computer Science/Algorithms/Erickson/Recursion Trees.md",
     "Computer Science/Algorithms/Erickson/Quickselect.md",
