@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e4989e243eedcbee",
+        "id": "0a08cdda880a6fd7",
         "type": "tabs",
         "children": [
           {
-            "id": "379c09f56c1c9412",
+            "id": "c96b756a661ef089",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -186,10 +186,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "379c09f56c1c9412",
+  "active": "c96b756a661ef089",
   "lastOpenFiles": [
-    "Home.md",
     "Work/Latent Intelligence/DecGPT.md",
+    "Home.md",
     "Computer Science/Algorithms/Erickson/Chapter 1.md",
     "Computer Science/Algorithms/Erickson/Momselect.md",
     "Computer Science/Algorithms/Erickson/Recursion Trees.md",
