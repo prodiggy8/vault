@@ -37,8 +37,7 @@
               "title": "Fixes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -202,10 +202,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "5f097cd7e67afda2",
+  "active": "c96b756a661ef089",
   "lastOpenFiles": [
-    "Work/Latent Intelligence/DecGPT.md",
     "Work/Sanii/Fixes.md",
+    "Work/Latent Intelligence/DecGPT.md",
     "Home.md",
     "Computer Science/Algorithms/Erickson/Chapter 1.md",
     "Computer Science/Algorithms/Erickson/Momselect.md",
