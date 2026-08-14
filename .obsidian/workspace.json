@@ -37,7 +37,8 @@
               "title": "Fixes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,10 +202,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "c96b756a661ef089",
+  "active": "5f097cd7e67afda2",
   "lastOpenFiles": [
-    "Work/Sanii/Fixes.md",
     "Work/Latent Intelligence/DecGPT.md",
+    "Work/Sanii/Fixes.md",
     "Home.md",
     "Computer Science/Algorithms/Erickson/Chapter 1.md",
     "Computer Science/Algorithms/Erickson/Momselect.md",
