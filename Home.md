@@ -5,7 +5,23 @@ People I need to see
 - [ ] Tio Mauro
 
 Documents to take:
-- [ ] 
+**Me**
+- [x] Passport and visa
+- [x] I-20
+- [x] I-901 fee receipt
+- [ ] Financial proof (Sheila)
+- [ ] Academic proof (SIO)
+**Her**
+- [ ] Passport and visa
+- [ ] Return flight booking
+- [ ] Rent contract
+- [ ] Bank statement
+- [ ] My I-20
+- [ ] Certificate of residence
+**Slayito**
+- [ ] CVI
+- [x] Vaccination card
+- [x] Health certificate
 
 Medicine to buy:
 - [ ] Dipirona
@@ -13,6 +29,7 @@ Medicine to buy:
 - [ ] Antibiótico
 - [ ] Clonazepam com receita
 - [ ] Aripiprazol se houver
+- [ ] Ibuprofeno
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
