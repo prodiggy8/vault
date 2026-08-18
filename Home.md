@@ -1,17 +1,18 @@
 Tasks for next two days:
-- [x] Transfer Richard
-- [ ] Transfer Deposit
-- [x] Purchase tickets with Copa, check pet availability with Delta
 - [ ] Fill out health and housing forms for CMU
-- [x] Send invoice to Joyce
 
 People I need to see
-- [ ] Luisa
 - [ ] Tio Mauro
-- [ ] Tio Beto
-- [ ] Gaby?
 
+Documents to take:
+- [ ] 
 
+Medicine to buy:
+- [ ] Dipirona
+- [ ] Remédio dor muscular
+- [ ] Antibiótico
+- [ ] Clonazepam com receita
+- [ ] Aripiprazol se houver
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
