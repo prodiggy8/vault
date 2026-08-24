@@ -9,15 +9,15 @@ Documents to take:
 - [x] Passport and visa
 - [x] I-20
 - [x] I-901 fee receipt
-- [ ] Financial proof (Sheila)
-- [ ] Academic proof (SIO)
+- [x] Financial proof (Sheila)
+- [x] Academic proof (SIO)
 **Her**
-- [ ] Passport and visa
-- [ ] Return flight booking
+- [x] Passport and visa
+- [x] Return flight booking
 - [ ] Rent contract
 - [ ] Bank statement
 - [ ] My I-20
-- [ ] Certificate of residence
+- [x] Certificate of residence
 **Slayito**
 - [ ] CVI
 - [x] Vaccination card
@@ -25,10 +25,8 @@ Documents to take:
 
 Medicine to buy:
 - [ ] Dipirona
-- [ ] Remédio dor muscular
-- [ ] Antibiótico
+- [ ] Ciclobenzaprina
 - [ ] Clonazepam com receita
-- [ ] Aripiprazol se houver
 - [ ] Ibuprofeno
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
