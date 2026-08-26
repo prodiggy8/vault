@@ -1,3 +1,7 @@
+### Tasks
+- [ ] Review Calculus
+- [ ] Review Distributed when lecture notes are posted
+- [ ] Need to speed run DecGPT
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
