@@ -10,11 +10,17 @@ aliases:
 date created: Tuesday, August 25th 2026, 1:26:30 pm
 date modified: Tuesday, August 25th 2026, 1:26:32 pm
 ---
-> [!callout]
-> The expected complexity of a randomized algorithm in a given model of computation is the maximum cost over of all possible inputs to the algorithm, of the expected value of the cost of that input, where the expected value is over the distribution of random choices made by the algorithm.
-> 1. Worst case inputs always
-> 2. Not worst case random output, expected value of distribution
- 
+
+> [!definition] Average Cost
+> This is equivalent to the *expected value* of its cost over a uniform distribution of possible inputs.
+
+> [!definition] Expected Cost
+> Maximum cost over all possible inputs to the algorithm, of the expected value of the cost of that input, where the expected value is over the distribution of random choices made by the algorithm.
+
+
+
+
+
 [[Quicksort]]
 [[Quickselect]]
 [[Momselect]]

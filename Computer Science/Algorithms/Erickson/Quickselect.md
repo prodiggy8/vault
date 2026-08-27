@@ -23,3 +23,9 @@ QuickSelect(A[1..n], k):
 			return A[r]
 ```
 
+#### Analysis
+
+$T(n) \leq n-1+ \mathbb{E}_{X}[T(X)]$
+$\mathbb{E}_{X}=\sum_{x=1}^{n-1}Pr[X=x] \cdot T(x)$
+$\mathbb{E}_{X} \leq Pr\left[ X \leq \frac{3n}{4} \right] \cdot T\left( \frac{3n}{4} \right) + Pr\left[ \frac{X>3n}{4} \right] \cdot T(n)$
+	We divide
