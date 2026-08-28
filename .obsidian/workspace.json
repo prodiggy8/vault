@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Sanii/Fixes.md",
+                "file": "Computer Science/Algorithms/451/Recitation 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Fixes"
+              "title": "Recitation 1"
             }
           }
         ]
@@ -189,6 +189,7 @@
   "active": "0e3f6ee39f2966c5",
   "lastOpenFiles": [
     "Home.md",
+    "Computer Science/Algorithms/451/Recitation 1.md",
     "Work/Sanii/Fixes.md",
     "Computer Science/Distributed Systems/Networking Review.md",
     "Computer Science/Algorithms/Erickson/Quickselect.md",
@@ -220,7 +221,6 @@
     "Computer Science/Summer 2026/Untitled",
     "Work/Fundação Estudar/Letter Q2 2026.md",
     "Computer Science/Summer 2026/15-451 Prep.md",
-    "Computer Science/Summer 2026/Resources.md",
     "Tools/LangChain",
     "Tools/TypeScript",
     "Tools/Go",
