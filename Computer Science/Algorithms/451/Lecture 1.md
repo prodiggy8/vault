@@ -30,3 +30,9 @@ Need to study:
 - Expected value (GTI slides on probability)
 - C++ STL
 - Speed run graphs and DP with Erickson
+
+
+### Problems
+
+1. Find an increasing function $F: \mathbb{R}_+ \rightarrow \mathbb{R}_+$, such that $\mathbb{E}[F(i)] >> F(\mathbb{E}[i])$
+
