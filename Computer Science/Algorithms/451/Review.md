@@ -23,3 +23,7 @@ $$
 Always! Even if the variables are dependent.
 
 **Indicator Variables**
+$$
+I_{A}=1 \text{ when event } A \text{ happens and } 0 \text{ otherwise}
+$$
+
