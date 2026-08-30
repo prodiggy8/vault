@@ -17,3 +17,4 @@ How to define one?
 Using **comparison model**: >, <, = with cost 1
 
 a) Idea: we bucket the repeated elements in $O(n)$ and then user QuickSort or MergeSort in $O(D \log D)$
+s
