@@ -1,7 +1,14 @@
 ### Tasks
-- [ ] Review Calculus
-- [ ] Review Distributed when lecture notes are posted
-- [ ] Need to speed run DecGPT
+- [ ] Statistics Homework
+- [ ] Calculus Homework & Review (Chapter 1 included)\
+- [ ] Algorithms Homework
+- [ ] Learn Go, find teammate for Distributed
+- [ ] Start Distributed P0
+- [ ] Review Computational Perception
+- [ ] Review Probability, do some exercises. Review Tree and Brick Methods as well as Master Method for complexity theory.
+- [ ] Some C++ for coding homeworks
+
+
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over

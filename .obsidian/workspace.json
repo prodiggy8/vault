@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Algorithms/451/Review.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Review"
+              "title": "Home"
             }
           }
         ],
@@ -204,9 +204,9 @@
   },
   "active": "d2f3a601657c6f36",
   "lastOpenFiles": [
+    "Computer Science/Algorithms/451/Review.md",
     "Computer Science/Algorithms/451/Lecture 1.md",
     "Computer Science/Algorithms/451/Homeworks/Homework 1.md",
-    "Computer Science/Algorithms/451/Review.md",
     "Home.md",
     "Computer Science/Algorithms/451/Homeworks",
     "Computer Science/Algorithms/451/Recitation 1.md",
