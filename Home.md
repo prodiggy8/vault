@@ -1,5 +1,5 @@
 ### Tasks
-- [ ] Statistics Homework
+- [x] Statistics Homework
 - [ ] Calculus Homework & Review (Chapter 1 included)\
 - [ ] Algorithms Homework
 - [ ] Learn Go, find teammate for Distributed
