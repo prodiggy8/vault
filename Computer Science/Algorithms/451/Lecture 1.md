@@ -17,10 +17,6 @@ date modified: Tuesday, August 25th 2026, 1:26:32 pm
 > [!definition] Expected Cost
 > Maximum cost over all possible inputs to the algorithm, of the expected value of the cost of that input, where the expected value is over the distribution of random choices made by the algorithm.
 
-
-
-
-
 [[Quicksort]]
 [[Quickselect]]
 [[Momselect]]

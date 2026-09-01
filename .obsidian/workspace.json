@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Calculus in Three Dimensions/First Week.md",
+                "file": "Computer Science/Algorithms/451/Lecture 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "First Week"
+              "title": "Lecture 1"
             }
           }
         ]
@@ -188,6 +188,7 @@
   },
   "active": "888c1833d384ef19",
   "lastOpenFiles": [
+    "Computer Science/Distributed Systems/Networking Review.md",
     "Home.md",
     "Math/Calculus in Three Dimensions/First Week.md",
     "Math/Reasoning with Data/Some definitions.md",
@@ -198,7 +199,6 @@
     "Computer Science/Algorithms/451/Homeworks",
     "Computer Science/Algorithms/451/Recitation 1.md",
     "Work/Sanii/Fixes.md",
-    "Computer Science/Distributed Systems/Networking Review.md",
     "Computer Science/Algorithms/Erickson/Quickselect.md",
     "Computer Science/Distributed Systems",
     "Computer Science/Algorithms/Erickson/Momselect.md",
