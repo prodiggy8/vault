@@ -9,11 +9,6 @@ aliases:
 date created: Sunday, August 30th 2026, 12:01:32 pm
 date modified: Sunday, August 30th 2026, 12:01:35 pm
 ---
-##### 1.
-###### a)
-I have read the course and university policy on academic integrity
-
-###### b)
 ```pseudo
 PowerRanks(A[1..n]):
 	B = []
@@ -27,4 +22,13 @@ PowerRanks(A[1..n]):
 	return B
 ```
 
-###### c)
+
+
+1. 
+2. **Shuffle**
+	1. {a}
+
+```
+SplitBitonic(A[1..n]):
+	Let D, E
+```
