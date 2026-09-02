@@ -58,3 +58,34 @@ In the case no such $i$ exists, then $i=n+1$ by the end of the loop and $D=A, E=
 **Complexity**
 
 The loop performs one comparison per element, so $O(n)$ comparisons in total.
+
+	2. {a}
+
+```pseudo
+Merge(A[1..n], B[1..m]):
+	i = 1, j = 1, len = n + m
+	for k from 1 to len:
+		if j > m:
+			C[k] = A[i]
+			i++
+		else if i > n:
+			C[k] = B[j]
+			j++
+		else if A[i] < B[j]:
+			C[k] = A[i]
+			i++
+		else
+			C[k] = A[j]
+			j++
+	return C
+
+SortBitonic(A[1..n]):
+	D, E = SplitBitonic(A[1..n])
+	return Merge(D, E)
+	
+```
+
+
+3. 
+	3. {a}
+
