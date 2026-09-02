@@ -45,17 +45,16 @@ SplitBitonic(A[1..n]):
 
 **Correctness**
 
-We assume $A[1..m]$ for some $m$ is sorted and $A[m+1..n]^R$ is sorted. Also, let $i$ be the first index where $A[i] < \text{prev}$.
+We assume $A[1..m]$ for some $m$ is sorted and $A[m+1..n]^R$ is sorted. Assume there exists an $i$ such that it is the first index where $A[i] < \text{prev}$.
 
-Before step $i$, every step  of the loop in line 5 takes the else branch, so each $A[i]$ is appended to $D$ and $\text{prev}$ is always the last element of $D$, namely $A[i-1]$. Hence, the else condition is $A[i] \geq A[i-1]$ and $D$ non-decreasing.
+For all $j<i$, every iteration of the loop appends $A[j]$ to $D$ and $\text{prev}$ becomes $A[j]$. Thus, $D=A[1..i-1]$ and $\text{prev}=A[i-1]$. Since $A[i]<A[i-1]$, the sequence stopped increasing, so $i-1 \geq m$ and $A[i-1]$ is the maximum of $A$. Hence, $D$ is a prefix of a bitonic sequence up to its maximum, so $D$ is sorted.
 
-Since $A[1..m]$ is non-decreasing, $i$
+For every $j \geq i$, $A[j] < A[i-1] = \text{prev}$ by assumption, so $A[j]$ is *prepended* to $E$ and $\text{prev}$ never changes. Thus, $E=A[i..n]^R$. By assumption, this segment is sorted and hence so is $E$.
 
+Concatenating $D$ and $E^R$ is equivalent to concatenating $A[1..i-1]$ and $A[i..n]$ which is $A$, so we correctly decomposed $A$ in two sorted sequences as intended.
 
+In the case no such $i$ exists, then $i=n+1$ by the end of the loop and $D=A, E=\emptyset$, which trivially concatenates to $A$.
 
 **Complexity**
 
-We perform $n-1$ comparisons between `x` and `prev` in this algorithm, hence, it runs in $O(n)$.
-
-2a
-3b
+The loop performs one comparison per element, so $O(n)$ comparisons in total.
