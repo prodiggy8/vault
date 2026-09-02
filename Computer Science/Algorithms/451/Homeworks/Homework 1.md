@@ -86,6 +86,33 @@ SortBitonic(A[1..n]):
 ```
 
 
-3. 
-	3. {a}
+3.  a)
+
+```
+StreakSort(A[1..n]):
+	Let B be an empty sequence
+	start = 1
+	
+	for i from 1 to n-1:
+		if A[i+1] < A[i]:
+			Append A[start..i] to B
+			start = i+1
+	
+	Append A[start..n] to B
+	
+	while |B| > 1:
+		Let B' be an empty sequence
+		j = 0
+		while j <= |B|:
+			if j + 1 <= |B|:
+				Append Merge(B[j], B[j+1]) to B'
+			else:
+				Append B[j] to B'
+			j += 2
+		B = B'
+		
+	return B[1]
+```
+
+3. b)
 
