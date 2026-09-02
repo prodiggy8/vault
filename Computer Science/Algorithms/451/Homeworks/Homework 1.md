@@ -114,5 +114,44 @@ StreakSort(A[1..n]):
 	return B[1]
 ```
 
+**Correctness**
+
+Lines 2-11:
+
+The scan cuts the array exactly at the positions $i$ where $A[i+1] < A[i]$. Let $m$ be the number of streaks it produces. Between two consecutive cuts every adjacent pair satisfies $A[i] < A[i+1]$, so each streak $B_j$ is strictly increasing. Conversely, any valid partition into $t$ streaks must cut at every such "descent" position, so the streaks we produce are the maximal increasing runs. In particular $m \leq t$, since a partition into $t$ streaks has $t − 1$ cuts and each of our $m − 1$ descents must be one of them.
+
+Lines 12-23:
+
+Assuming every sequence in $B$ is increasing and the collection 
+
+
 3. b)
 
+Fix any $t$. We’ll proceed by finding an input made of $t$ streaks on which the algorithm must make at least $c \cdot (n + n \log t)$ comparisons. We handle $t=1$ and $t \geq 2$ separately, since $t=1$ implies the target is just $n$ and when $t\geq 2$ we have $n \leq n \log t$, so $n + n\log t \leq 2n\log t$.
+
+Case $t=1$
+
+Feed the algorithm the array $1, 2, \dots, n$. Suppose it finishes in fewer than $n-3$ comparisons. Then there’s some neighboring pair of positions $i$ and $i+1$ (with $2 \leq i \leq n-2$) that it never compared directly.
+
+Now suppose a second array, the same one, but with values at $i$ and $i+1$ swapped. Every comparison the algorithm made gives the exact same answer on this new array. That’s because no direct comparison was made, and a comparison between either element with some other arbitrary $q$ will yield the same result, because $q$ is either smaller or greater than both (by the fact they’re adjacent).
+
+However, since the second array is a valid input (with streaks $(1, \dots, i+1$) and $(i, \dots, n)$) and the two arrays are different orderings of the same numbers, they need different rearrangements to sort them. Hence, the algorithm must make at least $\Omega(n)$ comparisons.
+
+Case $t \geq 2$
+
+Assume $t | n$ and let $m=\frac{n}{t}$. View the array as a $t \times m$ grid, Column 1 gets the values $1..t$, column 2 gets $t+1..2t$, and so on. Within each column, you can order those $t$ values top-to-bottom however you like, independently per column. Two things are true about any array built this way:
+
+- Each row is increasing, because everything in column $j$ is smaller than everything in column $j+1$.
+- Each row is its own streak: the last entry of a row is from the last column, so it’s big. The first entry of the new row is from column 1, so it’s at most $t$.
+
+So every array has exactly $t$ streaks, each of length $m \geq 2$, and is a legal input. Each column has $t!$ possible orderings, and the $m$ columns are chosen independently, so $t!^m$ arrays. They’re all different orderings of the numbers $1..n$, so each needs a different sorting rearrangement. By the lecture’s rule, the algorithm needs at least $m \cdot \log_{2}(t!)$ comparisons.
+
+Finally, a bound on $t!$: pair up the factors of $(t!)^2$ as $1\cdot t,\; 2\cdot(t-1),\; 3\cdot(t-2),\;\ldots,\; t\cdot 1$, i.e.
+$$(t!)^2 = \prod_{k=1}^{t} k\,(t+1-k).$$
+Each pair multiplies to at least $t$, since
+$$k(t+1-k) - t = (k-1)(t-k) \ge 0 \quad\text{for } 1 \le k \le t.$$
+There are $t$ pairs, so $(t!)^2 \ge t^t$, i.e. $t! \ge t^{t/2}$. Plugging in:
+$$\ell \;\ge\; m \log_2(t!) \;\ge\; m \cdot \frac{t}{2}\log_2 t \;=\; \frac{n}{t}\cdot\frac{t}{2}\log_2 t \;=\; \frac{n}{2}\log_2 t \;\ge\; \frac{1}{4}\bigl(n + n\log_2 t\bigr).$$
+Hence, for $t=1$ at least some input needs $n$ comparisons, and for $t \geq 2$ some input needs at least a quarter of $n+n \log t$.
+
+Edge case: if $t$ doesn’t divide $n$, then use $\left\lfloor  \frac{n}{t}  \right \rfloor$ columns and tackle the leftover values onto the end in increasing order. For $t=1$ with $n < 4$, the bound is trivial.
