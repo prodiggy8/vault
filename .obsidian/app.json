@@ -5,7 +5,7 @@
     "pageSize": "Letter",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 71
   },
   "attachmentFolderPath": "_assets",
   "alwaysUpdateLinks": true,
