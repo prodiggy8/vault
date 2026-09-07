@@ -38,7 +38,7 @@ We must argue some property about the structure of **any possible decision tree*
 
 Proof: At the root node there of any decision tree for this problem there are $n$ possible outputs. For each comparison, exactly one element loses, and hence the set of outputs is one fewer than at parent node. Therefore all decision trees have depth $n-1$.
 
-**Remark:** $[c, a, b, d]$ and $[b, d, a, c]$ sort to **different** permutations $[a_2, a_3, a_1, a_4]$ and $[a_3, a_1, a_4, a_2]$ while $[c, a, b, d]$ and $[m, d, e, z]$ sort to the **same** $[a_2, a_3, a_1, a_4]$. The comparison model doesn’t know values, only sequence of comparisons.
+==**Remark:**== $[c, a, b, d]$ and $[b, d, a, c]$ sort to **different** permutations $[a_2, a_3, a_1, a_4]$ and $[a_3, a_1, a_4, a_2]$ while $[c, a, b, d]$ and $[m, d, e, z]$ sort to the **same** $[a_2, a_3, a_1, a_4]$. The comparison model doesn’t know values, only sequence of comparisons.
 
 ### Information Theory
 
