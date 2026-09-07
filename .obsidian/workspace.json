@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Distributed Systems/Go.md",
+                "file": "Computer Science/Algorithms/451/Lecture 3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Go"
+              "title": "Lecture 3"
             }
           }
         ]
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -188,6 +189,8 @@
   },
   "active": "fd93888dc99fe23d",
   "lastOpenFiles": [
+    "Computer Science/Algorithms/451/Lecture 2.md",
+    "Computer Science/Algorithms/451/Lecture 3.md",
     "Home.md",
     "Computer Science/Distributed Systems/2. Concurrency.md",
     "Computer Science/Distributed Systems/Go.md",
@@ -206,9 +209,7 @@
     "_assets/method.png",
     "_assets/Pasted image 20260903122636.png",
     "_assets/2.1 and 2.2-3.png",
-    "Computer Science/Algorithms/451/Lecture 2.md",
     "Computer Science/Computational Perception/Lecture 4 - Computation.md",
-    "Computer Science/Algorithms/451/Lecture 3.md",
     "Math/Reasoning with Data/Homework 1.md",
     "Computer Science/Computational Perception",
     "Computer Science/Algorithms/Untitled.md",

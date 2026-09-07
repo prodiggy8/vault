@@ -1,12 +1,11 @@
 ### Tasks
 - [x] Statistics Homework
-- [ ] Calculus Homework & Review (Chapter 1 included)\
-- [ ] Algorithms Homework
-- [ ] Learn Go, find teammate for Distributed
-- [ ] Start Distributed P0
+- [ ] Review (Chapter 1 included)\
 - [ ] Review Computational Perception
 - [ ] Review Probability, do some exercises. Review Tree and Brick Methods as well as Master Method for complexity theory.
 - [ ] Some C++ for coding homeworks
+- [ ] Go through Go by Example again
+- [ ] Go through recitation 0 and lecture on Go concurrency
 
 
 ### Undated Tasks
