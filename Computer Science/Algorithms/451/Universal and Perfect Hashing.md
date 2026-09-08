@@ -31,4 +31,13 @@ We use hash functions so not to have an array of size $u$. This introduces **col
 
 **Claim:** for any $h$, if $u \geq (n-1)m+1$, there exists $n$ items that hash to the same location.
 
-**Proof:** 
+**Proof:** contrapositive. If every location had at most $n-1$ items, then $U$ could have size at most $m(n-1)$.
+
+## Universal Hashing
+
+> [!definition]
+> A set $H$ where each $h \in H$ maps $U \rightarrow \{0,\dots,m-1\}$ is called **universal** if for all $x \neq y$ in $U$, we have:
+> $$\Pr_{h \in H} [h(x) = h(y)] \leq \frac{1}{m}$$
+
+Alternative way of defining: count the number of hash functions in $H$ that cause $x$ and $y$ to collide.
+$$\frac{|\{h \in H | h(x) = h(y)\}|}{|H|} \leq \frac{1}{m}$$
