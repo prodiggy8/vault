@@ -55,4 +55,29 @@ If $u \in O(n)$ then this is better than comparison sort, i.e., if integers have
 
 ### Tuple Sorting
 
-Given $n$ elements where each element’s key is a tuple $(k_1, k_2, \dots, k_d)$, we want to sort by key.
+Given $n$ elements where each element’s key is a tuple $(k_1, k_2, \dots, k_d)$, we want to sort lexicographically by key.
+
+Using a normal sorting algorithm with a comparison function for such tuples, we will have $O(dn\log n)$.
+
+**Top-down tuple sorting**
+
+Sort first with any sorting algorithm by the first element. Then recursively sort each subarray of equal first elements, using the second tuple as the key, and so on.
+
+**Bottom-up tuple sorting**
+
+Sort the entire array starting with the last key all the way until the top. If sorting algorithm is stable we keep the relative order of equals at each iteration.
+
+### Radix Sort
+
+```pseudo
+RadixSort(A[1..n], key):
+	B = A
+	for each i from 0 to digits - 1:
+		B = CountingSort(B, key = x -> Digit(key(x), digits - i))
+	return B
+```
+
+Complexity: assuming a universe $\{0,1,\dots,u-1\}$, $d=\log_{b} u$ digits when written in base $b$.
+$$O((n+b) \log_{b}u)$$
+
+- This is unfinished work. Continue from Radix Sort complexity
