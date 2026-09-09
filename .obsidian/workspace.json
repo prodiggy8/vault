@@ -127,8 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -235,11 +234,11 @@
   },
   "active": "3a2ac1e6e957a029",
   "lastOpenFiles": [
+    "Home.md",
     "Computer Science/Algorithms/451/Integer Sorting.md",
     "Computer Science/Algorithms/451/Homeworks/Homework 2.md",
     "Computer Science/Algorithms/451/Homeworks/Homework 1.md",
     "Computer Science/Algorithms/451/Homeworks/Untitled 1.md",
-    "Home.md",
     "Computer Science/Algorithms/451/Fingerprinting and String Matching.md",
     "Computer Science/Algorithms/451/Lower bounds.md",
     "Computer Science/Algorithms/451/Universal and Perfect Hashing.md",
