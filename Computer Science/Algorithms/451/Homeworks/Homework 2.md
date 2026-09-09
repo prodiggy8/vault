@@ -13,11 +13,32 @@ date modified: Tuesday, September 8th 2026, 6:26:06 pm
 $$T(n) = \lceil \frac{64}{\log_{b} 2} \rceil (n + b) = \lceil \frac{64}{\log_{b} 2} \rceil (10^6 + b)$$
 Ignoring the ceiling and constants, we minimize $f(b) = \frac{(n+b)}{\ln b}$
 $$f'(b) = \frac{\ln b - (n+b)/b}{(\ln b)^2} = 0 \iff b(\ln b - 1) = n.$$
-which for $n = 10^6$ gives $b^* \approx 10^5 \approx 2^{16}$. Since the number of passes $d$ is an integer, for fixed $d$ the cost $d(n+b)$ is minimized by the smallest $b$ giving $d$ passes, $b = 2^{64/d}$. With $d = 4$ this is $b = 2^{16}$ and $T \approx 4.3 \times 10^6$; with $d = 3$ we need $b \approx 2.6 \times 10^6$ and $T \approx 11 \times 10^6$; with $d = 5$, $T \approx 5 \times 10^6$. **Answer** $b = 2^{16}$ minimizes the operation count with $T \approx 4.3 \times 10^6$, and Radix Sort performs $\lceil 64/16 \rceil = 4$ iterations. For comparison, $b = n$ also needs 4 passes but costs $8 \times 10^6$ operations. 
+Solving numerically in Python gives $b^* \approx 10^5$ so each digit carries $\log_2 10^5 \approx 16.6$ bits, so the 64 bits are consumed in $\lceil 64/16.6 \rceil = 4$ passes, and the total cost is $T(b^*) = 4\,(n + b^*) \approx 4.4 \times 10^6$ operations.
 
 #### 1b)
+
+A family $H$ of 4 functions is universal iff each of the $28$ pairs $x \neq y$ collides under at most $4/2 = 2$ of its functions. After brute forcing:
+
+| $x$   | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| ----- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $h_1$ | 0   | 0   | 0   | 0   | 1   | 1   | 1   | 1   |
+| $h_2$ | 0   | 0   | 1   | 1   | 0   | 0   | 1   | 1   |
+| $h_3$ | 0   | 1   | 0   | 1   | 0   | 1   | 0   | 1   |
+| $h_4$ | 0   | 1   | 1   | 0   | 1   | 0   | 0   | 1   |
+
+Each row of the table has a simple description. Write $x$ with three binary digits, $x = (x_2 x_1 x_0)$, so for example $5 = 101$. Then $h_1(x) = x_2$ is the leftmost digit (it is $1$ exactly for $x = 4, 5, 6, 7$), $h_2(x) = x_1$ is the middle digit ($1$ for $x = 2, 3, 6, 7$), $h_3(x) = x_0$ is the rightmost digit ($1$ for odd $x$), and $h_4(x) = x_0 \oplus x_1 \oplus x_2$ is $1$ exactly when $x$ has an odd number of $1$ digits ($x = 1, 2, 4, 7$).
+
+Take any $x \neq y$ and count. The first three functions read off the digits of $x$, so $h_1, h_2, h_3$ send $x$ and $y$ to the same location exactly as often as $x$ and $y$ have the same digit in a position. The fourth function compares how many $1$ digits they have, and this parity is the same exactly when they differ in an even number of positions. Since $x \neq y$, they differ in $1$, $2$ or $3$ positions:
+- differ in $1$ position: they agree on $2$ digits, and their parities differ, so $2$ collisions.
+- differ in $2$ positions: they agree on $1$ digit, and their parities agree, so $1 + 1 = 2$ collisions.
+- differ in $3$ positions: they agree on no digit, and their parities differ, so $0$ collisions. 
+In every case at most $2$ of the $4$ functions send $x$ and $y$ to the same location, so $\Pr_{h \in H}[h(x) = h(y)] \leq 2/4 = 1/2$, and $H$ is universal.
+
 #### 1c)
 
+Not universal. 
+
+A family $H$ is universal if for all distinct keys $x \neq y$, $\Pr_{h \in H}[h(x) = h(y)] \leq 1/m$; here $m = 2$ and $|H| = 5$, so each pair may collide under at most $2$ of the $5$ functions. Take $x = b$, $y = d$: $g(b) = g(d) = 1$, $i(b) = i(d) = 1$ and $j(b) = j(d) = 0$, so $$\Pr_{h \in H}[h(b) = h(d)] = \frac{3}{5} > \frac{1}{2}.$$
 #### 2a)
 
 Let $B$ be a sorted arrangement of $A$. If $B[i]$ has key $< x$ and $i’<i$ then $\operatorname{key}(B[i’]) \leq \operatorname{key}(B[i]) < x$
