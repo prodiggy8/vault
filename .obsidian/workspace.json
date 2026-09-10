@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Math/Calculus in Three Dimensions/Homework 2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Homework 2"
             }
           }
         ]
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -183,16 +182,17 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "card-board:CardBoard": false
     }
   },
   "active": "fcf17feeac98756a",
   "lastOpenFiles": [
     "Math/Calculus in Three Dimensions/Homework 2 Notes.md",
     "Math/Calculus in Three Dimensions/Homework 2.md",
-    "Math/Calculus in Three Dimensions/Lectures.md",
     "Math/Calculus in Three Dimensions/Homework 1.md",
     "Home.md",
+    "Math/Calculus in Three Dimensions/Lectures.md",
     "Computer Science/Algorithms/451/5. Fingerprinting and string matching.md",
     "Computer Science/Algorithms/451/4. Universal and perfect hashing.md",
     "Computer Science/Algorithms/451/3. Integer sorting.md",

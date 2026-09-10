@@ -91,4 +91,102 @@ $$
 \end{aligned}
 $$
 
-#### Problem 3
+#### Problem 4
+
+Equation of the line intersection of planes $3x-2y+z=2$ and $-x+2y+z=-3$
+
+We add to cancel out $-2y$ and $2y$ to isolate one variable
+$$
+\begin{aligned}
+3x-2y+z-x+2y+z &= 2 - 3 \\
+2x + 2z &=-1\\
+x&=-\frac{1}{2}-z
+\end{aligned}
+$$
+$$
+\begin{aligned}
+-\left( -\frac{1}{x} -z\right)+2y+z &= -3 \\
+\frac{1}{2} + 2z + 2y &= -3 \\
+y &= -\frac{7}{4} - x
+\end{aligned}
+$$
+Now let $z=y$ and to get the parametric equation
+$$
+\begin{aligned}
+x = -\frac{1}{2} -t && y= -\frac{7}{4} - t && z=t
+\end{aligned}
+$$
+
+#### Problem 5
+
+Rotate $-x+3y+z=2$ by $90 \degree$ about the line $\langle 2 + t, 2 + 2t, -1 + 2t \rangle$
+
+We rotate the normal $n=\langle -1, 3, 1 \rangle$ and the point. Axis is $(2, 2, -1)$ direction $d = \langle 1, 2, 2 \rangle$, $|d|=\sqrt{ 1 + 4 + 4 } = 3$.
+$$
+\begin{aligned}
+v'=\operatorname{proj}_{u}v+(v-\operatorname{proj}_{u}v)\cos \theta + \operatorname{rot}_{u}v\sin \theta \\
+\operatorname{rot}_{u}v = \frac{u \times v}{|u|}\\
+\theta = 90 \degree \\
+\cos \theta = 0 \\
+\sin \theta = 1
+\end{aligned}
+$$
+$$
+\begin{aligned}
+\operatorname{proj}_{d}n=\frac{n \cdot d}{d \cdot d}d = \frac{-1 + 6 + 2}{9} \langle 1, 2, 2 \rangle = \langle \frac{7}{9}, \frac{14}{9} \frac{14}{9} \rangle
+\end{aligned}
+$$
+$$
+\begin{aligned}
+n \times d = \langle 1, 2, 2 \rangle \times \langle-1, 3, 1 \rangle \\
+x = -4 \\
+y = -3 \\
+z = 5 \\
+\operatorname{rot}_{d}n=\frac{\langle -4, -3, -5 \rangle}{3}=\langle -\frac{4}{3}, -1, \frac{5}{3} \rangle \\
+n' = \langle \frac{7}{9} - \frac{12}{9}, \frac{14}{9} - 1, \frac{14}{9} + \frac{15}{9} \rangle = \langle-\frac{5}{9}, \frac{5}{9}, \frac{29}{9} \rangle
+\end{aligned}
+$$
+Now the point we find where the axis meets the plane
+$$ \begin{aligned} -(2+t)+3(2+2t)+(-1+2t) &= 2 \\ 3+7t &= 2 \\ t &= -\tfrac17 \end{aligned}$$
+Hence rotation is $\left(\tfrac{13}{7},\ \tfrac{12}{7},\ -\tfrac97\right)$. Equation:
+$$ -\tfrac59\left(x-\tfrac{13}{7}\right)+\tfrac59\left(y-\tfrac{12}{7}\right)+\tfrac{29}{9}\left(z+\tfrac97\right) = 0 $$
+#### Problem 6
+
+Distance between $-x+2=\frac{y}{2} + 1=z+2$ and $\frac{x+2}{3}=\frac{y}{2}=z$
+
+Pick a point on each line
+$$
+\begin{aligned}
+d_1 &= \langle -1,2,1\rangle, & P_1 &= (2,-2,-2) \\
+d_2 &= \langle 3,2,1\rangle,  & P_2 &= (-2,0,0)
+\end{aligned}
+$$
+The distance is the length of the shortest segment joining the lines, which is perpendicular to both lines, so parallel to $d_1\times d_2$. Take any vector from one line to the other and project it onto that direction.
+
+$$
+\begin{aligned}
+n &= d_1\times d_2 = \left\langle 2(1)-1(2),\ 1(3)-(-1)(1),\ (-1)(2)-2(3)\right\rangle = \langle 0,4,-8\rangle \\
+P_1P_2 &= \langle -2-2,\ 0-(-2),\ 0-(-2)\rangle = \langle -4,2,2\rangle \\
+\text{dist} &= \frac{\left|P_1P_2\cdot n\right|}{| n|} = \frac{|0+8-16|}{\sqrt{0+16+64}} = \frac{8}{4\sqrt5} = \frac{2}{\sqrt5}
+\end{aligned}
+$$
+
+#### Problem 7
+
+$a \neq 0$ Show that if $a \cdot b = a \cdot c$ and $a \times b = a \times c$ then $b = c$ (a,  b, c are vectors)
+
+$a(b-c)=ab - ac = 0$
+$a \times (b-c) = a \times b - a \times c = 0$
+
+Also:
+
+$a(b-c)=|a||b-c|\cos \theta=0$ and $|a \times (b-c)|=|a||b-c|\sin \theta = 0$
+
+Since $a \neq 0$ we can divide it out from both. Now if $b-c \neq 0$ we could also divide $|b-c|$ but that would leave $\cos \theta = 0$ and $\sin \theta = 0$, and both of them can’t be true at the same time. Hence $(b-c)=0$. That is, $b=c$.
+
+#### Problem 8
+
+Three mirrors meet at right angles. Show incoming ray of light is reflected by these three mirrors in exactly the opposite direction that it came from.
+
+We take the mirrors as the planes $x=0$, $y=0$ and $z=0$. Say the ray travels in $v= \langle a, b, c \rangle$.
+
