@@ -105,9 +105,9 @@ x&=-\frac{1}{2}-z
 $$
 $$
 \begin{aligned}
--\left( -\frac{1}{x} -z\right)+2y+z &= -3 \\
+-\left( -\frac{1}{2} -z\right)+2y+z &= -3 \\
 \frac{1}{2} + 2z + 2y &= -3 \\
-y &= -\frac{7}{4} - x
+y &= -\frac{7}{4} - z
 \end{aligned}
 $$
 Now let $z=y$ and to get the parametric equation
@@ -188,5 +188,34 @@ Since $a \neq 0$ we can divide it out from both. Now if $b-c \neq 0$ we could al
 
 Three mirrors meet at right angles. Show incoming ray of light is reflected by these three mirrors in exactly the opposite direction that it came from.
 
-We take the mirrors as the planes $x=0$, $y=0$ and $z=0$. Say the ray travels in $v= \langle a, b, c \rangle$.
+We take the mirrors as the planes $x=0$, $y=0$ and $z=0$ and with normals equal to the unit vectors $i,j,k$. Say the ray travels in $v= \langle a, b, c \rangle$. Reflecting off a flat mirror with normal $n$ reverses the components of $v$ along the normal and leaves the parallel parts alone.
+$$
+v'=v-2\operatorname{proj}_{n}v = v-2(v \cdot n)n
+$$
+For mirror $z$:
+$$v'=\langle a, b, c\rangle-2(vk)\langle 0,0,1\rangle=\langle a,b,-c\rangle$$
+Likewise for mirrors $x$ and $y$, they will effect $v’=\langle -a, -b, -c \rangle$. So the outgoing ray will point opposite to the incoming one.
 
+#### Problem 9
+
+**Part 1.** Show $\frac{d}{dt}(u(t) \times v(t))=\frac{du(t)}{dt} \times v(t) + u(t) \times \frac{dv(t)}{dt}$. 
+
+Let $u=\langle u_1, u_{2}, u_{3} \rangle$ and $v=\langle v_{1}, v_{2}, v_{3} \rangle$, then:
+$$
+u \times v = \langle u_{2}v_{3}-u_{3}v_{2}, u_{3}v_{1}-u_{1}v_{3}, u_{1}v_{2}-u_{2}v_{1} \rangle
+$$
+We differentiate each component:
+$$\begin{aligned}  
+(u_2v_3-u_3v_2)' &= u_2'v_3+u_2v_3'-u_3'v_2-u_3v_2' = (u_2'v_3-u_3'v_2)+(u_2v_3'-u_3v_2')\\  
+(u_3v_1-u_1v_3)' &= u_3'v_1+u_3v_1'-u_1'v_3-u_1v_3' = (u_3'v_1-u_1'v_3)+(u_3v_1'-u_1v_3')\\  
+(u_1v_2-u_2v_1)' &= u_1'v_2+u_1v_2'-u_2'v_1-u_2v_1' = (u_1'v_2-u_2'v_1)+(u_1v_2'-u_2v_1')  
+\end{aligned}$$
+In each row the first parenthesis is $u' \times v$ and the second is $v' \times u$. So $( u\times v)' = u'\times v+ u\times v'$.
+
+**Part 2**. Show that if $r(t)$ is always parallel to $\frac{d^2r(t)}{dt^2}$ then $r(t) \times \frac{dr(t)}{dt}$ is constant.
+
+We apply the rule above with $u=r$ and $v=r’$:
+$$
+\frac{d}{dt}(r \times r')=r' \times r' + r \times r''
+$$
+The first term is $0$ because any vector cross with itself is $0$. The second term is 0 because $r$ is parallel to $r’’$ and the cross product of parallel vectors is 0 (since $\sin 0 = 0$). So the derivative is $0$ hence a constant.
