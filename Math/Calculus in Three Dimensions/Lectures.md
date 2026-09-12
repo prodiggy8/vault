@@ -28,18 +28,5 @@ To do the inverse and get $(x,y)$ we just rotate by $- \phi$.
 
 ### Lecture 2
 
-###### Right-hand rule
-- Thumb points at the z-axis
-- Fingers align with the x-axis
-- Fingers curl towards the y-axis
 
-Each pair of axes forms a coordinate plane: the xy-plane, the xz-plane, and the yz-plane.
 
-If two points lie in the same plane it’s straightforward to calculate a distance. If they don’t:
-$$
-d=\sqrt{(x_{2}-x_{1})^2 +(y_{2}-y_{1})^2 + (z_{2}-z_{1})^2 }
-$$
-A sphere with center $(a,b,c)$ and radius $r$ is defined as:
-$$
-(x-a)^2 + (y-b)^2 + (z-c)^2 = r^2
-$$
