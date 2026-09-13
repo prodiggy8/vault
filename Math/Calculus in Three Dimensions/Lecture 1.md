@@ -7,6 +7,16 @@ aliases:
 date created: Monday, August 31st 2026, 12:04:07 am
 date modified: Saturday, September 12th 2026, 12:38:46 pm
 ---
+Polar coordinates:
+$$
+\begin{align}
+r = \sqrt{ x^2 + y^2 } \\
+\theta = \arctan\left( \frac{y}{x} \right) \\
+x = r\cos \theta \\
+y = r\sin \theta
+\end{align}
+$$
+
 
 Rotating $(x,y)$ by an angle $\phi$ about the origin, generating $(x’, y’)$.
 
