@@ -16,7 +16,10 @@ x = r\cos \theta \\
 y = r\sin \theta
 \end{align}
 $$
-
+Distance between two polar coordinates:
+$$
+d = \sqrt{ r_{1}^2 + r_{2}^2 - 2r_{1}r_{2}\cos(\theta_{2}-\theta_{1})}
+$$
 
 Rotating $(x,y)$ by an angle $\phi$ about the origin, generating $(x’, y’)$.
 

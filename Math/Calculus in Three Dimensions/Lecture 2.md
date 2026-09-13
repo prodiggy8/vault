@@ -7,7 +7,7 @@ aliases:
 date created: Monday, August 31st 2026, 12:04:07 am
 date modified: Monday, August 31st 2026, 12:04:14 am
 ---
-Point the thumb of your *right* hand in the direction of the orientation of the axis. How the fingers curl indicates the positive direction of rotation.
+ n                                                         Point the thumb of your *right* hand in the direction of the orientation of the axis. How the fingers curl indicates the positive direction of rotation.
 
 A positive rotation about the $+z$-axis rotates the $+x$-axis into the  $+y$-axis and leaves the $+z$-axis unchanged.
 $$
