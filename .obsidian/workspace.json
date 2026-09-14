@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Calculus in Three Dimensions/3.2.md",
+                "file": "Math/Calculus in Three Dimensions/3.3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "3.2"
+              "title": "3.3"
             }
           }
         ]
@@ -188,9 +188,10 @@
   },
   "active": "3c958c529f729275",
   "lastOpenFiles": [
-    "Math/Calculus in Three Dimensions/3.1.md",
     "Math/Calculus in Three Dimensions/3.2.md",
+    "Math/Calculus in Three Dimensions/3.3.md",
     "Home.md",
+    "Math/Calculus in Three Dimensions/3.1.md",
     "Math/Calculus in Three Dimensions/2.7.md",
     "Math/Calculus in Three Dimensions/2.5.md",
     "Math/Calculus in Three Dimensions/2.3.md",
@@ -214,7 +215,6 @@
     "_assets/Homework 2.png",
     "Computer Science/Algorithms/451/Homeworks/Homework 2.md",
     "Computer Science/Algorithms/451/Homeworks/Homework 1.md",
-    "Computer Science/Algorithms/451/Homeworks/Untitled 1.md",
     "_assets/vector_sub.png",
     "_assets/vector sum.png",
     "_assets/vector_sum.png",
