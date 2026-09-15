@@ -84,6 +84,6 @@ $$
 ___
 ### Rotating 3D vectors
 
-Let $\vec{u}$ and $\vec{v}$ be vectors based at the origin we want to rotate by $\phi$.
+Want to rotate $\vec{u}$ and $\vec{v}$ by $\phi$.
 
 Define $\operatorname{rot}_{\vec{u}}\vec{v}$ to be the vector obtained by rotating $\vec{v} - \operatorname{proj}_{\vec{u}}\vec{v}$ by $90 \degree$.
