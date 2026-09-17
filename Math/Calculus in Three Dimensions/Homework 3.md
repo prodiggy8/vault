@@ -20,14 +20,16 @@ $$
 $$
 #### Problem 1
 
-The ground covered equals the arc rolled so the center is at $\vec{C}(t)=\langle t,1\rangle$.
+The $x$ covered equals the arc rolled and the radius is $1$ so the center is at $\vec{C}(t)=\langle t,1\rangle$.
 
 Relative to the center, the point starts at $\vec{v}=\langle 0,-1,0\rangle$. Rolling right is clockwise, so $\vec{u}=\langle 0,0,-1\rangle$, $|\vec{u}|=1$. Then $\operatorname{proj}_{\vec{u}}\vec{v}=\vec{0}$ and $\operatorname{rot}_{\vec{u}}\vec{v}=\vec{u}\times\vec{v}=\langle -1,0,0\rangle$, so the rotation formula gives
 $$\begin{align} \langle 0,-1\rangle\cos t+\langle -1,0\rangle\sin t=\langle -\sin t,-\cos t\rangle \end{align} 
 $$
 Adding, 
 $$\begin{align} \vec{r}(t)=\langle t,1\rangle+\langle -\sin t,-\cos t\rangle=\langle t-\sin t,\ 1-\cos t\rangle \end{align} 
-$$Picture. Arches of height  touching the -axis at ; at time  the wheel is centered at . Distance. For : \begin{align} |\vec{r}\,'(t)|^2&=(1-\cos t)^2+\sin^2 t=2-2\cos t=4\sin^2\tfrac{t}{2} \\ |\vec{r}\,'(t)|&=2\sin\tfrac{t}{2} \\ \int_0^{2\pi}2\sin\tfrac{t}{2}\,dt&=\left[-4\cos\tfrac{t}{2}\right]0^{2\pi}=8 \end{align}
+$$
+
+
 #### Problem 2
 $\vec{r}(t)=\langle t-\sin t, 1 - \cos t \rangle$ 
 
@@ -137,6 +139,37 @@ a_{N}&=\sin\left( \frac{t}{2} \right)
 \end{align}
 $$
 #### Problem 4
+
+We know $\vec{F}=m\vec{a}=mv'(t)$ and $F=v \times B$
+$$\begin{align}
+v'(t)=v\times\hat{z}
+\end{align}
+$$
+So $v$ is rotating with angular velocity $u=-\hat{z}=\langle 0,0,-1\rangle$.
+
+With $\vec{v}(0)=\langle 0,1,0\rangle$:
+$$\begin{align}
+\operatorname{proj}_{\vec{u}}\vec{v}(0)&=\vec{0} \\
+\operatorname{rot}_{\vec{u}}\vec{v}(0)&=\vec{u}\times\vec{v}(0)=\langle 0,0,-1\rangle\times\langle 0,1,0\rangle=\langle 1,0,0\rangle
+\end{align}
+$$
+By the rotation formula,
+$$
+\begin{align}
+\vec{v}(t)=\langle 0,1,0\rangle\cos t+\langle 1,0,0\rangle\sin t=\langle \sin t,\ \cos t,\ 0\rangle
+\end{align}
+$$
+$$\begin{align} \vec{r}(t)=\int\vec{v}(t)\,dt=\int\langle \sin t,\ \cos t,\ 0\rangle\,dt=\langle -\cos t,\ \sin t,\ 0\rangle+C \end{align}$$
+$$
+\begin{align}
+\vec{r}(0)=\langle -1,0,0\rangle+C=\langle 1,0,0\rangle \implies C=\langle 2,0,0\rangle
+\end{align}
+$$
+Hence:
+$$\begin{align}
+\vec{r}(t)=\langle 2-\cos t,\ \sin t,\ 0\rangle
+\end{align}
+$$
 
 #### Problem 5
 
