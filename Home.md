@@ -1,12 +1,25 @@
 ### Tasks
-- [x] Statistics Homework
-- [ ] Review (Chapter 1 included)\
+- [ ] GoDaddy domain
+- [ ] Take down Ec3 instance with personal server
+- [ ] Need change card in Azure SSO registration
+**Thursday**
+- [ ] Distributed P1 Checkpoint
+- [ ] Calculus submission
+- [ ] Study P0 deeply and distributed lectures
+- [ ] Schedule appointment with UHS
+**Friday**
+- [ ] Algo Programming Homework
+- [ ] Computational Perception Homework
 - [ ] Review Computational Perception
-- [ ] Review Probability, do some exercises. Review Tree and Brick Methods as well as Master Method for complexity theory.
-- [ ] Some C++ for coding homeworks
-- [ ] Go through Go by Example again
-- [ ] Go through recitation 0 and lecture on Go concurrency
-
+**Saturday and Sunday**
+- [ ] Review statistics and do project (~2h)
+- [ ] Calculus 3D Motion
+- [ ] Algo - two lectures WITH exercises especially matrix part
+- [ ] Algo - past homeworks from scratch
+- [ ] Distributed P1 Part A final
+- [ ] Distributed P1 Part A checkpoint review
+**Monday**
+- [ ] Keep reviewing computational perception
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
