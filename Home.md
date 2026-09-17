@@ -3,8 +3,8 @@
 - [ ] Take down Ec3 instance with personal server
 - [ ] Need change card in Azure SSO registration
 **Thursday**
-- [ ] Distributed P1 Checkpoint
-- [ ] Calculus submission
+- [x] Distributed P1 Checkpoint
+- [x] Calculus submission
 - [ ] Study P0 deeply and distributed lectures
 - [ ] Schedule appointment with UHS
 **Friday**
