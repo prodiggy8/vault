@@ -153,7 +153,7 @@ a_{N}&=\sin\left( \frac{t}{2} \right)
 $$
 #### Problem 4
 
-We know $\vec{F}=m\vec{a}=mv'(t)$ and $F=v \times B$
+We know $f=ma=mv'(t)$ and $f=v \times b$
 $$\begin{align}
 v'(t)=v\times\hat{z}
 \end{align}
