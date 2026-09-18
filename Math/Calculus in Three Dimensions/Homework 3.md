@@ -28,8 +28,21 @@ $$
 Adding, 
 $$\begin{align} \vec{r}(t)=\langle t,1\rangle+\langle -\sin t,-\cos t\rangle=\langle t-\sin t,\ 1-\cos t\rangle \end{align} 
 $$
+Picture is attached below. Now we move to the distance, provided $0<x<2\pi$:
+$$
+\begin{align}
+r'(t)&=\langle 1-\cos t, \sin t \rangle  \\
+|r'(t)|^2&=(1-\cos t)^2+\sin^2t=2-2\cos t=4\sin^2\left( \frac{t}{2} \right) \\
+|r'(t)|&=2|\sin\frac{t}{2}|=2\sin \frac{t}{2}
+\end{align}
+$$
+$$
+\begin{align}
+\text{Distance}=\int_{0}^{2\pi}2\sin\left( \frac{t}{2} \right)dt=-4\cos \pi + 4\cos 0=8
+\end{align}
+$$
 
-
+![[WhatsApp Image 2026-09-17 at 21.49.49 2.jpeg|351]]
 #### Problem 2
 $\vec{r}(t)=\langle t-\sin t, 1 - \cos t \rangle$ 
 
