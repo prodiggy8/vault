@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Distributed Systems/3. Time Synchronization.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "3. Time Synchronization"
+              "title": "Home"
             }
           }
         ]
@@ -182,8 +182,7 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false,
-      "card-board:CardBoard": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "d3150234186cef06",

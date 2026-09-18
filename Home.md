@@ -5,7 +5,8 @@
 **Thursday**
 - [x] Distributed P1 Checkpoint
 - [x] Calculus submission
-- [ ] Study P0 deeply and distributed lectures
+- [x] Study P0 deeply and distributed lectures
+	- [ ] Missing from time sync onwards
 - [ ] Schedule appointment with UHS
 **Friday**
 - [ ] Algo Programming Homework
