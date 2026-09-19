@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Computational Perception/Looking is not seeing.md",
+                "file": "Computer Science/Algorithms/451/Amortized Analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Looking is not seeing"
+              "title": "Amortized Analysis"
             }
           }
         ]
@@ -188,9 +188,10 @@
   },
   "active": "d3150234186cef06",
   "lastOpenFiles": [
+    "Computer Science/Computational Perception/Looking is not seeing.md",
+    "Computer Science/Algorithms/451/Amortized Analysis.md",
     "Computer Science/Computational Perception/Lecture 4 - Computation.md",
     "Computer Science/Computational Perception/Perception is a computational problem.md",
-    "Computer Science/Computational Perception/Looking is not seeing.md",
     "Untitled 4.md",
     "Home.md",
     "_assets/lamport.png",
@@ -223,7 +224,6 @@
     "Computer Science/Algorithms/Erickson/Quicksort.md",
     "Computer Science/Algorithms/451/1. Linear-time selection.md",
     "Untitled 3.md",
-    "Math/Calculus in Three Dimensions/2.3.md",
     "Computer Science/Computational Perception",
     "Computer Science/Algorithms/451/Homeworks",
     "Computer Science/Distributed Systems",
