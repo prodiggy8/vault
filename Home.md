@@ -9,7 +9,7 @@
 	- [ ] Missing from time sync onwards
 - [ ] Schedule appointment with UHS
 **Friday**
-- [ ] Algo Programming Homework
+- [x] Algo Programming Homework
 - [ ] Computational Perception Homework
 - [ ] Review Computational Perception
 **Saturday and Sunday**
