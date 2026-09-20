@@ -136,8 +136,8 @@ Give a proof of the following theorem using the banker’s method.
 We already proved the top half of the theorem above. Now we move on to pop. Consider that shrinking happens when $n=\frac{c}{4}$.
 
 If $n\leq\frac{c}{2}$ we assign one credit per pop. Hence amortized pop costs 2.
-If $n > \frac{c}{2}$ we **use** two credits per pop. Hence amortized pop costs nothing and empties the credit store.
+If $n > \frac{c}{2}$ we **use** two credits per pop. Hence amortized pop costs 1t and empties the credit store.
 
 Consider that a resizing just happened and assume our credit is 0. After $m$ appends we have $2m$ credits. Pop consumes two credits since $n + m > \frac{c}{2}$ hence after $m$ pops we go back to 0.
 
-Now consider we pop with $n\leq \frac{c}{2}$. Each pop gives us one credit. If $n \leq \frac{n}{4}$ we have $\frac{n}{4}$ credits and use them to move the elements to the new $n
+Now consider we pop with $n\leq \frac{c}{2}$. Each pop gives us one credit. If $n \leq \frac{n}{4}$ we have $\frac{n}{4}$ credits and use them to move the elements to the new $\frac{n}{2}$ sized array.
