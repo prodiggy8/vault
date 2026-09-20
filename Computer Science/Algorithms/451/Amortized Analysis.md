@@ -75,7 +75,7 @@ $$
 \end{align}
 $$
 We only decreased the cost of append by a factor of $\frac{n}{2}$! We weren’t able to offset the cost. From this, we have an easy third candidate: $\Phi(n,c)=2\left( n-\frac{c}{2} \right)$.
-- Verification with append: $\text{ac}_{i}=1 + \Phi(n + 1, c)-\Phi(n-1, c)=3$
+- Verification with append: $\text{ac}_{i}=1 + \Phi(n + 1, c)-\Phi(n, c)=3$
 - Verification with resize:
 $$
 \begin{align}
@@ -87,3 +87,25 @@ $$
 $$
 **We’re done!**
 
+#### Shrinking
+
+We define `pop()` and shrinking. Erasing costs $1$.
+We shrink if $n=\frac{c}{4}$ and $c \geq 4$.
+
+**Analysis**
+
+$\frac{c}{2}$ is still the center. When $n=\frac{c}{2}$ means we either just resized the array, either to grow or shrink. So it would be nice if the potential was $0$ at these points. We start with the same function from before.
+
+Notice that unlike growing, shrinking only needs $\frac{n}{4}$ pops to happen and then we only copy $\frac{n}{4}$ elements anyway! That means only $1$ token in the bankers method would be necessary.
+
+We define:
+$$
+\Phi(n,c)=
+\begin{cases}
+2\left( n-\frac{c}{2} \right) & \text{if } n \geq \frac{c}{2} \\
+\frac{c}{2} -n & \text{if } n < \frac{c}{2}
+\end{cases}
+$$
+**Proof:**
+Consider the cost of pop. Erasing an element costs $1$. We consider each case:
+$$ \text{ac}_{i} = 1 + \Phi(n-1, c) - \Phi(n,c) = 1 + \left( \frac{c}{2} \right)$$
