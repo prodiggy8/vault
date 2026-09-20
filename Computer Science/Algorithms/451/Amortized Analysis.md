@@ -107,5 +107,37 @@ $$
 \end{cases}
 $$
 **Proof:**
-Consider the cost of pop. Erasing an element costs $1$. We consider each case:
-$$ \text{ac}_{i} = 1 + \Phi(n-1, c) - \Phi(n,c) = 1 + \left( \frac{c}{2} \right)$$
+Consider the cost of pop. Erasing an element costs $1$. We consider each case. First when $n \geq \frac{c}{2}$, potential goes down by 2.
+$$\Phi(n-1, c) - \Phi(n,c) = 2(n-1) - c - 2n + c=-2$$
+Now when $n <\frac{c}{2}$, potential goes up by 1.
+$$\Phi(n-1, c ) - \Phi(n,c)=\frac{c}{2}-n+1-\frac{c}{2} + n=1$$
+Hence potential is at most 1 and amortized cost is 2. Notice that this function is continuous, so when $n=\frac{c}{2}$ and $\Phi(n-1,c)=\frac{c}{2}-n$ while $\Phi(n,c)=2\left( n-\frac{c}{2} \right)$ we have 0 in both sides so we don’t consider that case separately.
+
+Now shrink. Before shrink occurs $c=4n$ and hence the initial potential is $n$ (by $\Phi$) which is exactly the cost of moving the $n$ elements to the new array. Hence the amortized cost of shrink is 0.
+
+Now considering the sequence of $m$ operations: $\Phi(S_{0})=1, \Phi(S_{m})\geq 0$ so we do not satisfy the criteria. However we can just account for this $1$ as the cost of initialization and we get our desired property $\Phi(S_{0}) \leq \Phi(S_{m})$.
+
+#### Problem 13
+Describe the difference between amortized analysis using the aggregate method and average case analysis. How are they different? What about *expected* cost analysis? Where does this fit in and how is it different then the first two?
+
+Amortized analysis considers a sequence of $m$ operations and we average over them. We guarantee a sequence of $m$ operations has that cost.
+
+Average case analysis fixes a probability distribution over the input and calculates expectation. We don’t guarantee anything, just claim worse cases are unlikely.
+
+Expected cost analysis considers worst case input and then we calculate the expectation of the randomness inside our algorithm.
+
+#### Problem 14
+
+Give a proof of the following theorem using the banker’s method.
+
+>[!theorem] Theorem
+>Using the doubling-halving array the amortized cost of append is at most 3 and the amortized cost of pop is at most 2 and the amortized cost of initialization is at most 1.
+
+We already proved the top half of the theorem above. Now we move on to pop. Consider that shrinking happens when $n=\frac{c}{4}$.
+
+If $n\leq\frac{c}{2}$ we assign one credit per pop. Hence amortized pop costs 2.
+If $n > \frac{c}{2}$ we **use** two credits per pop. Hence amortized pop costs nothing and empties the credit store.
+
+Consider that a resizing just happened and assume our credit is 0. After $m$ appends we have $2m$ credits. Pop consumes two credits since $n + m > \frac{c}{2}$ hence after $m$ pops we go back to 0.
+
+Now consider we pop with $n\leq \frac{c}{2}$. Each pop gives us one credit. If $n \leq \frac{n}{4}$ we have $\frac{n}{4}$ credits and use them to move the elements to the new $n
