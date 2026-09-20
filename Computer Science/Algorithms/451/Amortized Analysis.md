@@ -59,12 +59,31 @@ $$\sum_{i}c_{i}=\left( \sum_{i} \text{ac}_{i}\right)+\Phi(S_{0})-\Phi(S_{m})$$
 >If $\Phi(S_{0})\leq \Phi(S_{m})$:
 >$$\sum_{i}c_{i} \leq \sum_{i} \text{ac}_{i}$$
 
-Usually the first and hardest part is to define the potential function. Then:
-1. Prove that the amortized cost satisfy desired bounds
-2. Bound the quantity $\Phi(S_{0})-\Phi(S_{m})$
+We identify the quantity related to the cost. In this case, the values in the list matter not, just $n$ and $c$. Moreover, it’s the relation between them, that grows when resizing and shrinks when appending.
 
-For the list problem, we observe that the only thing that matters for resizing is $c$ and $n$. When we append elements, $n$ approaches $c$. When we resize, $c$ gets larger again. So $c-n$ seems to be a sensible choice of potential function.
+First attempt: $\Phi(n,c)=n-c$. But this is never positive!
 
-However $\Phi(n,c)=n-c$ is never positive!
+Second attempt: $\Phi(n,c)=n-\frac{c}{2}$. This stems from the fact that when resizing happens, $n=c$. Hence $n \geq \frac{c}{2}$ always.
+- Verification with append: $\text{ac}_{i}=1 + \Phi(n + 1, c)-\Phi(n-1, c)=2$
+- Verification with resize: 
+$$
+\begin{align}
+\text{ac}_{i}&=n + \Phi(n, 2c) - \Phi(n, c) \\
+&=n + n-c -n + \frac{c}{2} \\
+&=n-\frac{c}{2} \\
+&=\frac{n}{2}
+\end{align}
+$$
+We only decreased the cost of append by a factor of $\frac{n}{2}$! We weren’t able to offset the cost. From this, we have an easy third candidate: $\Phi(n,c)=2\left( n-\frac{c}{2} \right)$.
+- Verification with append: $\text{ac}_{i}=1 + \Phi(n + 1, c)-\Phi(n-1, c)=3$
+- Verification with resize:
+$$
+\begin{align}
+\text{ac}_{i}&=n + \Phi(n, 2c) - \Phi(n, c) \\
+&=n + 2n-2c -2n + c \\
+&=n-c \\
+&=0
+\end{align}
+$$
+**We’re done!**
 
-Since the capacity doubles when $n=c$, we have $n\geq \frac{c}{2}$ and we define $\Phi(n,c)=n-\frac{c}{2}$. This is almost it
