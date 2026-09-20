@@ -47,6 +47,24 @@ Amortized analysis applies over a *sequence of operations*
 > Consider a sequence of $m$ operations $\sigma_{1}, \dots, \sigma_{m}$ and a sequence of states $S_{0}, S_{1}, \dots, S_{m}$. Operation $\sigma_{i}$ changes state from $S_{i-1}$ to $S_{i}$. Let the actual cost of operation $\sigma_{i}$ in the cost model be $c_{i}$. Given a potential function $\Phi$ we then define the amortized cost **$\text{ac}_{i}$** of $\sigma_{i}$ by:
 > $$\text{ac}_{i}=c_{i}+\Phi(S_{i})-\Phi(S_{i-1})$$
 
-The potential function can be thought as a generalization of the credit in the banker’s method.
+The potential function can be thought as a generalization of the credit in the banker’s method. If an operation puts $p$ credit, it’s equivalent to increasing potential by $p$. If it consumes $p$ credits, it’s the equivalent of decreasing potential by $p$. 
 
+In plain English: $\text{amortized cost} = \text{actual cost} + \text{change in potential}$
 
+Summing up the potential formula for a sequence of operations:
+$$\sum_{i}\text{ac}_{i}=\sum_{i}(c_{i}+\Phi(S_{i})-\Phi(S_{i-1})=\Phi(S_{m})-\Phi(S_{0})+\sum_{i}c_{i}$$
+Rearranging:
+$$\sum_{i}c_{i}=\left( \sum_{i} \text{ac}_{i}\right)+\Phi(S_{0})-\Phi(S_{m})$$
+>[!theorem] Theorem
+>If $\Phi(S_{0})\leq \Phi(S_{m})$:
+>$$\sum_{i}c_{i} \leq \sum_{i} \text{ac}_{i}$$
+
+Usually the first and hardest part is to define the potential function. Then:
+1. Prove that the amortized cost satisfy desired bounds
+2. Bound the quantity $\Phi(S_{0})-\Phi(S_{m})$
+
+For the list problem, we observe that the only thing that matters for resizing is $c$ and $n$. When we append elements, $n$ approaches $c$. When we resize, $c$ gets larger again. So $c-n$ seems to be a sensible choice of potential function.
+
+However $\Phi(n,c)=n-c$ is never positive!
+
+Since the capacity doubles when $n=c$, we have $n\geq \frac{c}{2}$ and we define $\Phi(n,c)=n-\frac{c}{2}$. This is almost it
