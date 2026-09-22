@@ -116,3 +116,41 @@ Suppose each host has a 100Kb network buffer, meaning at most 10 packets may be 
 Grading comment:
 
 Does your answer to the above question make sense? Explain the intuition.
+
+
+
+
+
+
+
+Q3:
+
+P1 P2 P3
+each process uses unique pid (1, 2, 3) to calculate timestamp
+
+T(p) = 10 * L(p) + id 
+- L(p) is process current Lamport clock
+- id acts as tie-breaker
+
+- Delay: 2 steps to be delivered (received at t+2 where t is send time)
+- Critical section duration: 3 steps
+- Reply latency: can send no earlier than t + 1
+- Action ordering: if must perform send AND receive, send always comes first
+- Tie breaking for concurrent message arrival: lower process ID first
+- Tie breaking for concurrent message departure: lower PID first
+- Queue:
+	- remove from queue at the SAME real time step it sends OK
+	- Removes its OWN request from queue at the same step it starts critical section work
+- No lost messages
+
+Actions:
+- B roadcast
+- R eceive
+- S end
+- ExecCS
+- ExitCS
+
+Lp1 = 4, Tp1 = 41
+Lp2 = 7, Tp2 = 72
+Lp3 = 11, Tp3 = 113
+
