@@ -2,6 +2,7 @@
 tags:
   - algorithms
   - course/15-451
+  - union-find
 type:
 author:
 description:
@@ -10,37 +11,72 @@ date created: Tuesday, September 22nd 2026, 12:30:57 pm
 date modified: Tuesday, September 22nd 2026, 12:31:23 pm
 ---
 > [!warning] Recall
-> Kruskal: sort edges by weight and scan. Add to current forest if $u, v$ are not already connected.
-> Takes $O(|E|\log|E|)$
+> Kruskal: sort edges by weight and scan. Add to current forest if $(u, v)$ are not already connected. Takes $O(|E| \log |E|)$.
 
-#### Union-Find Problem
+## Union-Find Problem
 
 Disjoint sets
-Representative element to identify it
+We use a representative element to identify it
 
 `MakeSet(x)` creates new set with $x$
 `Find(x)` find representative element of set containing $x$
 `Union(x, y)` forms a new set that is the union of sets containing $x$ and $y$
 
-**Kruskal:** we `MakeSet(u)` $\forall u (u \in G)$. For each edge we find the set of the vertices. If same, we skip. If not, we union. We’ll make $|V|$ sets, perform $|V|-1$ unions and $2|E|$ finds.
+**Kruskal:** we `MakeSet(u)` $\forall u (u \in G)$. For each $(u,v)$ we find the set of $u$ and the set of $v$. If they are not the same, we union. We’ll make $|V|$ sets, perform $|V|-1$ unions and $2|E|$ finds.
+### How to implement?
 
-- Maintain representative manually: $O(n)$ union and $O(1)$ find.
-- Graph with adjacency list: $O(1)$ union and $O(n)$ find.
-- Tree: store parent pointer for each node.
-	- `p(x) = x` for new set
-	- $\operatorname{Union}(x, y) = p(\operatorname{find}(y)) = \operatorname{find}(x)$
-Long chains make it innefficient
-- Idea: always make the smaller tree a child of the larger
-- Keep $s(x) = \text{size of } x$
+1. We maintain a set representative manually: $O(n)$ union and $O(1)$ find.
+2. Graph with adjacency list: $O(1)$ union and $O(n)$ find.
+3. **Tree** with root as representative: $O(1)$ union and $O(n)$ find.
+	- We can improve the tree model to be faster.
+#### Optimizing union
 
-Another optimization: path compression
-- When finding, point every node along the path at its current root
-- `Find(x): if p(x) != x: p(x) <- find(x) ...`
+It’s dangerous to create very unbalanced trees. 
+
+We define a size function and use it to make the **smaller tree the child of the larger tree**. We get $O(\log n)$ find this way.
+
+**Why?** Every edge is created by a union-by-size. Whenever we move from a node to its parent, the total size of the tree rooted at the current node **at least doubles**. Since any tree has at most $n$ elements, find costs at most $O(\log n)$.
+
+#### Optimizing find with path compression
+
+Idea: whenever we do a find, we change the **parent of every node visited to point directly to the roo**t so future finds don’t travel as much.
+
+```pseudo
+Find(x): 
+	if p(x) != x: 
+		p(x) = Find(p(x))
+	return p(x)
+```
+
+Where `p(x)` is the direct parent of `x`. We recurse up until we find the root and point all elements on the way to it. It will cost **the number of elements it touches.** The cost of link will be $1 + \log n$ and the cost of find $2 + \log n$.
+##### Proof
+
+> [!definition] Heavy and light nodes
+> 1. **heavy** if $\operatorname{size}(u)>\frac{1}{2}\operatorname{size}(p(u))$
+> 2. **light** otherwise
 
 > [!lemma] Light lemma
-> Any root-to-leaf path there are at most $\log n$ light nodes.
+> Any root-to-leaf path has **at most** $\log n$ **light nodes**. By definition, since we at least halve the size of tree rooted at current every edge.
 
-*Proof about complexity of the above*.
+We can’t say much about the amount of heavy nodes, but we can say each node can have at most **one heavy children** by definition. When we compress a node, another might become heavy. But this can only happen a certain number of times. A node $u$ with $\operatorname{size}(u)$ can only be halved $\log(\operatorname{size}(u))$ times. Hence:
+$$\Phi(F)=\sum_{u \in F}\log(\operatorname{size}(u))$$
+1. The potential is initially $0$ and always positive
+2. Increases when union is done
+3. Decreases when find is done
+
+- **MakeSet** creates one node, $\log(1)=0$, hence no change in potential and amortized cost $1$.$\operatorname{size}(x)$ is at least $1$ hence $\log(\operatorname{size}(x)) \geq 0$
+- **Link**. Suppose we attach $y$ to $x$.
+	- $\operatorname{size}(x) \geq 1 \implies \log(\operatorname{size}(x)) \geq 0$
+	- $\operatorname{size'}(x) \leq n \implies \log(\operatorname{size'}(x)) \leq \log n$
+	- $\Delta \Phi = \Phi' - \Phi=\log(\operatorname{size'}(x))-\log(\operatorname{size}(x)) \leq \log n$
+	- Hence cost is at most $1 + \log n$
+- **Find.** 
+
+![[Union-Find.png]]
+
+By looking at the picture we notice all nodes except first and last have their size decreased, while the others stay the same. So size can only ever decrease and  so does potential.
+
+On find’s path: $1 + \text{\#heavy} + \text{\#light}=1 + \text{\#heavy} + \log n$
 
 Find costs # nodes touched = 1 + light + heavy
 = 1 + log n + heavy
