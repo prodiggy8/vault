@@ -36,9 +36,24 @@
               "icon": "lucide-file",
               "title": "Untitled 5"
             }
+          },
+          {
+            "id": "78411e9d5f80fc42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 5.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 5"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -202,11 +217,11 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "63f52a99c6bc9361",
+  "active": "78411e9d5f80fc42",
   "lastOpenFiles": [
     "Computer Science/Distributed Systems/Distributed Mutual Exclusion.md",
-    "Math/Integration and Approximation/After exam.md",
     "Untitled 5.md",
+    "Math/Integration and Approximation/After exam.md",
     "Computer Science/Distributed Systems/3. Time Synchronization.md",
     "Computer Science/Distributed Systems/2. Concurrency.md",
     "_assets/vectorclock.png",

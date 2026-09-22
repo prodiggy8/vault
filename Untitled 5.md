@@ -154,3 +154,15 @@ Lp1 = 4, Tp1 = 41
 Lp2 = 7, Tp2 = 72
 Lp3 = 11, Tp3 = 113
 
+___
+
+Two queues
+
+- atomicswap accept two queue references as parameter
+- attempt to deq from each and enq on the other
+	- If either is empty do nothing!
+- must appear atomic — should no see state where item has been deq from one and not enq on the other
+- allow concurrency bet distinct pairs with no shared elements without interference
+
+Has mutex
+
