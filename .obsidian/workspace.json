@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Distributed Systems/3. Time Synchronization.md",
+                "file": "Computer Science/Distributed Systems/Distributed Mutual Exclusion.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "3. Time Synchronization"
+              "title": "Distributed Mutual Exclusion"
             }
           }
         ]
