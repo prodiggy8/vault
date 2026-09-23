@@ -8,21 +8,26 @@ author:
 description:
 aliases:
 date created: Tuesday, September 22nd 2026, 12:30:57 pm
-date modified: Tuesday, September 22nd 2026, 12:31:23 pm
+date modified: Tuesday, September 22nd 2026, 6:35:22 pm
 ---
+
 > [!warning] Recall
 > Kruskal: sort edges by weight and scan. Add to current forest if $(u, v)$ are not already connected. Takes $O(|E| \log |E|)$.
 
 ## Union-Find Problem
 
 Disjoint sets
+
 We use a representative element to identify it
 
 `MakeSet(x)` creates new set with $x$
+
 `Find(x)` find representative element of set containing $x$
+
 `Union(x, y)` forms a new set that is the union of sets containing $x$ and $y$
 
 **Kruskal:** we `MakeSet(u)` $\forall u (u \in G)$. For each $(u,v)$ we find the set of $u$ and the set of $v$. If they are not the same, we union. We’ll make $|V|$ sets, perform $|V|-1$ unions and $2|E|$ finds.
+
 ### How to implement?
 
 1. We maintain a set representative manually: $O(n)$ union and $O(1)$ find.
@@ -49,6 +54,7 @@ Find(x):
 ```
 
 Where `p(x)` is the direct parent of `x`. We recurse up until we find the root and point all elements on the way to it. It will cost **the number of elements it touches.** The cost of link will be $1 + \log n$ and the cost of find $2 + \log n$.
+
 ##### Proof
 
 > [!definition] Heavy and light nodes
@@ -59,7 +65,9 @@ Where `p(x)` is the direct parent of `x`. We recurse up until we find the root a
 > Any root-to-leaf path has **at most** $\log n$ **light nodes**. By definition, since we at least halve the size of tree rooted at current every edge.
 
 We can’t say much about the amount of heavy nodes, but we can say each node can have at most **one heavy children** by definition. When we compress a node, another might become heavy. But this can only happen a certain number of times. A node $u$ with $\operatorname{size}(u)$ can only be halved $\log(\operatorname{size}(u))$ times. Hence:
+
 $$\Phi(F)=\sum_{u \in F}\log(\operatorname{size}(u))$$
+
 1. The potential is initially $0$ and always positive
 2. Increases when union is done
 3. Decreases when find is done
@@ -77,20 +85,3 @@ $$\Phi(F)=\sum_{u \in F}\log(\operatorname{size}(u))$$
 By looking at the picture we notice all nodes except first and last have their size decreased, while the others stay the same. So size can only ever decrease and  so does potential.
 
 On find’s path: $1 + \text{\#heavy} + \text{\#light}=1 + \text{\#heavy} + \log n$
-
-Find costs # nodes touched = 1 + light + heavy
-= 1 + log n + heavy
-So amortized cost is = 1 + log n + heavy + $\Delta \Phi$. We want $\Delta \Phi \approx -$heavy.
-
-- A node can only heave **one** heavy children at a time by definition
-- A heavy node can only halve it’s size (by compressing heavy node) $\log(\operatorname{size}(u))$ times. Hence $\Phi(F)=\sum_{u \in F}\log(\operatorname{size}(u))$.
-
-Now the actual analysis using this function:
-
-- **Makeset:** initially empty, so only actual cost: 1
-- **Link:** linking node $y$ to node $x$
-	- `size(x) >= 1` hence potential $0$
-	- `size'(x) <= n` hence potential $\log n$
-	- Hence change in potential is at most $\log n$. Costs $1+ \log n$
-
-- **Find:** 
