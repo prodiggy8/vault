@@ -2,26 +2,13 @@
 - [ ] GoDaddy domain
 - [ ] Take down Ec3 instance with personal server
 - [ ] Need change card in Azure SSO registration
-**Thursday**
-- [x] Distributed P1 Checkpoint
-- [x] Calculus submission
-- [x] Study P0 deeply and distributed lectures
-	- [ ] Missing from time sync onwards
-- [ ] Schedule appointment with UHS
-**Friday**
-- [x] Algo Programming Homework
-- [ ] Computational Perception Homework
-- [ ] Review Computational Perception
-**Saturday and Sunday**
-- [ ] Review statistics and do project (~2h)
-- [ ] Calculus 3D Motion
-- [ ] Algo - two lectures WITH exercises especially matrix part
-- [ ] Algo - past homeworks from scratch
-- [ ] Distributed P1 Part A final
-- [ ] Distributed P1 Part A checkpoint review
-**Monday**
-- [ ] Keep reviewing computational perception
 
+# Today
+- [ ] Study chapter 4 of calculus with exercises and previous recitation (1 hour)
+- [ ] Splay tree lecture of Algorithms (1 hour)
+- [ ] Algorithms homework (2 hours)
+- [ ] Reasoning with Data Project (2 hours)
+- [ ] Re-do P0 (3 hours)
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over

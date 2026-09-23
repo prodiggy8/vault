@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus Post Exam.md",
+                "file": "Math/Calculus in Three Dimensions/After exam.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Calculus Post Exam"
+              "title": "After exam"
             }
           }
         ]
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -188,11 +189,11 @@
   },
   "active": "14987417b82ad427",
   "lastOpenFiles": [
+    "Home.md",
     "Untitled 5.md",
     "Calculus Post Exam.md",
     "Computer Science/Algorithms/451/Splay Trees.md",
     "Computer Science/Algorithms/451/Union-Find.md",
-    "Home.md",
     "_assets/Union-Find.png",
     "Math/Calculus in Three Dimensions/After exam.md",
     "Computer Science/Distributed Systems/Distributed Mutual Exclusion.md",
