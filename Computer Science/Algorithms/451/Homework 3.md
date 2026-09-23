@@ -36,4 +36,35 @@ Hence we can describe a palindrome as:
 
 ## Manacher’s algorithm
 
+First a trivial one:
+```pseudo
+p = empty array
+for i = 1; i <= n; i++:
+	while (s[i - p[i]] == s[i + p[i]]):
+		p[i]++ 
+```
 
+Palindromic strings can be odd or even. Manacher simplifies that:
+- Insert “#” between characters
+	- abba becomes \#a\#b\#b\#a\#, i.e., every string becomes n’=2n + 1
+- Sentinels @original word$ to handle boundaries safely
+
+Keep $l$ and $r$ representing the boundaries of the **rightmost** palindrome found so far
+Start from index 1 end before n - 1
+```c++
+for (int i = 1; i <= n; i++) {
+	int mirror = l + r - i // mirror of i around center (l + r)/2
+	
+	// if i lies inside rightmost palindrome
+	// if palindrome of radius p[mirror] sits at mirror
+	// the mirrored copy of its sits at i as long as within bounds
+	if (i < r)
+		// r - i is how far you can go from i before hitting the right edge
+		p[i] = min(r-i, p[mirror])
+	
+}
+```
+
+## Overall algorithm
+
+W

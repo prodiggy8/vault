@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ec1abd068b01508c",
+        "id": "cac09e38d92cdce2",
         "type": "tabs",
         "children": [
           {
-            "id": "14987417b82ad427",
+            "id": "54a26cbdd51e4c7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -187,10 +186,11 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "14987417b82ad427",
+  "active": "efb38fc531253df3",
   "lastOpenFiles": [
-    "Math/Calculus in Three Dimensions/After exam.md",
+    "Computer Science/Algorithms/451/4. Universal and perfect hashing.md",
     "Computer Science/Algorithms/451/Homework 3.md",
+    "Math/Calculus in Three Dimensions/After exam.md",
     "Home.md",
     "Untitled 5.md",
     "Calculus Post Exam.md",
@@ -216,7 +216,6 @@
     "Concepts/Genetic confounding of the SES–IQ correlation.md",
     "Computer Science/Computational Perception/Modeling the retina.md",
     "Computer Science/Algorithms/451/Homeworks/Union Find.md",
-    "Computer Science/Algorithms/451/Homeworks/Homework 3.md",
     "_assets/lamport.png",
     "_assets/WhatsApp Image 2026-09-17 at 21.49.49 2.jpeg",
     "_assets/hw3.png",
