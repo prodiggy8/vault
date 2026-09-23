@@ -65,6 +65,41 @@ for (int i = 1; i <= n; i++) {
 }
 ```
 
-## Overall algorithm
+___
 
-W
+`T = s[i..j]`
+
+Suppose deleting `s[p]` turns `T` into a palindrome.
+`q = i + j - p` is the mirror of `p` about the center and suppose `p <= c`
+
+Claim: deleting `s[p]` turns `T` into a palindrome iff `S[p+1, q]` 
+
+
+
+
+
+# Problem 2
+
+**Preprocessing:** 
+- Let keys be stored in array $A$
+- We create an array $B$ of size $n+m$ such that:
+	- $B[0..m-1]=0$ and $B[m..n + m - 1] = 1$
+- We create a hash map $H$ such that $H[A[i]] = m + i$
+
+This is all $O(n+m)$.
+
+**Data Structure:**
+- We create a segment tree with two auxiliary variables:
+	- The hash map $H$
+	- A variable $\text{front} = m$
+- Then the operations become:
+
+```pseudo
+Find(x):
+	return H(x)
+	
+Move(x):
+	Assign(H(x), 0)
+	front--
+	
+```
