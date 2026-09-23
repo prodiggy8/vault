@@ -85,3 +85,17 @@ $$\Phi(F)=\sum_{u \in F}\log(\operatorname{size}(u))$$
 By looking at the picture we notice all nodes except first and last have their size decreased, while the others stay the same. So size can only ever decrease and  so does potential.
 
 On find’s path: $1 + \text{\#heavy} + \text{\#light}=1 + \text{\#heavy} + \log n$
+
+# Problems
+
+17. Consider union-find with path compression. We perform $n$ MakeSet operations, followed by $m$ unions then $f$ finds in that order. Show the total cost of this sequence is $O(n+m+f)$, i.e., each operation takes constant amortized time. (Hint: define potential function that is the degree of the root of the tree).
+
+We define:
+$$\Phi(F)=\sum_{u \in F, \: p(u)=u} \deg(u)$$
+where $\deg(u)$ is the number of direct children of $u$.
+
+MakeSet: $\operatorname{ac}=1+\Delta \Phi=1$ since MakeSet only ever creates roots, not children. Hence, the total cost is $n$.
+
+18. 
+
+
