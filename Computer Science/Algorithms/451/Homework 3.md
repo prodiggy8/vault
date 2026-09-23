@@ -99,7 +99,10 @@ Find(x):
 	return H(x)
 	
 Move(x):
-	Assign(H(x), 0)
 	front--
-	
+	Assign(H(x), 0)
+	Assign(front, x)
+	H[x] = front
 ```
+
+The complexity of find is $O(1)$ and the complexity of move is $O(\log(n+m))$ as we have an $n+m$ sized SegTree.
