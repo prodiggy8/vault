@@ -34,3 +34,16 @@ With a function of two variables, each ordered pair $(x,y)$ in the domain is map
 
 The graph of a function $z=(x,y)$ of two variables is called a **surface**.
 
+Imagine the $(x,y)$ plane lying flat. Every point in the domain has a unique $z$ associated with it.
+
+# Limits
+
+Normal limit laws apply: root, exponent, sum, product, quotient, etc.
+
+**It is possible to approach this point from an infinite number of directions.**
+
+Sometimes the answer varies depending on the path taken toward $(a,b)$.
+
+Example:
+$\lim_{ x,y \to 0,0 }\frac{2xy}{3x^2+y^2}$
+Fix $x=0$ and approach from positive $y$.
