@@ -81,28 +81,28 @@ Claim: deleting `s[p]` turns `T` into a palindrome iff `S[p+1, q]`
 # Problem 2
 
 **Preprocessing:** 
-- Let keys be stored in array $A$
 - We create an array $B$ of size $n+m$ such that:
 	- $B[0..m-1]=0$ and $B[m..n + m - 1] = 1$
-- We create a hash map $H$ such that $H[A[i]] = m + i$
+- We build an array $\text{pos}[x]=m+x$ keeping track of the leaf each key lives
+- We build a SegTree of size $n+m$ based on $B$
 
 This is all $O(n+m)$.
 
 **Data Structure:**
-- We create a segment tree with two auxiliary variables:
-	- The hash map $H$
+- We define two auxiliary variables within the SegTree:
 	- A variable $\text{front} = m$
+	- The array $\text{pos}$
 - Then the operations become:
 
 ```pseudo
 Find(x):
-	return H(x)
+	return RangeSum(0, pos[x])
 	
 Move(x):
 	front--
-	Assign(H(x), 0)
-	Assign(front, x)
-	H[x] = front
+	Assign(pos[x], 0)
+	Assign(front, 1)
+	pos[x] = front
 ```
 
-The complexity of find is $O(1)$ and the complexity of move is $O(\log(n+m))$ as we have an $n+m$ sized SegTree.
+The complexity of both find and move is $O(\log(n+m))$ as we have an $2(n+m) - 1$ sized SegTree.
