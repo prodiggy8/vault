@@ -71,7 +71,22 @@ Where $\delta$ is the indicator variable of whether $i$ connects to $k$.
 
 $$
 U(i,j)=\begin{cases}
-
+\delta(i,j) & \text{if i+1=j} \\
+\delta(i,j)C(i,j) + \sum_{i < k < j}\delta(i,k)C(i,k)U(k,j) & \text{otherwise}
 \end{cases}
 $$
 
+This is $O(n^3)$ because we have two $n^2$ tables to fill and then we need to consider all $k$ on top of it.
+
+### Independent Sets on Trees
+
+Given $G = (V, E)$, an independent set is a subset of vercies such that none of the vertices are adjacent.
+
+max weight IS
+
+w(v)=value of the maximum weight IS of the subtree rooted at v
+
+w(v) = {
+$\sum_{u \in C(v)}$ if we dont use v
+
+}

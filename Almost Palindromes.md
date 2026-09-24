@@ -7,6 +7,15 @@ aliases:
 date created: Thursday, September 24th 2026, 11:20:12 am
 date modified: Thursday, September 24th 2026, 12:19:11 pm
 ---
+# Intuition
+
+A pseudo-palindrome is a palindrome with an extra character wedged in. A pseudo-palindrome is going to be symmetric until we reach this character then it becomes out of step by 1, but the piece inside it is still a palindrome.
+
+So a pseudo-palindrome is two palindromic layers with their axes of symmetry half a position apart:
+- an inner one symmetric about $c$
+- an outer one symmetric about $c\pm \frac{1}{2}$
+- the one character that shifts the axis.
+We just search for these three things.
 
 Let $s=[0..L-1]$ be a palindrome and let $i$ be the first mismatch from the outside, i.e., $s[i] \neq s[L-1-i]$.
 
@@ -34,7 +43,7 @@ That’s because $\rho'$ candidate is contained in $T[a..b]$ (the inner palindro
 
 So for every $(c, \text{side})$:
 
-1. $P(c)$: we can use Manacher’s algorithm to do this in $O(n)$. If anybody asks  us how to prove Manacher’s complexity, then we do a binary search on the length for each $c$ in $O(n \log n)$.
+1. $P(c)$: we can use Manacher’s algorithm to do this in $O(n)$. If anybody asks us how to prove Manacher’s complexity, then we do a binary search on the length for each $c$ in $O(n \log n)$.
 
 2. The largest eligible $\rho$
 	- Start at the pair for $\rho=P(c)$ and walk inward until the first mismatch $T[a-1] \neq T[b]$. For $k$ steps we know $T[a-1..a-2+k]=T[b-k+1..b]$ so we just do binary search on $k$ again in $O(n \log n)$.
@@ -43,6 +52,9 @@ So for every $(c, \text{side})$:
 3. The extension $i$: the largest $i$ with $T[a-1-i..a-2]$ equal to the reverse of $T[b+1..b+i]$, capped by the ends of $T$. Binary search once more in $O(n \log n)$.
 
 Output the maximum of $\rho + 1 + 2i$ over all $(c, \text{side})$. 
+
+**Correctness:**
+
 
 #### Queries
 
@@ -54,4 +66,7 @@ The total probability of error is (by union-bound) $\frac{Qn}{k}=\frac{1}{n}$.
 
 #### Complexity
 
-t
+A prime at most $O(n^3 \log n)$ still fits in size $\log n$. Since the input has $n$ cells we have $w \geq \log n$ so it fits in $O(1)$ space and so does every operation $\mod p$. Prime selection runs in $\text{poly}(n)$ and will be dominated by the rest. Hence we’re left with the binary searches on expansions which give us $O(n \log n)$.
+
+
+
