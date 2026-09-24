@@ -7,7 +7,7 @@ aliases:
 date created: Wednesday, September 23rd 2026, 2:17:50 pm
 date modified: Wednesday, September 23rd 2026, 2:17:52 pm
 ---
-# Almost Palindrome
+# Lemmas
 
 #### How to describe a palindrome?
 
@@ -87,3 +87,19 @@ This is explained by the fact weights exist only in the analysis, the two bounds
 # Problem 3b
 
 With unit weights, $r(\text{root})=\lfloor \log 10^6 \rfloor=19$ 
+
+Since $x$ has 1000 ancestors, all 500 steps are zig-zig or zig-zag.
+
+After step $i$, $x$’s rank equals the former rank of ancestor $a_{2i}$. After step $i+1$ it has the former rank of $a_{2i+2}$. In the original tree, $a_{2i+2}$ is an ancestor of $a_{2i}$, hence $s(a_{2i+2}) \geq s(a_{2i})$.
+
+The rank of $x$ is $\geq 0$ and the rank of the root is 19.
+
+That forces at least $500-19=481$ scary steps.
+
+# Problem 3c
+
+The cost of a zig-zig/zig-zag step has amortized cost:
+$$\leq 3(r(z)-r(x))=3(r'(x)-r(x))$$
+Telescoping over 500 steps:
+$$500 + \Delta \Phi \leq 3(r(t) - r_{0}(x)) = 3(19 - 0)=57$$
+Hence $\Delta \Phi \leq 57 - 500 = -443$. The potential is guaranteed to drop by at least $k=443$.

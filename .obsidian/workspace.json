@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -187,13 +186,13 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "54a26cbdd51e4c7e",
+  "active": "efb38fc531253df3",
   "lastOpenFiles": [
+    "Home.md",
     "Computer Science/Algorithms/451/6. Range query data structures.md",
     "Computer Science/Algorithms/451/Homework 3.md",
     "Computer Science/Algorithms/451/4. Universal and perfect hashing.md",
     "Math/Calculus in Three Dimensions/After exam.md",
-    "Home.md",
     "Untitled 5.md",
     "Calculus Post Exam.md",
     "Computer Science/Algorithms/451/Splay Trees.md",
