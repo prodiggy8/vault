@@ -46,14 +46,12 @@ Output the maximum of $\rho + 1 + 2i$ over all $(c, \text{side})$.
 
 #### Queries
 
-We are comparing strings all the time! For all of the above to work in $O(n \log n)$ we need to be able to do so in $O(1)$. We want $\frac{1}{n}$ failure overall. We are going to run $O(n \log n)$ tests so we pick $k=n^3 \log n$ and select a random prime from $[2, 2k\log k]$. 
+We are comparing strings all the time! For all of the above to work in $O(n \log n)$ we need to be able to do so in $O(1)$. We want $\frac{1}{n}$ failure overall. We are going to run $O(n \log n)$ tests so we pick $k=n^3 \log n$ and select a random prime from $[2, 2k\log k]$. Prime selection is crazy cheap compared to anything else done here.
 
-Run prefix hashes of both the string and it’s reverse in $O(n)$ and we now have constant-time comparisons.
+Run prefix hashes of both the string and it’s reverse in $O(n)$ and we now have constant-time comparisons. 
 
 The total probability of error is (by union-bound) $\frac{Qn}{k}=\frac{1}{n}$.
 
 #### Complexity
 
-
-
-
+t
