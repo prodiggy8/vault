@@ -75,9 +75,15 @@ The complexity of both find and move is $O(\log(n+m))$ as we have an $2(n+m) - 1
 
 # Problem 3a
 
-Let a=$\lceil \log n \rceil$ and $b=\lceil \log m \rceil$. Give every red weight $2^{-a}$ and every blue $2^{-b}$.
-Since $2^{-a} \leq \frac{1}{n} \leq 2 \cdot 2^{-a}$ the red items contribute $\left( \frac{1}{2}, 1 \right]$, and likewise for the blue ones.
-So total weight $W$ lies in $\left(1, 2\right]$.
+Give every red item weight $\frac{1}{n}$ and every blue item weight $\frac{1}{m}$. The total weight is $n \cdot \frac{1}{n} + m \cdot \frac{1}{m}=2$ so the root has $s(t)=2$ and $r(t)=1$.
 
-Take a red item $x$. Its subtree contains $x$ so $s(x)\geq 2^{-a}$ and $r(x) \geq -a$. Two cases for the root:
-- $W=2$, which happens
+Take a red item $x$. Its subtree contains $x$ so $s(x) \geq \frac{1}{n}$ and $r(x) \geq \log\left( \frac{1}{n} \right) = -\log n$. By the Access Lemma, the amortized number of splay steps is:
+
+$$3(r(t) - r(x)) + 1 \leq 3(1 + \log n) + 1 = 4 + 3 \log n$$
+For a blue item, $s(y) \geq \frac{1}{m}$ gives $r(y) \geq -\log m$ and the same computation yields $4 + 3\log m$.
+
+This is explained by the fact weights exist only in the analysis, the two bounds hold at once for every way of coloring items red and blue. What the bound really says is about the sequences of operations. If you keep hitting a small set of items, the cost of hauling them is paid once. The algorithm doesn’t need to know the colors, it adapts to the access pattern.
+
+# Problem 3b
+
+With unit weights, $r(\text{root})=\lfloor \log 10^6 \rfloor=19$ 
