@@ -21,8 +21,24 @@
               "icon": "lucide-file",
               "title": "Homework 3"
             }
+          },
+          {
+            "id": "2437a34dc1e2d6d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Almost Palindromes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Almost Palindromes"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,11 +202,13 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "efb38fc531253df3",
+  "active": "2437a34dc1e2d6d3",
   "lastOpenFiles": [
+    "Untitled 6.md",
+    "Almost Palindromes.md",
+    "Computer Science/Algorithms/451/Homework 3.md",
     "Home.md",
     "Computer Science/Algorithms/451/6. Range query data structures.md",
-    "Computer Science/Algorithms/451/Homework 3.md",
     "Computer Science/Algorithms/451/4. Universal and perfect hashing.md",
     "Math/Calculus in Three Dimensions/After exam.md",
     "Untitled 5.md",
@@ -214,8 +232,6 @@
     "Concepts/Minimum Spanning Trees.md",
     "Concepts/Mental Ability.md",
     "Concepts/Learning.md",
-    "Concepts/Genetic confounding of the SES–IQ correlation.md",
-    "Computer Science/Computational Perception/Modeling the retina.md",
     "_assets/lamport.png",
     "_assets/WhatsApp Image 2026-09-17 at 21.49.49 2.jpeg",
     "_assets/hw3.png",
