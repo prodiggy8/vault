@@ -9,10 +9,12 @@ date modified: Wednesday, September 23rd 2026, 2:17:52 pm
 ---
 # Almost Palindrome
 
+#### How to describe a palindrome?
+
 Let t be a substring of $s$ with length m. We compare pairs $(0, m-1)$ then $(1, m-2)$ and so on.
 Let $(l,r)$ be the **first** mismatch if there is one (\*)
 
-**Claim:** If deleting any character gives a palindrome, then deleting $l$ or $r$ suffices.
+**Lemma 1:** If deleting any character gives a palindrome, then deleting $l$ or $r$ suffices.
 *Proof:* Suppose we delete $k$ and the result $u$ is a palindrome (\*\*).
 
 - **Case $k<l$**:
@@ -33,63 +35,14 @@ Hence we can describe a palindrome as:
 - The first mismatch $(l,r)$
 - An inner palindrome: either $t[l+1, r]$ or $t[l, r-1]$.
 
+#### How to pick the right pair $l, r$ to delete?
 
-## Manacher’s algorithm
+Fix $S$ and without loss of generality with delete $l$. 
 
-First a trivial one:
-```pseudo
-p = empty array
-for i = 1; i <= n; i++:
-	while (s[i - p[i]] == s[i + p[i]]):
-		p[i]++ 
-```
-
-Palindromic strings can be odd or even. Manacher simplifies that:
-- Insert “#” between characters
-	- abba becomes \#a\#b\#b\#a\#, i.e., every string becomes n’=2n + 1
-- Sentinels @original word$ to handle boundaries safely
-
-Keep $l$ and $r$ representing the boundaries of the **rightmost** palindrome found so far
-Start from index 1 end before n - 1
-```c++
-for (int i = 1; i <= n; i++) {
-	int mirror = l + r - i // mirror of i around center (l + r)/2
-	
-	// if i lies inside rightmost palindrome
-	// if palindrome of radius p[mirror] sits at mirror
-	// the mirrored copy of its sits at i as long as within bounds
-	if (i < r)
-		// r - i is how far you can go from i before hitting the right edge
-		p[i] = min(r-i, p[mirror])
-	
-}
-```
-
-___
-
-`T = s[i..j]`
-
-Suppose deleting `s[p]` turns `T` into a palindrome.
-`q = i + j - p` is the mirror of `p` about the center and suppose `p <= c`
-
-Claim: deleting `s[p]` turns `T` into a palindrome iff `S[p+1, q]` 
-
-
-
-
-
+Let $x,y$ be the maximal palindrome with center sum $S+1$. Manacher’s algorithm computes these in $O(n)$ for every center. The inner palindrome in $s[l+1,r]$ must be contained in it.
 # Problem 1
 
-$P(t)$ is the length of longest palindrome centered at $t$.
-$\text{fit}(t)=2\min(t, n - 1 - t) + 1$ is the length of the longest substring centered at $t$
 
-We perform the pair matching from above and claim $l,r$ must be deleted for the first pair that doesn’t match.
-
-#### Algorithm
-Pick a prime $p \leq M$.  Precompute $2^k \mod p$ for $k\leq n$ and prefixes $H[i]=h(s[0..i-1])$ using $H[i+1]=2H[i] + s[i] \mod p$. Then $h(s[a..b])=H[b+1]-H[a] \cdot 2^{b-a+1} \mod p$.
-Do the same for $r = \text{reverse}(s)$.
-
-1. For every center $t$, find $P(t)$ by binary search on the length.
 
 # Problem 2
 
@@ -122,3 +75,9 @@ The complexity of both find and move is $O(\log(n+m))$ as we have an $2(n+m) - 1
 
 # Problem 3a
 
+Let a=$\lceil \log n \rceil$ and $b=\lceil \log m \rceil$. Give every red weight $2^{-a}$ and every blue $2^{-b}$.
+Since $2^{-a} \leq \frac{1}{n} \leq 2 \cdot 2^{-a}$ the red items contribute $\left( \frac{1}{2}, 1 \right]$, and likewise for the blue ones.
+So total weight $W$ lies in $\left(1, 2\right]$.
+
+Take a red item $x$. Its subtree contains $x$ so $s(x)\geq 2^{-a}$ and $r(x) \geq -a$. Two cases for the root:
+- $W=2$, which happens
