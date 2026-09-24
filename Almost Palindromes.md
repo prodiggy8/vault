@@ -39,11 +39,11 @@ Let $T[a..b]$ be the substring of length $\rho$ centered at $c$ (so $\rho = b �
 
 **Claim:** For a fixed $(c,\text{side})$, the best candidate uses the largest eligible $\rho$.
 
-That’s because $\rho'$ candidate is contained in $T[a..b]$ (the inner palindrome of $\rho$), and $\rho$'s candidate strictly contains $T[a−1..b]$.
+That’s because $\rho'<\rho$ candidate is contained in $T[a..b]$ (the inner palindrome of $\rho$), and $\rho$'s candidate strictly contains $T[a−1..b]$.
 
 So for every $(c, \text{side})$:
 
-1. $P(c)$: we can use Manacher’s algorithm to do this in $O(n)$. If anybody asks us how to prove Manacher’s complexity, then we do a binary search on the length for each $c$ in $O(n \log n)$.
+1. $P(c)$: We do a binary search on the length for each $c$ in $O(n \log n)$.
 
 2. The largest eligible $\rho$
 	- Start at the pair for $\rho=P(c)$ and walk inward until the first mismatch $T[a-1] \neq T[b]$. For $k$ steps we know $T[a-1..a-2+k]=T[b-k+1..b]$ so we just do binary search on $k$ again in $O(n \log n)$.
@@ -54,7 +54,9 @@ So for every $(c, \text{side})$:
 Output the maximum of $\rho + 1 + 2i$ over all $(c, \text{side})$. 
 
 **Correctness:**
+*Everything we return is a pseudo-palindrome*: each output has the form: palindrome $T[a..b]$, mismatched pair $a-1,b$ and $i$ matching outer layers. Deleting $T[a-1]$ leaves a palindrome. The mismatch shows the string itself isn’t one.
 
+*We return the longest possible pseudo-palindrome:* Any pseudo-palindrome has a first mismatched pair, and by the lemma deleting one of its endpoints leaves a palindrome. That palindrome
 
 #### Queries
 
@@ -67,6 +69,5 @@ The total probability of error is (by union-bound) $\frac{Qn}{k}=\frac{1}{n}$.
 #### Complexity
 
 A prime at most $O(n^3 \log n)$ still fits in size $\log n$. Since the input has $n$ cells we have $w \geq \log n$ so it fits in $O(1)$ space and so does every operation $\mod p$. Prime selection runs in $\text{poly}(n)$ and will be dominated by the rest. Hence we’re left with the binary searches on expansions which give us $O(n \log n)$.
-
 
 
