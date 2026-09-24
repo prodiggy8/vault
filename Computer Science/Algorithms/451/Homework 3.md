@@ -106,3 +106,9 @@ Move(x):
 ```
 
 The complexity of both find and move is $O(\log(n+m))$ as we have an $2(n+m) - 1$ sized SegTree.
+
+# Problem 3
+n red, m blue
+Prove:
+- Amortized number of splay steps done when a red item is accessed is at most 4 + 3logn
+- When a blue is accessed is at most 4 + 3 log m
