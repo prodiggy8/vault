@@ -78,6 +78,19 @@ Claim: deleting `s[p]` turns `T` into a palindrome iff `S[p+1, q]`
 
 
 
+# Problem 1
+
+$P(t)$ is the length of longest palindrome centered at $t$.
+$\text{fit}(t)=2\min(t, n - 1 - t) + 1$ is the length of the longest substring centered at $t$
+
+We perform the pair matching from above and claim $l,r$ must be deleted for the first pair that doesn’t match.
+
+#### Algorithm
+Pick a prime $p \leq M$.  Precompute $2^k \mod p$ for $k\leq n$ and prefixes $H[i]=h(s[0..i-1])$ using $H[i+1]=2H[i] + s[i] \mod p$. Then $h(s[a..b])=H[b+1]-H[a] \cdot 2^{b-a+1} \mod p$.
+Do the same for $r = \text{reverse}(s)$.
+
+1. For every center $t$, find $P(t)$ by binary search on the length.
+
 # Problem 2
 
 **Preprocessing:** 
@@ -107,8 +120,5 @@ Move(x):
 
 The complexity of both find and move is $O(\log(n+m))$ as we have an $2(n+m) - 1$ sized SegTree.
 
-# Problem 3
-n red, m blue
-Prove:
-- Amortized number of splay steps done when a red item is accessed is at most 4 + 3logn
-- When a blue is accessed is at most 4 + 3 log m
+# Problem 3a
+
