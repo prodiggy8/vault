@@ -6,8 +6,6 @@
 # Today
 - [ ] Study chapter 4 of calculus with exercises and previous recitation (1 hour)
 - [ ] Splay tree lecture of Algorithms (1 hour)
-- [ ] Algorithms homework (2 hours)
-- [ ] Reasoning with Data Project (2 hours)
 - [ ] Re-do P0 (3 hours)
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian

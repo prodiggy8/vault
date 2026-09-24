@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Algorithms/451/Homework 3.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Homework 3"
+              "title": "Home"
             }
           },
           {
@@ -36,8 +36,39 @@
               "icon": "lucide-file",
               "title": "Almost Palindromes"
             }
+          },
+          {
+            "id": "c9005799cb86b610",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework 4.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Homework 4"
+            }
+          },
+          {
+            "id": "c0e89049422ec1d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Today.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Today"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,8 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -202,13 +232,15 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "54a26cbdd51e4c7e",
+  "active": "c9005799cb86b610",
   "lastOpenFiles": [
+    "Today.md",
+    "Homework 4.md",
+    "Home.md",
     "Almost Palindromes.md",
     "Computer Science/Algorithms/451/Homework 3.md",
     "Computer Science/Algorithms/451/Dynamic Programming.md",
     "Untitled 6.md",
-    "Home.md",
     "Computer Science/Algorithms/451/6. Range query data structures.md",
     "Computer Science/Algorithms/451/4. Universal and perfect hashing.md",
     "Math/Calculus in Three Dimensions/After exam.md",
@@ -230,8 +262,6 @@
     "Computer Science/Computational Perception/Looking is not seeing.md",
     "Concepts/Airbag Tech.md",
     "Computer Science/Computational Perception/Perception is a computational problem.md",
-    "Concepts/Minimum Spanning Trees.md",
-    "Concepts/Mental Ability.md",
     "_assets/lamport.png",
     "_assets/WhatsApp Image 2026-09-17 at 21.49.49 2.jpeg",
     "_assets/hw3.png",
