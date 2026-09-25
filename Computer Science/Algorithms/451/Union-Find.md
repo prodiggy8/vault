@@ -96,6 +96,20 @@ where $\deg(u)$ is the number of direct children of $u$.
 
 MakeSet: $\operatorname{ac}=1+\Delta \Phi=1$ since MakeSet only ever creates roots, not children. Hence, the total cost is $n$.
 
-18. 
+recitation problems:
 
-
+1)
+Plant at i:
+	O(1) MakeSet
+	 If i-1 has corn (find):
+		 merge(find i, find i-1)
+		 if |find i-1| >= k:
+			 ready to harvest -= 1
+		 if |find i| >= k:
+			 ready to harvest += 1
+	If j-1 has corn:
+		merge(find i, find i+1)
+		if |find i+1| >= k:
+			 ready to harvest -= 1
+		if |find i| >= k:
+			 ready to harvest += 1

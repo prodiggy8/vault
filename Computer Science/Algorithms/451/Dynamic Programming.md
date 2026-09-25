@@ -89,4 +89,60 @@ w(v)=value of the maximum weight IS of the subtree rooted at v
 w(v) = {
 $\sum_{u \in C(v)}$ if we dont use v
 
+___
+2) n houses
+house i => profit c_i
+cannot sell to neighbors
+
+10 houses, values 50 10 12 65 40 95 100 12 20 30
+optimal: 1, 4, 6, 8, 10
+
+a)
+dp\[i\] = sell to interval 1, i
+
+b)
+dp\[0\] = 0
+dp\[1\] = c_1
+
+c)
+dp\[i\] = {
+	max(dp\[i-2\] + ci, dp\[i-1\])
 }
+
+d)
+dp\[n\]
+
+e)
+O(n)
+
+
+3)
+N cities connected by N-1 roads
+formes a weighted tree
+
+Countries A, B occupy set of cities
+- some cities not occupied
+- no city occupied by both
+
+remove edges so no city from A is connected to B
+
+Destroying x costs x.
+min cost?
+
+Linear time DP
+
+a)
+dp\[leaf\] = 0
+dp\[subtree\] = d(self, right)min(dp\[right\] + c(self-right), dp\[right\])) + 
+	d(self, left)min(dp\[left\] + c(self-left), dp\[left\])
+
+d(self, x) = same color
+
+O(n)
+
+b) A1,…An
+\# ways Partition A into contiguous non overlapping subarrays. max element in each are non decreasing.
+
+a)
+dp\[0\] = 1
+dp\[i\] = # ways of doing A\[0..i\]
