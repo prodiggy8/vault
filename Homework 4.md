@@ -75,21 +75,31 @@ $$
 \cos\beta = \frac{\sin t\,\theta'(t)}{\sqrt{1 + \sin^2 t\,(\theta'(t))^2}}.
 $$
 ## d)
-$\beta$ is constant so from c, with $w = \sin t\,\theta'(t)$, $$ \cos\beta = \frac{w}{\sqrt{1 + w^2}}$$$$
+$\beta$ is constant so from c, with $w = \sin t\,\theta'(t)$, 
+$$ \cos\beta = \frac{w}{\sqrt{1 + w^2}}$$
+$$
 \cos^2\beta = \frac{w^2}{1 + w^2} \implies \cos^2\beta\,(1 + w^2) = w^2 \implies \cos^2\beta = w^2 - w^2\cos^2\beta = w^2(1 - \cos^2\beta) = w^2\sin^2\beta
-$$Hence:
+$$
+Hence:
 $$
 w^2 = \frac{\cos^2\beta}{\sin^2\beta} = \cot^2\beta \implies w = \pm\cot\beta
-$$The denominator is positive, so $w$ and $\cos\beta$ have the same sign, and $\cot\beta$ has the same sign as $\cos\beta$. So $w$ and  $\cot\beta$ have the same sign, $w=\cot \beta$.
+$$
+The denominator is positive, so $w$ and $\cos\beta$ have the same sign, and $\cot\beta$ has the same sign as $\cos\beta$. So $w$ and  $\cot\beta$ have the same sign, $w=\cot \beta$.
 $$ \sin t\,\theta'(t) = \cot\beta \implies \theta'(t) = \frac{\cot\beta}{\sin t}. $$
 ## e)
-From d, $\theta'(t) = \dfrac{\cot\beta}{\sin t}$, so $$ \theta(t) = \cot\beta\int\frac{dt}{\sin t}. $$ $$
+From d, $\theta'(t) = \dfrac{\cot\beta}{\sin t}$, so $$ \theta(t) = \cot\beta\int\frac{dt}{\sin t}. $$ 
+$$
 \frac{1}{\sin t} = \frac{1}{2\sin(t/2)\cos(t/2)} = \frac{1}{2\sin(t/2)\cos(t/2)}\cdot\frac{\cos(t/2)}{\cos(t/2)} = \frac{\tfrac{1}{2}\sec^2(t/2)}{\tan(t/2)}
 $$
 Substitution: $u = \tan(t/2)$, $du = \tfrac{1}{2}\sec^2(t/2)\,dt$. Then 
 $$ 
 \int\frac{dt}{\sin t} = \int\frac{du}{u} = \log|u| + C = \log\tan(t/2) + C
-$$  Therefore: $$ \theta(t) = \cot(\beta)\log\tan(t/2) + C. $$
+$$
+Therefore: 
+$$ \theta(t) = \cot(\beta)\log\tan(t/2) + C$$
+
+![[sphere.png|362]]
+With $\beta=0.523$.
 ## f)
 $$
 s = \int_{t_0}^{t_1}|\vec{p}\,'(t)|\,dt.
@@ -133,6 +143,8 @@ $x'(t)=\cos \theta_{0}$
 $y'(t)=\sin \theta_{0}$
 
 Tangent: $y=$$\tan \theta_{0}\cdot x$
+Isolating:
+$$\hat{r}(r,\theta) = (\cos \theta, \sin \theta)$$
 
 ## b)
 $\hat{\theta}(r,\theta)$ with $r(t)=r_{0}$ and $\theta(t)=t$
@@ -143,11 +155,11 @@ $y(t) = r(t)\sin \theta(t)=r_{0}\sin t$
 $x'(t)=-r_{0}\sin t$
 $y'(t)=r_{0}\cos t$
 
-Tangent: 
-$y-r_{0}\sin t=-\cot t \cdot (x-r_{0}\cos t)$
+Tangent vector: $(x', y') = (-r_{0}\sin t, r_{0}\cos t)$,
+Length $\sqrt{r_{0}^2\sin^2 t+r_{0}^2\cos^2 t}=r_{0}$. 
+Dividing by $r_{0}$: $$\hat{\theta}(r,\theta) = (-\sin \theta, \cos \theta)$$ Tangent : $y-r_{0}\sin t=-\cot t \cdot (x-r_{0}\cos t)$
 $y=-\cot t \cdot x + r_{0}(\cot t \cos t + \sin t)$
 $y=-\cot t \cdot x + r_{0}\left( \frac{\cos^2t}{\sin t} + \sin t \right)$
-$y=-\cot t \cdot x + r_{0}\left( \frac{\cos^2t + \sin^2t}{\sin t} \right)=-\cot t \cdot x + \frac{r_{0}}{\sin t}$
 
 ## c)
 In Cartesian:

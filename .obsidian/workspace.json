@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework 4.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Homework 4"
+              "title": "Home"
             }
           },
           {
@@ -228,12 +228,12 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false,
-      "card-board:CardBoard": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "54a26cbdd51e4c7e",
   "lastOpenFiles": [
+    "_assets/sphere.png",
     "Home.md",
     "Today.md",
     "Math/Calculus in Three Dimensions/2.3.md",
@@ -261,7 +261,6 @@
     "Untitled 1.md",
     "Untitled.md",
     "Computer Science/Computational Perception/Intrinsic image decomposition.md",
-    "Computer Science/Computational Perception/Looking is not seeing.md",
     "_assets/lamport.png",
     "_assets/WhatsApp Image 2026-09-17 at 21.49.49 2.jpeg",
     "_assets/hw3.png",
