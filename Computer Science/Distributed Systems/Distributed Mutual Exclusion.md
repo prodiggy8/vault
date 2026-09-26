@@ -59,6 +59,7 @@ If fewer than $\frac{m}{2}$ votes: backoff and try again.
 - Majority ensures safety
 - Fairness depends on random chance
 - $2km+m$ messages for $k$ attempts to get a majority.
+	- $2m$ for each attempt and $m$ for releasing the lock
 - Risk of starvation.
 
 ## Totally-ordered multicast
