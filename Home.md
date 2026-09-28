@@ -4,9 +4,26 @@
 - [ ] Need change card in Azure SSO registration
 
 # Today
-- [ ] Study chapter 4 of calculus with exercises and previous recitation (1 hour)
-- [ ] Splay tree lecture of Algorithms (1 hour)
-- [ ] Re-do P0 (3 hours)
+- [ ] Finish all distributed lectures and homework 2
+- [ ] Review reasoning with data
+- [ ] Do Cognition assignment
+- [ ] Send e-mail
+
+# Tomorrow
+- [ ] Calculus study
+- [ ] Algorithms study
+- [ ] Exam
+- [ ] Latent work -> deploy
+- [ ] Sanii charges
+
+Sept 28
+- [ ] P1
+- [ ] Sanii work
+- [ ] Algorithms study
+- [ ] Calculus study
+
+
+
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
