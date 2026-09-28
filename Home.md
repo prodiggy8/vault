@@ -3,26 +3,18 @@
 - [ ] Take down Ec3 instance with personal server
 - [ ] Need change card in Azure SSO registration
 
-# Today
-- [ ] Finish all distributed lectures and homework 2
-- [ ] Review reasoning with data
-- [ ] Do Cognition assignment
-- [ ] Send e-mail
-
-# Tomorrow
-- [ ] Calculus study
+# Sept 26-28
+In order of priority
+- [x] Review statistics and exam
+- [x] Latent work -> deploy
+- [ ] Do ai (dev) assignment
+- [ ] Finish all distributed lectures and homework 2, create a cheat sheet
+- [ ] Send e-mail to housing
 - [ ] Algorithms study
-- [ ] Exam
-- [ ] Latent work -> deploy
-- [ ] Sanii charges
-
-Sept 28
+- [ ] Calculus study
 - [ ] P1
-- [ ] Sanii work
-- [ ] Algorithms study
-- [ ] Calculus study
-
-
+### Sept 29
+- [ ] Changes to GCP
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
