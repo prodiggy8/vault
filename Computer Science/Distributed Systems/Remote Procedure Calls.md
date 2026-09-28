@@ -81,7 +81,26 @@ Three things that make transparency difficult:
 	- In distributed systems **machine failure is indistinguishable from network failure**
 	1. We can make identical to local: partial failure triggers complete failure, system crashes.
 	2. Break transparency: 
-		- If it’s
-		- sometimes it’s okay to repeat the call (if idempotent).
+		- If it’s not idempotent we don’t know if it has been performed, can’t repeat, so we just
+		- If idempotent we repeat until success
+		- At least once: keep retrying
+		- At most once: server must re-send previous reply and keep a cache (keep sliding window)
 - Latency
+	- major overheads in RPC
+	- Don’t do malloc or free for small buffers to improve latency
+	- Avoid copying byte arrays
+
+**Where to implement transparency semantics?** RPC layer, not application, TCP, or OS.
+- We might want to implement on the application sometimes
+- Application can set some flags in the RPC layer (e.g. what kind of retry policy)
+
+### gRPC
+
+Can efficiently connect services in and across data centers.
+Server and client don’t need to have the same languages
+
+Why not use REST?
+
+It’s inefficient text-based protocols. Serialization is manual.
+Lacked of typed interfaces
 
