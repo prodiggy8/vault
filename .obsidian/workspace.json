@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -218,10 +218,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "9871e471d8dfe979",
+  "active": "ee4e9b4fd7182551",
   "lastOpenFiles": [
-    "Home.md",
     "Computational Perception - Lecture 10.md",
+    "Home.md",
     "Computer Science/Distributed Systems/Filesystems.md",
     "Untitled 4.md",
     "Untitled 5.md",
