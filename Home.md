@@ -7,7 +7,7 @@
 In order of priority
 - [x] Review statistics and exam
 - [x] Latent work -> deploy
-- [ ] Send e-mail to housing 
+- [x] Send e-mail to housing 
 - [ ] Do ai (dev) assignment (3:30 until 6:30)
 - [ ] Finish all distributed lectures and homework 2, create a cheat sheet (7:30 until 9)
 - [ ] Algorithms study (9 until 1)
