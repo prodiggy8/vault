@@ -21,8 +21,24 @@
               "icon": "lucide-file",
               "title": "Filesystems"
             }
+          },
+          {
+            "id": "196c8510b0f9e839",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Distributed Transactions.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Distributed Transactions"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,10 +203,11 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "e02c8eda1310ac93",
+  "active": "196c8510b0f9e839",
   "lastOpenFiles": [
-    "Computer Science/Distributed Systems/Remote Procedure Calls.md",
     "Computer Science/Distributed Systems/Filesystems.md",
+    "Distributed Transactions.md",
+    "Computer Science/Distributed Systems/Remote Procedure Calls.md",
     "Home.md",
     "Computer Science/Distributed Systems/Distributed Mutual Exclusion.md",
     "Computer Science/Distributed Systems/Networking.md",
@@ -217,7 +234,6 @@
     "Untitled 4.md",
     "Untitled 3.md",
     "Untitled 2.md",
-    "Untitled 1.md",
     "_assets/lamport.png",
     "_assets/WhatsApp Image 2026-09-17 at 21.49.49 2.jpeg",
     "_assets/hw3.png",
