@@ -20,3 +20,9 @@ Prompts:
 **MCP for design, DBs, etc**
 **Frequent feedback**
 
+Decisions:
+- NextJS -> no microservices, no separate backend/frontend, no monorepo, we need simplicity as PowerApps is simple.
+- Microsoft SSO -> inherits structure already known to company
+- Shared infra and DB -> can create multiple modules.
+- Role-based access: again trying to fit MS’s shoes
+- 
