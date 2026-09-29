@@ -5,13 +5,13 @@
 
 # Sept 29
 Morning:
-- [ ] Latent work -> deploy
+- [x] Latent work -> deploy
 - [ ] Changes to GCP
 Afternoon:
 - [ ] Finish all distributed lectures and homework 2, create a cheat sheet (7:30 until 9)
-- [ ] Do ONE practice exam
+- [ ] Do ONE practice exam (**aim for 4 hours**)
 - [ ] Algorithms study
-- [ ] Algorithms homework
+- [ ] Algorithms homework (**aim for 3 hours**)
 # Sept 30
 - [ ] Calculus study
 - [ ] Calculus homework
