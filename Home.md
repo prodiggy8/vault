@@ -3,18 +3,18 @@
 - [ ] Take down Ec3 instance with personal server
 - [ ] Need change card in Azure SSO registration
 
-# Sept 26-28
-In order of priority
-- [x] Review statistics and exam
-- [x] Latent work -> deploy
-- [x] Send e-mail to housing 
-- [ ] Do ai (dev) assignment (3:30 until 6:30)
-- [ ] Finish all distributed lectures and homework 2, create a cheat sheet (7:30 until 9)
-- [ ] Algorithms study (9 until 1)
-- [ ] Calculus study
-- [ ] P1
-### Sept 29
+# Sept 29
+Morning:
+- [ ] Latent work -> deploy
 - [ ] Changes to GCP
+Afternoon:
+- [ ] Finish all distributed lectures and homework 2, create a cheat sheet (7:30 until 9)
+- [ ] Do ONE practice exam
+- [ ] Algorithms study
+- [ ] Algorithms homework
+# Sept 30
+- [ ] Calculus study
+- [ ] Calculus homework
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
