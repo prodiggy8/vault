@@ -72,3 +72,61 @@ Locks in global order -> **can’t deadlock**
 Commit: apply changes, release locks
 Abort: discard changes, release locks
 
+Example:
+```python
+transfer(i, j, v):
+	L = {i, j} // locks
+	U = []     // updates
+	if Bal[i] >= v:
+		U.append(Bal[i] -= v)
+		U.append(Bal[j] += v)
+		commit(U, L)
+	else:
+		abort(L)
+```
+
+Deadlocks can still occur:
+- Transaction may not know all the locks it needs ahead of time
+
+Ways to handle:
+- Lock manager builds the graph. On finding a cycle, choose offending transaction and force abort
+- Use timeouts: transactions should be short. If hit time limit, find transaction and force abort.
+
+# Distributed Transactions
+
+We can have distributed databases. Example: `i` is in one server (responsible for `withdraw`) and `j` is in another (responsible for `deposit`)
+**All servers** must agree to commit or abort. 
+
+- Coordinator server
+- Ensures all reach the same decision
+### Phase 1A
+- Coordinator sends prepare to participants
+### Phase 1B
+- Participants log vote to disk and respond with vote
+### Phase 2A
+- Coordinator checks votes and makes decision: commit if all vote commit
+- Persist to disk before green lighting
+### Phase 2B
+- Write decision to disk, complete transaction, send ACK
+- Coordinator persists END to disk
+___
+Must abort if any voted abort
+
+# Failure and Recovery
+
+- Recover from log on disk
+
+Participant fails with no logged abort/commit
+- Set timeouts to wait for participant
+- Upon recovery participant doesn’t see a logged decision and aborts
+
+Participant fails with logged vote abort
+- Coordinator sees vote, aborts
+- Participant unilaterally aborts after seeing local VoteAbort
+
+Participant fails with logged vote commit
+- Ask the coordinator for decision
+- If within timeout, it will abort, otherwise send correct answer
+
+Coordinator fails with logged COMMIT without an END
+- Broadcast commit decision

@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sanii Week 5 - Dashboard de Clientes.md",
+                "file": "Distributed Transactions, Two-Phase Commit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Sanii Week 5 - Dashboard de Clientes"
+              "title": "Backlinks"
             }
           },
           {
@@ -165,8 +164,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -189,6 +187,7 @@
   },
   "active": "806adf52e5c92bf7",
   "lastOpenFiles": [
+    "Distributed Systems Exam Review.md",
     "Distributed Transactions, Two-Phase Commit.md",
     "Home.md",
     "Computational Perception - Lecture 10.md",
@@ -196,7 +195,6 @@
     "Devin.md",
     "Homework 5.md",
     "Computer Science/Algorithms/451/Union-Find.md",
-    "Distributed Systems Exam Review.md",
     "PowerDevin - Design Choices.md",
     "Computer Science/Distributed Systems/Filesystems.md",
     "Untitled 4.md",
