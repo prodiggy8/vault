@@ -23,10 +23,12 @@ We create a union-find structure that will be used to keep track of the new edge
 **Correctness:**
 - Notice that by definition an edge $(u,v)$ is not a bridge if there is another path from $u$ to $v$ that does not include such edge. Hence there is a cycle containing edge $(u,v)$ and every edge in this cycle is not a bridge.
 - When adding an edge to the spanning tree, we create a cycle and hence destroy bridges.
-- By traversing the tree we find all edges contained in such cycle, say $k$ of them. We union all of their nodes in the union-find structure, hence decreasing the number of connected components by exactly $k$.
-
-**Complexity:**
-- 
+- By traversing the tree we find all edges contained in such cycle, say $k$ of them. We union all of their nodes in the union-find structure and hence we can decrease the number of connected components by exactly $k$.
+- We prove amortized complexity together with part c.
 
 ## c)
+- We already know by lecture that `Union(u, v)` runs in $O(\alpha(n))$. It remains to prove our tree traversal is constant amortized. We can notice that over the entire $m$ insertions, the loop above only loops $n-1$ times.  That is because we mentioned above we decrease $k$ from the number of bridges for a traversal of $k$ edges.
+- Also we note that the whole sequence performs at most $n − 1$ unions and at most $3(n − 1) + 2m$ finds. That is because each iteration does one union and three finds (`find(u)`, `find(v)`, `find(par[t])`); each call additionally does the two finds of its final, failing check. Sum with Lemma 2. ∎
+
+Theorem (Tarjan 1975; see CLRS Thm 21.14).** A union-find on n elements, using union by size (or rank) together with path compression, executes any sequence of q `find`/`union` operations in O((n + q) · α(n)) time, where α is the inverse Ackermann function. The same bound holds when path compression is replaced by path halving or path splitting (Tarjan & van Leeuwen 1984).
 

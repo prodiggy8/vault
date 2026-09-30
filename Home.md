@@ -11,7 +11,7 @@ Afternoon:
 - [ ] Finish all distributed lectures and homework 2, create a cheat sheet (7:30 until 9)
 - [ ] Do ONE practice exam (**aim for 4 hours**)
 - [ ] Algorithms study
-- [ ] Algorithms homework (**aim for 3 hours**)
+- [x] Algorithms homework (**aim for 3 hours**)
 # Sept 30
 - [ ] Calculus study
 - [ ] Calculus homework
