@@ -102,3 +102,8 @@ Case 2: both sent requests before receiving from the other
 - Since ordered, cannot have a deadlock! It **must** be that the time of one request is lower than the other.
 
 - If node made request it would be granted eventually.
+
+
+Need to include:
+![[Screenshot_2026-09-30_17-25-08.png]]
+
