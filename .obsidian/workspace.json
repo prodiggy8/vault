@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Distributed Transactions, Two-Phase Commit.md",
+                "file": "Computer Science/Distributed Systems/Concurrency.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Distributed Transactions, Two-Phase Commit"
+              "title": "Concurrency"
             }
           }
         ]
@@ -187,9 +187,10 @@
   },
   "active": "806adf52e5c92bf7",
   "lastOpenFiles": [
+    "Computer Science/Distributed Systems/Networking.md",
+    "Home.md",
     "Distributed Systems Exam Review.md",
     "Distributed Transactions, Two-Phase Commit.md",
-    "Home.md",
     "Computational Perception - Lecture 10.md",
     "PowerApps.md",
     "Devin.md",
@@ -203,7 +204,6 @@
     "Computer Science/Distributed Systems/Distributed Transactions.md",
     "Computer Science/Distributed Systems/Remote Procedure Calls.md",
     "Computer Science/Distributed Systems/Distributed Mutual Exclusion.md",
-    "Computer Science/Distributed Systems/Networking.md",
     "Computer Science/Distributed Systems/Concurrency.md",
     "Computer Science/Distributed Systems/Time Synchronization.md",
     "Computer Science/Algorithms/451/Dynamic Programming.md",
