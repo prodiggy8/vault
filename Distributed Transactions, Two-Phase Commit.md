@@ -130,3 +130,21 @@ Participant fails with logged vote commit
 
 Coordinator fails with logged COMMIT without an END
 - Broadcast commit decision
+
+
+
+Possibilities:
+Before prepare or before write vote
+- 1 minute down
+- Once wakes up does nothing
+- Coordinator sends request every ms so 1 extra ms once awake
+Total: no failures + 1 minute
+
+Before send vote
+- 1 minute down
+- Same thing as before
+
+Before write receiving or writing commit
+- 
+
+Before ack (before or after completing operation)
