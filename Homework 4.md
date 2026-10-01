@@ -1,257 +1,78 @@
 ---
 tags:
-  - calculus
 type:
 author:
 description:
 aliases:
-date created: Thursday, September 24th 2026, 6:12:20 pm
-date modified: Thursday, September 24th 2026, 6:12:22 pm
+date created: Tuesday, September 29th 2026, 8:19:30 pm
+date modified: Tuesday, September 29th 2026, 8:19:35 pm
 ---
-# 1.
-## a)
-Rhumb line: $\phi(t)=t$, $\theta=\theta(t)$
-$$ \vec{p}(t) = (\sin t\cos\theta,\ \sin t\sin\theta,\ \cos t) $$
-$$ \begin{aligned} x'(t) &= \cos t\cos\theta + \sin t\cdot(-\sin\theta)\cdot\theta' = \cos t\cos\theta - \sin t\sin\theta\,\theta' \\ y'(t) &= \cos t\sin\theta + \sin t\cdot\cos\theta\cdot\theta' = \cos t\sin\theta + \sin t\cos\theta\,\theta' \\ z'(t) &= -\sin t \end{aligned}
-$$
-$$ \vec{p}\,'(t) = \bigl(\cos t\cos\theta - \sin t\sin\theta\,\theta',\ \ \cos t\sin\theta + \sin t\cos\theta\,\theta',\ \ -\sin t\bigr). $$
+# Problem 1
 
-Now length:
-$$ \begin{aligned} (x')^2 &= \cos^2 t\cos^2\theta - 2\cos t\sin t\cos\theta\sin\theta\,\theta' + \sin^2 t\sin^2\theta\,(\theta')^2 \\ (y')^2 &= \cos^2 t\sin^2\theta + 2\cos t\sin t\sin\theta\cos\theta\,\theta' + \sin^2 t\cos^2\theta\,(\theta')^2 \\ (z')^2 &= \sin^2 t \end{aligned} $$
-$$ \begin{aligned} |\vec{p}\,'|^2 &= \cos^2 t(\cos^2\theta + \sin^2\theta) + \sin^2 t\,(\theta')^2(\sin^2\theta + \cos^2\theta) + \sin^2 t \\ &= \cos^2 t + \sin^2 t\,(\theta')^2 + \sin^2 t \\ &= 1 + \sin^2 t\,(\theta')^2. \end{aligned} $$
+1. 
+$$\Phi(\langle x,y \rangle )=3x$$
 
-Therefore 
-$$ \vec{T}(t) = \frac{\vec{p}\,'(t)}{|\vec{p}\,'(t)|} = \frac{\bigl(\cos t\cos\theta - \sin t\sin\theta\,\theta',\ \ \cos t\sin\theta + \sin t\cos\theta\,\theta',\ \ -\sin t\bigr)}{\sqrt{1 + \sin^2 t\,(\theta')^2}}. $$
-## b)
-Line of latitude has $\theta(u) = u$ and $\phi(u) = \phi_0$ constant. Substituting into $x = \sin\phi\cos\theta$, $y = \sin\phi\sin\theta$, $z = \cos\phi$:
-$$
-\vec{q}(u) = \bigl(\sin\phi_0\cos u,\ \sin\phi_0\sin u,\ \cos\phi_0\bigr).
-$$
+2. 
+$$\Phi(\langle x,y \rangle )=2|x-y|$$
+3. 
+$$\Phi(\langle x, y, z \rangle )=2x+y$$
 
-Differentiate each component ($\sin\phi_0$ and $\cos\phi_0$ are constants):
+## Problem 2
+
+Let $P[0] = 0$ and $P[i] = a_1 + \dots + a_i$, computed in $O(n)$ time. The block $a_j, \dots, a_i$ then has sum $S(j,i) = P[i] - P[j-1]$, available in $O(1)$.
+
+**Subproblems:** For $1 \le j \le i \le n$, let $L[j][i]$ be the maximum length of a strictly increasing summed array of the prefix $a_1, \dots, a_i$ whose last block is exactly $a_j, \dots, a_i$, or $-\infty$ if no such array exists. We define the recurrence:
+
 $$
-\begin{aligned}
-x'(u) &= \sin\phi_0\cdot(-\sin u) = -\sin\phi_0\sin u \\
-y'(u) &= \sin\phi_0\cdot\cos u = \sin\phi_0\cos u \\
-z'(u) &= 0
-\end{aligned}
-$$
-$$
-\vec{q}\,'(u) = \bigl(-\sin\phi_0\sin u,\ \sin\phi_0\cos u,\ 0\bigr).
+\begin{align}
+L[1][i] &= 1 \\
+L[j][i] &= 1 + \max\{\, L[k][j-1] : 1 \le k \le j-1,\ S(k, j-1) < S(j, i) \,\} \qquad (j \ge 2)
+\end{align}
 $$
 
-Magnitude:
-$$
-|\vec{q}\,'|^2 = \sin^2\phi_0\sin^2 u + \sin^2\phi_0\cos^2 u + 0 = \sin^2\phi_0(\sin^2 u + \cos^2 u) = \sin^2\phi_0.
-$$
-Then
-$$
-\vec{L}(u) = \frac{\vec{q}\,'(u)}{|\vec{q}\,'(u)|}
-= \frac{\bigl(-\sin\phi_0\sin u,\ \sin\phi_0\cos u,\ 0\bigr)}{\sin\phi_0}
-= \bigl(-\sin u,\ \cos u,\ 0\bigr).
-$$
+where the max of an empty set is $-\infty$ and $1 + (-\infty) = -\infty$.
 
-## c)
-At $t$ the rhumb line is at$\phi = t$, $\theta = \theta(t)$. Line of latitude through this point has $\phi_0 = t$. From b, its unit tangent there is
-$$
-\vec{L} = \bigl(-\sin\theta,\ \cos\theta,\ 0\bigr).
-$$
+$L[j][i]$ depends only on entries with right endpoint $j - 1 < i$, so we fill the table in increasing order of $i$.
 
-Since $\vec{T}$ and $\vec{L}$ are unit vectors, $\cos\beta = \vec{T}\cdot\vec{L}$.
-$$
-\cos\beta = \frac{(-\sin\theta)(\cos t\cos\theta - \sin t\sin\theta\,\theta') + (\cos\theta)(\cos t\sin\theta + \sin t\cos\theta\,\theta') + (0)(-\sin t)}{\sqrt{1 + \sin^2 t\,(\theta')^2}}.
-$$
-Simplifying
-$$
-\begin{aligned}
-&-\sin\theta\cos t\cos\theta + \sin t\sin^2\theta\,\theta' + \cos\theta\cos t\sin\theta + \sin t\cos^2\theta\,\theta' \\
-&= \bigl(-\cos t\sin\theta\cos\theta + \cos t\sin\theta\cos\theta\bigr) + \sin t\,\theta'\bigl(\sin^2\theta + \cos^2\theta\bigr) \\
-&= 0 + \sin t\,\theta'.
-\end{aligned}
-$$
+For the final answer, we just do $\max_{1 \le j \le n} L[j][n]$. Every summed array of $a$ has some last block $a_j, \dots, a_n$, so this covers all cases. It is at least $L[1][n] = 1$ (the whole array as one block).
 
-Therefore
-$$
-\cos\beta = \frac{\sin t\,\theta'(t)}{\sqrt{1 + \sin^2 t\,(\theta'(t))^2}}.
-$$
-## d)
-$\beta$ is constant so from c, with $w = \sin t\,\theta'(t)$, 
-$$ \cos\beta = \frac{w}{\sqrt{1 + w^2}}$$
-$$
-\cos^2\beta = \frac{w^2}{1 + w^2} \implies \cos^2\beta\,(1 + w^2) = w^2 \implies \cos^2\beta = w^2 - w^2\cos^2\beta = w^2(1 - \cos^2\beta) = w^2\sin^2\beta
-$$
-Hence:
-$$
-w^2 = \frac{\cos^2\beta}{\sin^2\beta} = \cot^2\beta \implies w = \pm\cot\beta
-$$
-The denominator is positive, so $w$ and $\cos\beta$ have the same sign, and $\cot\beta$ has the same sign as $\cos\beta$. So $w$ and  $\cot\beta$ have the same sign, $w=\cot \beta$.
-$$ \sin t\,\theta'(t) = \cot\beta \implies \theta'(t) = \frac{\cot\beta}{\sin t}. $$
-## e)
-From d, $\theta'(t) = \dfrac{\cot\beta}{\sin t}$, so $$ \theta(t) = \cot\beta\int\frac{dt}{\sin t}. $$ 
-$$
-\frac{1}{\sin t} = \frac{1}{2\sin(t/2)\cos(t/2)} = \frac{1}{2\sin(t/2)\cos(t/2)}\cdot\frac{\cos(t/2)}{\cos(t/2)} = \frac{\tfrac{1}{2}\sec^2(t/2)}{\tan(t/2)}
-$$
-Substitution: $u = \tan(t/2)$, $du = \tfrac{1}{2}\sec^2(t/2)\,dt$. Then 
-$$ 
-\int\frac{dt}{\sin t} = \int\frac{du}{u} = \log|u| + C = \log\tan(t/2) + C
-$$
-Therefore: 
-$$ \theta(t) = \cot(\beta)\log\tan(t/2) + C$$
+**Correctness**
 
-![[sphere.png|362]]
-With $\beta=0.523$.
-## f)
-$$
-s = \int_{t_0}^{t_1}|\vec{p}\,'(t)|\,dt.
-$$
-$|\vec{p}\,'(t)| = \sqrt{1 + \sin^2 t\,(\theta')^2}$ from first part. Then $\sin t\,\theta' = \cot\beta$, so
-$$
-|\vec{p}\,'(t)| = \sqrt{1 + \cot^2\beta} = \sqrt{\csc^2\beta} = \csc\beta
-$$
-So:
-$$
-s = \int_{t_0}^{t_1}\csc\beta\,dt = \csc\beta\,(t_1 - t_0)
-$$
+*Case $j = 1$.* The last block is the entire prefix $a_1, \dots, a_i$, so it is the only block and the length is 1.
 
-## g)
-The Mercator map is $(\theta, \phi) \mapsto (x, y) = \bigl(\theta,\ \log\tan(\phi/2)\bigr)$.
+*Case $j \ge 2$.* The last block does not start at $a_1$, so there is a previous block. It ends at $a_{j-1}$, so it is $a_k, \dots, a_{j-1}$ for some $1 \le k \le j-1$.
 
-On the rhumb line, $\phi = t$ and $\theta = \cot(\beta)\log\tan(t/2) + C$, so
-$$
-x = \cot(\beta)\log\tan(t/2) + C, \qquad y = \log\tan(t/2).
-$$
+- ($\le$) Take any valid array for $(j, i)$. Removing its last block leaves a strictly increasing summed array of $a_1, \dots, a_{j-1}$ with last block $a_k, \dots, a_{j-1}$, so it has length at most $L[k][j-1]$. Since the original array is strictly increasing, $S(k, j-1) < S(j, i)$. Hence the original length is at most $1 + L[k][j-1]$, which is at most the right-hand side of the recurrence.
+- ($\ge$) Take any $k$ with $S(k, j-1) < S(j, i)$ and $L[k][j-1] > -\infty$, and append the block $a_j, \dots, a_i$ to an optimal array for $(k, j-1)$. The result is a summed array of $a_1, \dots, a_i$ with last block $a_j, \dots, a_i$. It is strictly increasing because the old blocks already were, and the only new pair of consecutive blocks satisfies $S(k, j-1) < S(j, i)$. Hence $L[j][i] \ge 1 + L[k][j-1]$ for every such $k$.
+- If no such $k$ exists, no valid array for $(j, i)$ exists, which matches the empty max giving $-\infty$.
 
-So:
-$$
-x = \cot(\beta)\,y + C.
-$$
+**Complexity**
 
-Rewriting as $y = \tan(\beta)(x - C)$this is a straight line. Lines of latitude map to horizontal lines, so the rhumb line still crosses them at angle $\beta$ on the map.
+There are $O(n^2)$ subproblems. Each takes a max over $O(n)$ values of $k$, and each $k$ is checked in $O(1)$ using prefix sums. With the $O(n)$ prefix-sum computation, the total is $O(n^3)$.
 
-Near the pole $\tan \frac{t}{2}$ tends to 0 so $y$ becomes so the poles are pushed off to infinity (log) and everything near them is stretched.
-
-# 2.
+# Problem 3
 
 ## a)
-$r(t)=t$, $\theta(t)=\theta_{0}$ where $t \geq 0$ and $\theta_{0}$ is a constant.
-$\hat{r}(r,\theta)$ tangent at $P$ whose coordinates are $r, \theta$
-
-$x(t)=r(t)\cos \theta=t\cos \theta_{0}$
-$y(t) = r(t)\sin \theta=t\sin \theta_{0}$
-
-$x'(t)=\cos \theta_{0}$
-$y'(t)=\sin \theta_{0}$
-
-Tangent: $y=$$\tan \theta_{0}\cdot x$
-Isolating:
-$$\hat{r}(r,\theta) = (\cos \theta, \sin \theta)$$
+We create a union-find structure that will be used to keep track of vertices that can’t be separated by removing an edge, with both path compression and union-by-size. We add a variable to the structure keeping the number of sets. The representative element of each set is the element with smallest depth in the set. We also keep the original spanning tree to track parents and (pre-computed) depth of each node. All of this is $O(n)$.
 
 ## b)
-$\hat{\theta}(r,\theta)$ with $r(t)=r_{0}$ and $\theta(t)=t$
+`AddRoads(u, v)` will do the following:
+- Go up in the tree with two pointers starting at the sets of `u` and `v` until they meet. At each step we take the pointer whose set has the deeper top `t` and do `Union(t, parent(t))`, which moves that pointer to the set on the other side of the tree edge `(t, parent(t))` and decreases the number of sets by one.
 
-$x(t)=r(t)\cos \theta(t)=r_{0}\cos t$
-$y(t) = r(t)\sin \theta(t)=r_{0}\sin t$
+`NumBridges()` just returns the value of the variable for number of sets we set in the beginning in $O(1)$.
 
-$x'(t)=-r_{0}\sin t$
-$y'(t)=r_{0}\cos t$
-
-Tangent vector: $(x', y') = (-r_{0}\sin t, r_{0}\cos t)$,
-Length $\sqrt{r_{0}^2\sin^2 t+r_{0}^2\cos^2 t}=r_{0}$. 
-Dividing by $r_{0}$: $$\hat{\theta}(r,\theta) = (-\sin \theta, \cos \theta)$$ Tangent : $y-r_{0}\sin t=-\cot t \cdot (x-r_{0}\cos t)$
-$y=-\cot t \cdot x + r_{0}(\cot t \cos t + \sin t)$
-$y=-\cot t \cdot x + r_{0}\left( \frac{\cos^2t}{\sin t} + \sin t \right)$
+**Correctness:**
+- Notice that by definition an edge $(u,v)$ is not a bridge if there is another path from $u$ to $v$ that does not include such edge. Hence there is a cycle containing edge $(u,v)$ and every edge in this cycle is not a bridge.
+- When adding an edge to the spanning tree, we create a cycle and hence destroy bridges. Such cycle contains the edge we added and the tree path between its endpoints.
+- Invariant: the sets of the union-find are exactly the groups of vertices that cannot be separated by removing a single edge, and each set is a connected subtree of the spanning tree with its stored `top` being its shallowest node. Initially every node is its own set, which holds since in a tree any two vertices are separated by cutting the path between them.
+- Given the invariant, contracting each set into a single node leaves a tree whose edges are exactly the bridges: edges inside a set are on a cycle, edges between sets disconnect the graph when removed. A tree on $s$ nodes has $s − 1$ edges, so `NumBridges()` correctly returns (number of sets − 1), initially $n − 1$.
+- By traversing the tree we merge exactly the sets on the path from $u$ to $v$. The set containing the lowest common ancestor of $u$ and $v$ has a top at least as shallow as the lowest common ancestor, while any other set on the path is strictly below the lowest common ancestor and has a strictly deeper top. So the pointer we advance is never the one at the lower common ancestor's set, the edge `(t, parent(t))` is on the path, and the pointers meet at the lowest common ancestor’s set without overshooting. Each `Union(t, parent(t))` merges two distinct sets, since `parent(t)` is shallower than `t` and hence outside `t`'s set, and the merged set is again a connected subtree whose top is the shallower of the two tops, so the invariant is preserved. Sets off the path are never touched.
+- Hence if the path contains k edges that are still bridges, we perform exactly k unions and the number of sets decreases by exactly k, matching the k bridges destroyed.
+- We prove amortized complexity together with part c.
 
 ## c)
-In Cartesian:
-$p(t)=(t\cos \theta_{0},t\sin \theta_{0})$
-$p’(t)=(\cos \theta_{0},\sin \theta_{0})$ of length $1$ so already unit.
-$\hat{r}=(\cos \theta,\sin \theta)$
-
-$p(t)=(r_{0}\cos t, r_{0}\sin t)$
-$p'(t)=(-r_{0}\sin t,r_{0}\cos t)$ of length $r_{0}$ so:
-$p'(t)=(-\sin t, \cos t)$ unit
-$\hat{\theta}=(-\sin \theta,\cos \theta)$
-
-$\hat{r} \cdot \hat{\theta}=(\cos \theta)(-\sin \theta)+\sin \theta \cos \theta=0$
-Hence they are orthogonal.
-
-## d)
-$\hat{r}=\cos \theta \hat{x} + \sin \theta \hat{y}$
-$\hat{\theta}=-\sin \theta \hat{x} + \cos \theta \hat{y}$
-
-
-$\hat{r} \cos \theta=\cos^2\theta \hat{x} + \sin \theta \cos \theta \hat{y}$
-$\hat{\theta} \sin \theta=-\sin^2 \hat{x}+\sin \theta \cos \theta \hat{y}$
-$\cos \theta \hat{r}-\sin \theta \hat{\theta}=(\cos^2+\sin^2)\hat{x}$
-$\hat{x}=\hat{r}\cos \theta- \hat{\theta}\sin \theta$
-
-$\hat{r} \sin \theta=\cos \theta \sin \theta \hat{x} + \sin^2 \theta \hat{y}$
-$\hat{\theta}\cos \theta=-\sin \theta \cos \theta \hat{x} + \cos^2\theta \hat{y}$
-$\sin \theta \hat{r} + \cos \theta \hat{\theta}=(\sin^2 \theta + \cos^2 \theta)\hat{y}$
-$\hat{y}=\sin \theta \hat{r}+\cos \theta \hat{\theta}$
-
-## e)
-$\hat{r}(t) = \cos\theta(t)\,\hat{x} + \sin\theta(t)\,\hat{y}$
-$\hat{\theta}(t) = -\sin\theta(t)\,\hat{x} + \cos\theta(t)\,\hat{y}$
-
-$$
-\begin{aligned}
-\hat{r}'(t) &= -\sin\theta \cdot \theta'\,\hat{x} + \cos\theta \cdot \theta'\,\hat{y} \\
-&= \theta'\left(-\sin\theta\,\hat{x} + \cos\theta\,\hat{y}\right) \\
-&= \theta'(t)\,\hat{\theta}(t)
-\end{aligned}
-$$
-$$
-\begin{aligned}
-\hat{\theta}'(t) &= -\cos\theta \cdot \theta'\,\hat{x} - \sin\theta \cdot \theta'\,\hat{y} \\
-&= -\theta'\left(\cos\theta\,\hat{x} + \sin\theta\,\hat{y}\right) \\
-&= -\theta'(t)\,\hat{r}(t)
-\end{aligned}
-$$
-$$
-\hat{r}' = \theta'\hat{\theta}, \qquad \hat{\theta}' = -\theta' \hat{r}
-$$
-## f)
-$\vec{r}(t) = r(t)\,\hat{r}(t)$ so by product rule:
-$$
-\vec{r}\,'(t) = r'(t)\,\hat{r}(t) + r(t)\,\hat{r}\,'(t).
-$$
-Since $\hat{r}(t) = \cos\theta(t)\,\hat{x} + \sin\theta(t)\,\hat{y}$ with $\hat{x}, \hat{y}$ constant,
-$$
-\hat{r}\,'(t) = \theta'(t)\left(-\sin\theta\,\hat{x} + \cos\theta\,\hat{y}\right) = \theta'(t)\,\hat{\theta}(t).
-$$
-Therefore
-$$
-\vec{r}\,'(t) = r'(t)\,\hat{r} + r(t)\,\theta'(t)\,\hat{\theta}.
-$$
-
-## g)
-From before: $$ \vec{r}\,'(t) = r'(t)\,\hat{r} + r(t)\theta'(t)\,\hat{\theta}, \qquad \hat{r}\,'(t) = \theta'(t)\,\hat{\theta}, \qquad \hat{\theta}\,'(t) = -\theta'(t)\,\hat{r}. $$we do product rule: 
-$$ \bigl(r'(t)\,\hat{r}\bigr)' = r''(t)\,\hat{r} + r'(t)\,\hat{r}\,'(t) = r''(t)\,\hat{r} + r'(t)\theta'(t)\,\hat{\theta}.
-$$
-$$ \bigl(r(t)\theta'(t)\,\hat{\theta}\bigr)' = r'(t)\theta'(t)\,\hat{\theta} + r(t)\theta''(t)\,\hat{\theta} + r(t)\theta'(t)\,\hat{\theta}\,'(t)
-$$
-$$= r'(t)\theta'(t)\,\hat{\theta} + r(t)\theta''(t)\,\hat{\theta} - r(t)(\theta'(t))^2\,\hat{r}$$
-Hence, adding and collecting like terms:
-$$ \vec{r}\,''(t) = \bigl(r''(t) - r(t)(\theta'(t))^2\bigr)\,\hat{r} + \bigl(2r'(t)\theta'(t) + r(t)\theta''(t)\bigr)\,\hat{\theta}. $$
-# 3.
-Since the ratio does not depend on the shape, take $D$ to be a triangle. Place one vertex at the origin (translation does not change areas or the projection), and let the other two vertices be $\vec{a} = (a_1, a_2, a_3)$ and $\vec{b} = (b_1, b_2, b_3)$. Then
-$$
-\text{Area}(D) = \tfrac{1}{2}\,|\vec{a}\times\vec{b}|.
-$$
-Since $\vec{a}\times\vec{b}$ is normal to the plane of $D$, $\vec{a}\times\vec{b} = \pm|\vec{a}\times\vec{b}|\,\hat{u}$.
-
-Projecting to the $xy$-plane sets the $z$-component to zero: $\vec{a}\,' = (a_1, a_2, 0)$, $\vec{b}\,' = (b_1, b_2, 0)$. The projected triangle $D'$ has area
-$$
-\text{Area}(D') = \tfrac{1}{2}\,|\vec{a}\,'\times\vec{b}\,'| = \tfrac{1}{2}\,|a_1 b_2 - a_2 b_1|.
-$$
-But $a_1 b_2 - a_2 b_1$ is exactly the $z$-component of $\vec{a}\times\vec{b}$, so
-$$
-\text{Area}(D') = \tfrac{1}{2}\,\left|(\vec{a}\times\vec{b})\cdot\hat{z}\right| = \tfrac{1}{2}\,|\vec{a}\times\vec{b}|\,|\hat{u}\cdot\hat{z}| = \text{Area}(D)\,|\hat{u}\cdot\hat{z}|.
-$$
-
-Therefore
-$$
-\frac{\text{Area}(D)}{\text{Area}(D')} = \frac{1}{|\hat{u}\cdot\hat{z}|} = \frac{1}{|\cos\varphi|},
-$$
-where $\varphi$ is the angle between $\hat{u}$ and $\hat{z}$. If $\hat{u} = (u_1, u_2, u_3)$, this is $1/|u_3|$.
+- We already know by lecture (CLRS proof) that any sequence of $m$ `Find`/`Union` operations on a union-find with path compression and union-by-size runs in $O(m \cdot \alpha(n))$ total.
+- It remains to count the operations our traversal performs over $m$ calls to `AddRoads`. Every iteration of the loop does `Union(t, parent(t))`, which by correctness merges two distinct sets. The structure starts with $n$ sets and never has fewer than one, so over the entire sequence of $m$ insertions the loop runs at most $n − 1$ times in total.
+- Each iteration performs a constant number of union-find operations: two `Find`s for the meeting test, one comparison of top depths, one `Find` of `parent(t)`, and one `Union`. Each call to `AddRoads` additionally performs the two `Find`s of its final, failing meeting test. So the total number of union-find operations is at most $c₁(n − 1) + c₂ m = O(n + m)$. 
+- Applying the theorem with $m = O(n + m)$, the $m$ insertions run in $O((n + m) \cdot \alpha(n))$ total.
+- Amortized cost: dividing the total by the number of operations, each of the $n$ initializations and $m$ insertions costs $O(\alpha(n))$ amortized. A single `AddRoads` can still take $O(n \cdot \alpha(n))$, but it does so by spending unions from the shared budget of $n − 1$, which no later call can spend again.

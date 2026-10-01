@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Distributed Systems/Distributed Mutual Exclusion.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Distributed Mutual Exclusion"
+              "title": "Home"
             }
           }
         ]
@@ -181,12 +181,13 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false,
-      "card-board:CardBoard": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "806adf52e5c92bf7",
   "lastOpenFiles": [
+    "Homework 4 calc.md",
+    "Homework 4.md",
     "Home.md",
     "Computer Science/Distributed Systems/Filesystems.md",
     "Computer Science/Distributed Systems/Remote Procedure Calls.md",
@@ -206,7 +207,6 @@
     "Computational Perception - Lecture 10.md",
     "PowerApps.md",
     "Devin.md",
-    "Homework 5.md",
     "Computer Science/Algorithms/451/Union-Find.md",
     "PowerDevin - Design Choices.md",
     "Untitled 4.md",
@@ -219,7 +219,6 @@
     "Almost Palindromes.md",
     "_assets/sphere.png",
     "Math/Calculus in Three Dimensions/2.4.md",
-    "Homework 4.md",
     "_assets/Union-Find.png",
     "_assets/vectorclock.png",
     "Computer Science/Computational Perception",
