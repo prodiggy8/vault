@@ -13,7 +13,7 @@ At $B$ it is negative.
 contour $10840$ is at about $75ft$ west and $10760$ at about $100ft$ east so that gives us $-\frac{80}{175} \approx -\frac{1}{2}$.
 
 #### d)
-At $A$ and $C$ it is negative. That’s because they are a local maximums and a saddle, respectively.
+At $A$ and $C$ it is negative. That’s because they are a maximums.
 At $B$ it is positive because the contour is a bit closer together west than east.
 
 #### e)
