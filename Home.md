@@ -3,19 +3,15 @@
 - [ ] Take down Ec3 instance with personal server
 - [ ] Need change card in Azure SSO registration
 
-# Sept 29
+# Weekend
 Morning:
 - [x] Latent work -> deploy
 - [ ] Changes to GCP
-Afternoon:
-- [ ] Finish all distributed lectures and homework 2, create a cheat sheet (7:30 until 9)
-- [ ] Do ONE practice exam (**aim for 4 hours**)
+- [ ] Fix memory problem in Linux
 - [ ] Algorithms study
-- [x] Algorithms homework (**aim for 3 hours**)
-# Sept 30
 - [ ] Calculus study
 - [ ] Calculus homework
-
+- [ ] Computational perception study + setup for exam
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
