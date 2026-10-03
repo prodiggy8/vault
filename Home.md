@@ -1,17 +1,45 @@
+---
+tags:
+type:
+author:
+description:
+aliases:
+date created: Saturday, April 11th 2026, 5:16:03 pm
+date modified: Saturday, October 3rd 2026, 1:54:59 am
+---
+
 ### Tasks
 - [ ] GoDaddy domain
 - [ ] Take down Ec3 instance with personal server
 - [ ] Need change card in Azure SSO registration
 
 # Weekend
+
 Morning:
+
 - [x] Latent work -> deploy
 - [ ] Changes to GCP
-- [ ] Fix memory problem in Linux
+- [x] Fix memory problem in Linux
 - [ ] Algorithms study
 - [ ] Calculus study
 - [ ] Calculus homework
 - [ ] Computational perception study + setup for exam
+
+Tomorrow specifically:
+
+1. 2 chapter of calculus + exercises
+2. Splay trees review + exercises (notes + leetcode)
+3. Joyce work
+4. Apply to new on-campus job, write cover letter
+5. At least 4 lectures of Comp. Perception
+
+Sunday:
+
+1. Remaining DP lecture, Algo
+2. Amortized analysis problems, LeetCode (finish all mediums and some hard)
+3. 2 chapters calculus
+4. 2 lectures Comp Perception
+5. Prepare setup computational perception (GPT with screenshot, install utility for maximum transparency)
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
 - [ ] Find previous notes and port them over
