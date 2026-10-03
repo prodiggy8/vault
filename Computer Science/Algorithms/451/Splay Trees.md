@@ -51,11 +51,44 @@ Define $\Phi(T) = \sum_{x \in T} r(x)$
 ### Access Lemma
 Suppose we splay $T$ to get $T’$
 $$\text{amortized splaying steps} = \text{actual splaying steps} + \Phi(T') - \Phi(T) \leq 3(r(t)-r(x)) + 1$$
+##### Auxiliary lemmas
 
-**Cost of one splay step:**
-Zig-zig or zig-zag step costs: 
+> [!lemma] Rank rule
+> If two siblings have the same rank $r$, then the parent has rank $\geq r + 1$.
+
+Conversely: if parent and sibling have rank $r$ then $x$ must have rank $<r$
+
+> [!lemma] Cost of one splay step
+> Zig-zig or zig-zag step costs:  
+> $$
+> 3(r(z)-r(x))
+> $$
+> Zig step costs:
+> $$
+> 3(r(y)-r(x))+1
+> $$
+
+Notice we can say that $r(z)$ is really $r'(x)$ which is the rank of $x$ after the rotation. Via telescopic sum:
 $$
-3(r(z)-r(x))
+\begin{align}
+3(r'(x) - r(x)) \\
+3(r''(x) - r'(x)) \\
+\dots \\
+3(r(t) - r(x))
+\end{align}
 $$
-Zig step costs:
-$$3(r(y)-r(x))+1$$
+
+##### Zig Case
+Actual cost is $1$.
+$r'(x) = r(y)$ since $x$ is now the root.
+Since $y$ used to be the root its rank can’t increase, so $r'(y) \leq r(y)$. 
+Hence the difference in potential is at most:
+$$(r(y) + r(y)) - (r(x) + r(y))=r(y) - r(x)$$
+$$ \text{amortized cost} = (r(y) - r(x))+1 \leq 3(r(y)-r(x))+1$$
+
+##### Zig-zag Case
+
+
+## Balance Theorem
+
+A sequence of $m$ splays in a tree of $n$ nodes takes $O(m \log n + n \log n)$.
