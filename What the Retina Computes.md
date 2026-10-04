@@ -28,3 +28,13 @@ A transformation from input to output, according to a rule. In the LoG model the
 - How the physical organism implements it?
 
 ## Hermann Grid
+
+The classical explanation says it’s because of center-surround (4 black corners).
+It even predicts that when we focus it disappears because foveal field is small.
+
+This breaks!
+- If streets are wavy, the illusion disappears although centre-surround layout is still there
+- With grey and white streets the illusion is enhanced ONLY when the grey is in the front.
+
+So the model is missing something: **orientation and surface/depth interpretation**. The illusion is probably cortical, not retinal.
+
