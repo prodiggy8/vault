@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Computer Science/Computational Perception/Intrinsic image decomposition.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Intrinsic image decomposition"
             }
           }
         ]
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6f767d836ae9181a",
@@ -182,13 +181,15 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "card-board:CardBoard": false
     }
   },
-  "active": "90a0b415dc808f8e",
+  "active": "efb38fc531253df3",
   "lastOpenFiles": [
-    "Computer Science/Algorithms/451/Splay Trees.md",
+    "Computer Science/Computational Perception/Untitled.md",
     "Home.md",
+    "Computer Science/Algorithms/451/Splay Trees.md",
     "Homework 5.md",
     "Homework 4 calc.md",
     "Homework 4.md",
@@ -219,7 +220,6 @@
     "Computer Science/Algorithms/451/Dynamic Programming.md",
     "Today.md",
     "Math/Calculus in Three Dimensions/2.3.md",
-    "Almost Palindromes.md",
     "_assets/sphere.png",
     "_assets/Union-Find.png",
     "_assets/vectorclock.png",
