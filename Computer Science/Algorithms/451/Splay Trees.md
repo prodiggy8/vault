@@ -139,7 +139,19 @@ A sequence of $m$ splays in a tree of $n$ nodes takes $O(m \log n + n \log n)$.
 *Proof.*
 
 Suppose all weights equal $1$.
-
 $$\begin{align}
-\text{actual number of splaying steps}  + (\Phi(T')-\Phi(T)) \leq 3(\log n - \log |T(x)|) + 1
+\text{actual number of splaying steps}  + (\Phi(T')-\Phi(T)) &\leq 3(\log n - \log |T(x)|) + 1 \\
+&\leq 3 \log n + 1
 \end{align}$$
+Repeatedly using this until tree $T_{m}$:
+$$
+\text{actual total number of splaying steps} + (\Phi(T_{m})-\Phi(T_{0})) \leq m(3 \log n + 1)
+$$
+Notice since unit weights we have $s(x) \leq n$, $r(x) \leq \log n$ and $\Phi(T) \leq n \log n$.
+$$
+\begin{align}
+\text{actual total number of splaying steps} &\leq m(3 \log n + 1) + (\Phi(T_{0})-\Phi(T_{m})) \\
+&\leq O(m \log n) + O(n \log n)
+\end{align}
+$$
+
