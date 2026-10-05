@@ -13,11 +13,11 @@ date modified: Saturday, October 3rd 2026, 1:54:59 am
 - [ ] Take down Ec3 instance with personal server
 - [ ] Need change card in Azure SSO registration
 
-- [ ] Calculus: whole chapter (4 Openstax, 14 in Stewart)
-- [ ] Computational Perception Project 2
-- [ ] Algorithms: SegTrees, Union-Find, Proofs
-- [ ] Algorithms: DP lecture
-
+- [ ] **Calculus: whole chapter (4 Openstax, 14 in Stewart)**
+- [ ] Computational Perception Homework 2
+- [ ] **Algorithms: SegTrees, Union-Find, Proofs**
+- [ ] **Algorithms: DP lecture**
+- [ ] Read book (chapters 1 to 3; make notes tomorrow)
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
