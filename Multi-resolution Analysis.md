@@ -24,7 +24,7 @@ This is the band of detail lost between blur levels $k$ and $k+1$.
 **A blurry image doesn’t need all its pixels:** dropping every other sample loses almost nothing.
 
 ## The Gaussian pyramid
-
+**Reduce**
 $$g_{l}(i,j)=\sum_{m=-2}^2 \sum_{n=-2}^2 w(m,n)g_{l-1}(2i + m, 2j + n)$$
 Each level has half the width and height or the one below. Total storage is $\frac{4}{3}$ of the original.
 
@@ -34,7 +34,13 @@ The kernel needs to be:
 - Symmetric $w(i) = w(-i)$
 - Equal contribution for each node at level $l-1$ to weight of level $l$
 
-## Laplacian pyramid
-
-Predict a finer level from a coarser one by inserting zeroes between samples and interpolating with the same kernel.
+**Expand**
 $$g_{l,1}(i,j)=4 \sum_{m=-2}^2 \sum_{n=-2}^2 w(m,n)g_{l}\left( \frac{i-m}{2}, \frac{j - n}{2} \right)$$
+The other way around. We can find out exactly what got thrown away.
+$$L_{l} = g_{l} - \operatorname{EXPAND}(g_{l+1})$$
+#### Summary
+- **Gaussian** level $g_l$ is the blurry, shrunken image, what’s left after blurring.
+- **Laplacian level** $L_{l} = g_{l} - \operatorname{EXPAND}(g_{l+1})$ what the blur threw away.
+
+## Applications
+- Progressive transmission: send $g_{N}$ first, then $L_{N-1}, \dots, L_{0}$ until viewer recognizes it.
