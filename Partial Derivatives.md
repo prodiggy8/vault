@@ -22,3 +22,21 @@ $$
 \frac{dz}{dt}=\dfrac{\partial z}{\partial x} \cdot \frac{dx}{dt} + \dfrac{\partial z}{\partial y} \cdot \frac{dy}{dt}
 $$
 
+For two independent variables like $x=x(u,v)$ and $y=y(u,v)$ and $z=f(x,y)$ we have:
+$$
+\frac{\partial z}{\partial u} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial u} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial u}
+$$
+$$
+\frac{\partial z}{\partial v} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial v} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial v}$$
+## Implicit Differentiation
+
+Example:
+$$
+\begin{align}
+\frac{d}{dx}(x^2 + 3y^2 + 4y - 4) &= \frac{d}{dx}0\\
+2x + 6y \frac{dy}{dx} + 4\frac{dy}{dx} &=0 \\
+\frac{dy}{dx}&=-\frac{2x}{6y+4}
+\end{align}
+$$
+**On functions of two or more variables:**
+
