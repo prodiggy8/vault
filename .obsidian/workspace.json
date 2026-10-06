@@ -133,17 +133,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computational Perception - Texture.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Computational Perception - Texture"
+              "title": "Home"
+            }
+          },
+          {
+            "id": "553d8fafa6f5ff92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Functions of Several Variables.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Functions of Several Variables"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -307,9 +322,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "ee6ee9de6d9c6d9e",
+  "active": "553d8fafa6f5ff92",
   "lastOpenFiles": [
     "Home.md",
+    "Functions of Several Variables.md",
     "Computational Perception - Texture.md",
     "Primary Visual Cortex.md",
     "Texture.md",
@@ -344,7 +360,6 @@
     "Computer Science/Distributed Systems/Distributed Transactions, Two-Phase Commit.md",
     "Computational Perception - Lecture 10.md",
     "PowerApps.md",
-    "Devin.md",
     "Computer Science/Computational Perception",
     "Computer Science/Algorithms/451/Homeworks",
     "Computer Science/Distributed Systems",
