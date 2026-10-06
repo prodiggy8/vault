@@ -53,5 +53,4 @@ $$
 $$
 Hence, limit does not exist!
 
-##### Interior and boundary points
 
