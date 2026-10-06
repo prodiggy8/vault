@@ -15,5 +15,5 @@ Is the mixed partial derivative.
 
 Also, as long as mixed partial derivatives are continuous, $f_{xy}=f_{yx}$.
 
-## Tangent Planes and Linear Approximations
-
+Partial derivatives are slopes of **traces**.
+$f_{x}(a,b)$ is the slope of the trace of $f(x,y)$ for the plane $y=b$ at point $(a,b)$.
