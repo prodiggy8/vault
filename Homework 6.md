@@ -13,7 +13,7 @@ W.l.o.g. center the sphere at origin and say it has radius $a > 0$. The sphere i
 $$F(x,y,z)=x^2+y^2+z^2=a^2$$
 At at any point where $\nabla F \neq 0$, $\nabla F$ is normal to the surface:
 $$\nabla F(x,y,z)=\left( \frac{\partial F}{\partial x}, \frac{\partial F}{\partial y}, \frac{\partial F}{\partial z} \right)=(2x,2y,2z)=2(x,y,z)=2r$$
-Where $r$ is the position vector of the point. On the sphere, $||r||=a > 0$ so $\nabla F = 2r \neq 0$. The normal then is defined everywhere. The radius from the center to $(x,y,z)$ is $r$ so the radius is a scalar multiple of the normal vector.   
+Where $r$ is the position vector of the point. On the sphere, $|r|=a > 0$ so $\nabla F = 2r \neq 0$. The normal then is defined everywhere. The radius from the center to $(x,y,z)$ is $r$ so the radius is a scalar multiple of the normal vector.   
 
 ### Problem 2
 For $f,g : \mathbb{R}^n \rightarrow \mathbb{R}$
@@ -143,46 +143,25 @@ n m \sum_i x_i^2 + n b \sum_i x_i = n \sum_i x_i y_i \\
 m \Big(\sum_i x_i\Big)^2 + n b \sum_i x_i = \sum_i x_i \sum_i y_i
 \end{align}
 $$
-Both equations now contain the same term $n b \sum_i x_i$, so subtracting the second from the first eliminates $b$:
-
+Subtracting the second from the first eliminates $b$:
 $$
 n m \sum_i x_i^2 - m \Big(\sum_i x_i\Big)^2 = n \sum_i x_i y_i - \sum_i x_i \sum_i y_i,
 $$
-
-that is,
-
 $$
 m \left( n \sum_i x_i^2 - \Big(\sum_i x_i\Big)^2 \right) = n \sum_i x_i y_i - \sum_i x_i \sum_i y_i.
 $$
-
-Similarly, multiplying the first equation by $\sum_i x_i$ and the second by $\sum_i x_i^2$ gives
-
+Similarly, multiplying the first equation by $\sum_i x_i$ and the second by $\sum_i x_i^2$ gives:
 $$
-m \sum_i x_i \sum_i x_i^2 + b \Big(\sum_i x_i\Big)^2 = \sum_i x_i \sum_i x_i y_i, \qquad\qquad m \sum_i x_i \sum_i x_i^2 + n b \sum_i x_i^2 = \sum_i x_i^2 \sum_i y_i.
+\begin{align}
+m \sum_i x_i \sum_i x_i^2 + b \Big(\sum_i x_i\Big)^2 = \sum_i x_i \sum_i x_i y_i \\
+m \sum_i x_i \sum_i x_i^2 + n b \sum_i x_i^2 = \sum_i x_i^2 \sum_i y_i
+\end{align}
 $$
-
-Both equations now contain the same term $m \sum_i x_i \sum_i x_i^2$, so subtracting the first from the second eliminates $m$:
+Subtracting the first from the second:
 
 $$
 n b \sum_i x_i^2 - b \Big(\sum_i x_i\Big)^2 = \sum_i x_i^2 \sum_i y_i - \sum_i x_i \sum_i x_i y_i,
 $$
-
-that is,
-
-$$
-b \left( n \sum_i x_i^2 - \Big(\sum_i x_i\Big)^2 \right) = \sum_i x_i^2 \sum_i y_i - \sum_i x_i \sum_i x_i y_i.
-$$
-
-
-
-Multiplying the first equation by $n$, the second by $\sum_i x_i$, and subtracting eliminates $b$:
-
-$$
-m \left( n \sum_i x_i^2 - \Big(\sum_i x_i\Big)^2 \right) = n \sum_i x_i y_i - \sum_i x_i \sum_i y_i.
-$$
-
-Multiplying the first equation by $\sum_i x_i$, the second by $\sum_i x_i^2$, and subtracting eliminates $m$:
-
 $$
 b \left( n \sum_i x_i^2 - \Big(\sum_i x_i\Big)^2 \right) = \sum_i x_i^2 \sum_i y_i - \sum_i x_i \sum_i x_i y_i.
 $$
