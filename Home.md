@@ -57,3 +57,11 @@ date modified: Saturday, October 3rd 2026, 1:54:59 am
 
 - [x] Pay or solve housing for registration purposes
 mb_xLIIgYzGgILdzdRM9coHJqzTOAlCyYWiCJbjGNa9WjE= metabase admin
+
+
+##### Subs
+Claude
+Google (confirm)
+Apple 
+Can only have one of: Apple, Google
+
