@@ -5,7 +5,7 @@ author:
 description:
 aliases:
 date created: Saturday, April 11th 2026, 5:16:03 pm
-date modified: Saturday, October 3rd 2026, 1:54:59 am
+date modified: Tuesday, October 13th 2026, 11:53:00 am
 ---
 
 ### Tasks
@@ -16,6 +16,14 @@ date modified: Saturday, October 3rd 2026, 1:54:59 am
 - [ ] Calculus Section 1 Review
 - [ ] Algorithms: finish study guide, redo hashes, add fingerprinting to the list of exercises.
 - [ ] Distributed: P1 from scratch
+
+
+- [ ] Read one lecture from algorithms (AFTER)
+- [ ] Do two LeetCode problems (AFTER)
+- [ ] Finish presentation for Cognition (BOTH)
+- [ ] Reschedule interview (BEFORE)
+- [ ] Read chapters from book (BEFORE)
+- [ ] Do meetings, possibly having something to say about marketing with AI
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
@@ -60,8 +68,11 @@ mb_xLIIgYzGgILdzdRM9coHJqzTOAlCyYWiCJbjGNa9WjE= metabase admin
 
 
 ##### Subs
-Claude
-Google (confirm)
-Apple 
-Can only have one of: Apple, Google
 
+Claude
+
+Google (confirm)
+
+Apple 
+
+Can only have one of: Apple, Google
