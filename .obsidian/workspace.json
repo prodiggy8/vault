@@ -8,67 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "557a01f23b1f4bf7",
+            "id": "c9f8e65baa10c165",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Latent Intelligence/Softwar Round Table (Ch 1-3).md",
+                "file": "Cognition Presentation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Softwar Round Table (Ch 1-3)"
-            }
-          },
-          {
-            "id": "ffb15fa763418ec9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dynamic Programming II.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Dynamic Programming II"
-            }
-          },
-          {
-            "id": "c4a818c109006568",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Home"
-            }
-          },
-          {
-            "id": "1d7d827de8073145",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Home"
+              "title": "Cognition Presentation"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:book/software",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +77,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -232,18 +187,19 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "1d7d827de8073145",
+  "active": "c9f8e65baa10c165",
   "lastOpenFiles": [
-    "Homework 6.md",
+    "Work/Latent Intelligence/Softwar Round Table (Ch 1-3).md",
+    "Cognition Presentation.md",
+    "Dynamic Programming II.md",
     "Home.md",
+    "Homework 6.md",
     "_assets/Homework 4 - Reasoning with Data.png",
     "Homework 4 - Reasoning with Data.md",
-    "Dynamic Programming II.md",
     "Recitation 5.md",
     "Untitled 7.md",
     "Practice Midterm.md",
     "Work/Latent Intelligence/KSN Tech.md",
-    "Work/Latent Intelligence/Softwar Round Table (Ch 1-3).md",
     "Partial Derivatives.md",
     "Work/Latent Intelligence/Softwar Round Table (Ch 1-3).md.tmp.324457.e59fa93f4279",
     "Functions of Several Variables.md",
@@ -266,7 +222,6 @@
     "Homework 5.md",
     "Homework 4 calc.md",
     "Homework 4.md",
-    "Computer Science/Distributed Systems/Filesystems.md",
     "_assets/Screenshot_2026-09-30_17-25-08.png",
     "_assets/Distributed Mutual Exclusion-4.png",
     "_assets/Distributed Mutual Exclusion-3.png",
