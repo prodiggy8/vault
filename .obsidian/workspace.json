@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Softwar Chapters 4-6.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Softwar Chapters 4-6"
+              "title": "Home"
             }
           },
           {
@@ -28,16 +28,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work/Latent Intelligence/Software Chapters 1-3.md",
+                "file": "Softwar Chapters 4-6.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Software Chapters 1-3"
+              "title": "Softwar Chapters 4-6"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,11 +203,11 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "796d08ced16dc26b",
+  "active": "4367d59ae73599cb",
   "lastOpenFiles": [
     "Work/Latent Intelligence/Software Chapters 1-3.md",
-    "Softwar Chapters 4-6.md",
     "Home.md",
+    "Softwar Chapters 4-6.md",
     "Network Flows I.md",
     "Cognition Presentation.md",
     "Dynamic Programming II.md",
