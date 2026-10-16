@@ -46,7 +46,7 @@ He calls it the first of many high-risk decisions he made only when the risk imp
 
 **The next threat.** Sybase arrived with a database built for client/server computing, with stored procedures, two-phase commit and referential integrity. Ellison had promised to double revenue every year, so he ordered a full kernel rewrite for Version 6. Under heavy sales pressure, Oracle shipped it in 1988 with far more bugs than anyone expected. That decision began the crisis of the next chapter.
 
-### Chapter 5: To the Limit
+### Ch5
 
 In 1985 Ellison promised to double revenue every year, and Oracle did it five years running, from $24M to $916M. It went public in March 1986, one day before Microsoft. Ellison owned 39%. In 1988 he went further with a "Five in Five" plan, $5B in five years, that he later called "absurd and naive."
 
@@ -54,7 +54,7 @@ Behind the growth was what Ellison calls "management by abdication." He ran engi
 
 In March 1990 Oracle wrote off $15M of bad deals and the stock fell 30% in a day. Ellison promised to catch up, and Kennedy delivered one more strong quarter, partly with commissions paid in gold coins, by pulling future sales forward. **The next quarter collapsed.** Oracle posted its first loss, restated three quarters of earnings and was fined by the SEC. The stock fell from $28 to $4.88. **A bank syndicate cut its credit line, and at one point Oracle was within $3M of its overdraft limit.** Tom Siebel left. Ellison faced margin calls on loans against his shares, his marriage ended, and cofounder Miner wanted to sell.
 
-Symonds puts most of the blame on Ellison. He set impossible targets and built a culture of aggression; one ad showed Oracle as a fighter jet shooting down a rival's biplane. He chose a CFO casually and refused to raise cash when the board urged it. The defense is that enterprise software was immature, and that market share really did decide who survived. The chairman kept Ellison as CEO over part of the board's objections. Walker: "If you take a brilliant, compulsive personality and subject them to a learning experience, they learn brilliantly and compulsively."
+**Symonds puts most of the blame on Ellison. He set impossible targets and built a culture of aggression;** one ad showed Oracle as a fighter jet shooting down a rival's biplane. He chose a CFO casually and refused to raise cash when the board urged it. The defense is that enterprise software was immature, and that market share really did decide who survived. The chairman kept Ellison as CEO over part of the board's objections. Walker: "If you take a brilliant, compulsive personality and subject them to a learning experience, they learn brilliantly and compulsively."
 
 **Takes**
 
@@ -62,30 +62,27 @@ Symonds puts most of the blame on Ellison. He set impossible targets and built a
 - **Revenue is vanity; receivables are reality.** $468M owed on $971M of revenue isn't growth. It's an interest-free loan to your customers.
 - **Discounting next year's demand into this quarter is borrowing at ruinous rates.** The bill came due two quarters later.
 - **The crash was an operations failure; the near-death was a financing failure.** Raise money when you don't need it.
-- **"Smart" is a trait, not a qualification.** Geoff Squire's question about Walker was the right test: "Yes, he's very smart, but can he do his job?"
+- **"Smart" is a trait, not a qualification.** Geoff Squire's question about Walker was the right test: **"Yes, he's very smart, but can he do his job?"**
 - **Counter-take:** the same recklessness may be why Oracle exists today and Ingres, Informix and Sybase don't.
+Playbooks
+e.g. quantos BDRs, SDRs tem que ter
 
-### Chapter 6: Growing Up
+Retainer: pagamento por serviço; suporte; etc.
+### Ch6
 
-Ellison’s recovery plan had three parts: fix the cash problem, bring in experienced managers, and ship a database that beat Sybase.
+Cash came first. Ellison sent a 30-year-old product manager, Ron Wohl, to negotiate with Nippon Steel and let the talks run slowly, because Oracle's cash improved every week. The final deal was an $80M loan on good terms, plus an option for Nippon Steel to buy up to 25% of Oracle Japan. Oracle gave up no shares in the parent company.
 
-**1. Cash.** Ron Wohl negotiated with Nippon Steel. Ellison let the talks drag on deliberately, because Oracle’s finances improved every day they waited. The final deal was an $80M loan on good terms, plus warrants for up to 25% of Oracle Japan. Oracle gave up no parent-company equity.
+Then came experienced managers. CFO Jeff Henley took the job only on condition that Ellison stayed. He cleaned up the books, hired experienced clerks over young stars, and cut perks; one veteran complained that Oracle "became a job, when it had been a mission." Ray Lane, from consulting firm Booz Allen, had never heard of Ellison, and almost everyone he asked told him not to join. Ellison tripled his stock options on the spot. Lane tested Ellison twice: would he back Lane's firing of Craig Conway, an Ellison friend, and would he accept a McKinsey study showing customers hated Oracle? Ellison passed both. Lane set sales quotas by account size and refused to pay extra for good service, and the "cowboys" left.
 
-**2. New managers.**
+Oracle 7 (1992) gave Oracle the product lead. It matched Sybase's selling points using a few keywords of standard SQL and won the performance benchmarks: "a dog with a note in its mouth could sell it." Ellison chose market share over profit ("I want to beat Sybase") and tied executive bonuses to it. In 1994 he woke Lane at 3 a.m. to say Sybase had missed its quarter: "It's over." Informix broke about 18 months later. Ellison also made new mistakes. He gave Lane too much too fast and fired Geoff Squire, who had saved the company, which he calls "the mother of all the management mistakes." Miner stepped down after throwing a crumpled-up piece of paper on the table as "your fucking schedule," and died of cancer two years later.
 
-- **Jeff Henley** became CFO in 1991. He was a conventional, steady finance executive. He approved the cleanup Walker had blocked, hired experienced staff instead of young high-flyers, and cut lavish spending. Noosheen Hashemi, who ran finance for U.S. sales, complained that Oracle “became a job, when it had been a mission” and that “people started having children.”
-- **Ray Lane**, a consultant from Booz Allen, was hired to run U.S. sales. Ellison tripled his stock options on the spot. Almost everyone Lane asked told him not to join. He set Ellison two tests, and Ellison passed both:
-    - Backing Lane’s firings, including Craig Conway, without interfering.
-    - Accepting a McKinsey study showing customers hated Oracle and trusted Sybase.
-- Lane changed how salespeople were paid. He set quotas by account size, so no one could sell a customer everything at once with a 90% discount, and he refused to pay extra for good service. Many of the “cowboys” left.
-- **Robert Shaw**, also from Booz Allen, grew consulting from 200 poorly suited staff to 17,000 people and nearly $3B in revenue. This made Oracle a competitor to the big consulting firms, a deliberate risk because it could push those firms to recommend rivals like SAP and PeopleSoft to clients.
+Video-on-demand, built on parallel computers from a company Ellison owned privately, worked technically and failed economically. It still put Ellison on the cover of _Fortune_ and made Oracle look like a peer of Microsoft and IBM. By 1994 Oracle had won the database wars. Applications would be its next crucible.
 
-**3. Oracle 7 (1992).** Ellison called it “a working version of Oracle 6 plus a few very important new features.” It matched Sybase’s selling points and did them better: two-phase commit and referential integrity took a few keywords of standard SQL instead of hundreds of lines of code. It also handled distributed queries across servers and won performance benchmarks by wide margins using clusters. One salesman said a “dog with a note in its mouth could sell it.” Nine months after Lane arrived, the stock jumped from $15 to $23 in a day.
+**Takes**
 
-**Ellison’s mistakes of 1993.** Ellison gave Lane control of global sales and customer support too quickly. He fired Squire over a London breakfast, which he now calls “the mother of all the management mistakes.” Miner gave up running development after a blow-up over the Oracle 7.1 schedule, and he died of lung cancer about two years later.
-
-**The database wars.** Ellison chose market share over profit. In his words: “I don’t give a shit about profits. I want to beat Sybase.” The top executives’ bonus was tied to market share. Sybase badly missed a quarter in early 1994 and never recovered, and Informix broke about 18 months later.
-
-**Video-on-demand.** Ellison used nCUBE, a parallel-computer maker he owned privately, to build a video server. The technology worked in trials with BT in Ipswich and in the US. It failed for economic reasons: consumers wouldn’t pay enough to justify billions in fiber networks, and cheaper alternatives arrived, including DSL, digital TV and the web. Still, it put Ellison on the cover of _Fortune_ and made Oracle a name known outside IT. Marc Benioff calls this Ellison’s “martial arts of business”: a move that raises Oracle’s profile while unsettling rivals.
-
-By 1994 Oracle had won the database wars. The chapter ends by setting up the next challenge: the applications business, which was supposed to drive future growth, was still struggling.
+- **In a negotiation, time favors whoever's position is improving.** Ellison won by running out the clock.
+- **Experienced managers only have authority if the founder publicly backs them against his own friends.** Lane's Conway test was the real hiring decision.
+- **Your sales team will always say "we never lose."** Pay someone neutral, or call customers yourself, to hear the truth.
+- **Pay plans are the real org chart.** Lane changed the culture by changing quotas, not by giving speeches.
+- **A failed product can still win the narrative.** Video-on-demand sold no movies but sold plenty of databases.
+- **Founders fix last year's mistake and make this year's.** Ellison fixed the 1990 problems, then fired the executive who had saved him.
