@@ -46,3 +46,29 @@ There’s matrix method, parallelogram, and triangle areas left.
 
 # 2.5
 
+$$
+\langle x,y,z \rangle=\langle x_{0}, y_{0}, z_{0} \rangle + t \langle a,b,c \rangle
+$$
+$$
+\begin{align}
+x=x_{0} +ta && y=y_{0}+tb && z=z_{0}+tc
+\end{align}
+$$
+$$\frac{x-x_{0}}{a} = \frac{y-y_{0}}{b}=\frac{z-z_{0}}{c}$$
+
+Finding from two points: direction vector $\overrightarrow{PQ}=Q - P$ and initial point $P$.
+
+#### Distance between a point and a line
+
+Want to distance from line $L$ closest to $M$.
+
+1. Pick arbitrary point in line $P$
+2. $d=\frac{|\overrightarrow{PM} \times v|}{|v|}$
+
+#### Plane
+
+Given by three points that do not lie on the same line.
+
+- Normal is parallel to the plane.
+- $n \cdot \overrightarrow{PQ} = 0$
+- 
