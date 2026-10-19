@@ -31,3 +31,18 @@ $$u=\operatorname{proj}_{v}u + \operatorname{proj}_{w}u$$
 $$u = \operatorname{proj}_{v}u + (u - \operatorname{proj}_{v}u)$$
 
 # 2.4
+
+$$u \times v = \langle u_{2}v_{3} - u_{3}v_{2}, u_{3}v_{1} - v_{3}u_{1}, u_{1}v_{2} - u_{2}v_{1} \rangle $$
+The result is orthogonal to both.
+
+- Anticommutative: $u \times v = -(v \times u)$
+- i -> j -> k
+	- Clockwise product: positive direction
+	- Counterclockwise: negative direction
+- Scalar triple product: $u \cdot (u \times w) = (u \times v) \cdot w$
+- $|u \times v| = |u||v| \sin \theta$
+
+There’s matrix method, parallelogram, and triangle areas left.
+
+# 2.5
+
