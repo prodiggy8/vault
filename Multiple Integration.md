@@ -39,6 +39,18 @@ $$\iint f(x,y)dA=\left( \int_{a}^b g(x)dx \right)\left( \int_{c}^d h(y)dy \right
 # 5.2 Double Integrals General
 
 Arbitrary region $D$ inside rectangle $R$. Define $g(x,y) = \begin{cases} f(x,y) & \text{ if } (x,y) \in D \\ 0 & \text{otherwise} \end{cases}$
+#### Type I
+
+Two vertical lines for $x$, two functions $g_{1}(x)$ and $g_{2}(x)$ for $y$.
+$$D=\{(x,y) | a \leq x \leq b, g_{1}(x) \leq y \leq g_{2}(x)\}$$
+$$\iint_{D}f(x,y)dA=\int_{a}^b\left[ \int_{g_{1}(x)}^{g_{2}(x)}f(x,y)dy\right]dx$$
+#### Type II
+
+Two horizontal lines for $y$, two functions $h_{1}(y)$ and $h_{2}(y)$ for $x$.
+$$D=\{(x,y)|h_{1}(y) \leq x \leq h_{2}(y), c \leq y \leq d\}$$
+$$\iint_{D}f(x,y)dA=\int_{c}^d \left[ \int_{h_{1}(y)}^{h_{2}(y)}f(x,y)dx\right]dy$$
+> [!important]
+> Integrate with respect to the lines first, dependent variable becomes the inner integral.
 
 # 5.3
 We work with a **polar rectangle** instead of Cartesian ones to define the sum.
