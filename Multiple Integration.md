@@ -8,7 +8,7 @@ aliases:
 date created: Monday, October 19th 2026, 12:00:08 pm
 date modified: Monday, October 19th 2026, 12:00:20 pm
 ---
-# 5.1
+# 5.1 Double Integrals Rectangular
 
 We consider a rectangular region $R = \{(x,y) \in R^2 | a \leq x \leq b, c \leq y \leq d\}$ and surface $z=f(x,y)$.
 
@@ -36,5 +36,10 @@ $$\iint f(x,y)dA=\left( \int_{a}^b g(x)dx \right)\left( \int_{c}^d h(y)dy \right
 
 **Average:** $\frac{1}{A(R)}\iint f(x,y)dA$
 
-# 5.2
+# 5.2 Double Integrals General
 
+Arbitrary region $D$ inside rectangle $R$. Define $g(x,y) = \begin{cases} f(x,y) & \text{ if } (x,y) \in D \\ 0 & \text{otherwise} \end{cases}$
+
+# 5.3
+We work with a **polar rectangle** instead of Cartesian ones to define the sum.
+$$R=\{(r,\theta) | a \leq r \leq b, \alpha \leq \theta \leq \beta\}$$
