@@ -51,3 +51,44 @@ On top of that the server has a limit $M$ of unacked messages. So the limit is r
 
 ### Epoch Events
 
+Time trigger into server and client divide flow of time into epochs.
+
+Epoch duration $\delta=2000 \text{ms}$ by default.
+
+They ensure:
+1. Server and clients re transmit messages that may have been dropped
+2. Detect when connections timeout
+
+- **Exponential Backoff**
+Epoch limit -> maximum epochs without response before we declare connection dead
+
+Current backoff -> amount of epochs we wait before re-transmitting data that did not receive and ACK.
+- Initially 0
+
+MaxBackOffInterval -> maximum amount of epochs we wait without retrying to transmit data.
+
+
+- Each message keeps a backoff interval of its own.
+- EpochLimit is about **last time any message at all was received**. 
+
+On Epoch:
+- Client
+	1. Resend connection if unacked.
+	2. For each unacked message, resend following exponential backoff
+	3. If no message was sent, send a heartbeat
+- Server
+	1. For each unacked message, resend following exponential backoff
+	2. Send heartbeat if hasn’t sent any message to the client in the last epoch
+
+- Must discard duplicates based on sequence ID
+- Must discard connection requests based on host address and port number
+
+$K$ EpochLimit is 5 by default.
+Thus, after $K\delta$ seconds the connection is lost.
+
+If such limit happens while a connection request is being attempted, the client closes.
+
+**Heartbeat**: Ack with sequence number 0.
+
+### Data Size
+
