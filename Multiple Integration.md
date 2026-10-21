@@ -52,6 +52,17 @@ $$\iint_{D}f(x,y)dA=\int_{c}^d \left[ \int_{h_{1}(y)}^{h_{2}(y)}f(x,y)dx\right]d
 > [!important]
 > Integrate with respect to the lines first, dependent variable becomes the inner integral.
 
-# 5.3
+#### Decomposing
+
+Sometimes it’s useful to divide $D$ into a type I and a type II non-overlapping regions.
+
+
+
+
+
+# 5.3 Polar Integrals
 We work with a **polar rectangle** instead of Cartesian ones to define the sum.
 $$R=\{(r,\theta) | a \leq r \leq b, \alpha \leq \theta \leq \beta\}$$
+# 5.4 Triple Integrals
+
+
