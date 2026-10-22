@@ -69,6 +69,13 @@ Doesn’t scale, sparse matrix
 	- Crowds (technique), Freenet (network), Onion (network)
 - Routers don’t know if source is really the sender or another router
 
+### Tor
+1. Estabilishes symmetric key conn with Router 1
+2. Then router 2
+3. etc…
+
+Multiple layers of encapsulating encryption
+- 
 
 
 

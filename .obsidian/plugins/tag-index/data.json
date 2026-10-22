@@ -1,0 +1,14 @@
+{
+  "importantTags": [],
+  "addTagsToTop": false,
+  "debugMode": false,
+  "autoOpenTagIndexPanel": true,
+  "expandedTags": [],
+  "expandedNodes": [],
+  "showLineContent": true,
+  "lineContentClickBehavior": "jumpToLine",
+  "cursorPosition": "end",
+  "refreshDelay": 500,
+  "noteSortMethod": "modified-new",
+  "tagSortMethod": "custom"
+}
