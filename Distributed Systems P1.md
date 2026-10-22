@@ -92,3 +92,98 @@ If such limit happens while a connection request is being attempted, the client 
 
 ### Data Size
 
+If size of received payload < size -> drop packet.
+If size is greater, one solution is to truncate it.
+
+### Checksum
+
+Discard if different.
+Algorithm provided in `checksum.go`. 16-bit one’s complement sum.
+
+1. Separate in blocks of 16 bits (2 bytes). If odd number of bytes, pad with 0x0.
+2. Sum up all values. Carry gets added to **least significant bit**.
+3. Take one’s complement of final sum.
+
+# API
+
+The following is a trick since Go has no enum type. Iota means start at 0.
+```go title="Messages"
+type MsgType int
+
+const (
+	MsgConnect MsgType = iota
+	MsgData
+	MsgAck
+	MsgCAck
+)
+
+type Message struct {
+	Type     MsgType
+	ConnId   int
+	SeqNum   int
+	Size     int
+	Checksum uint16
+	Payload  []byte
+}
+```
+
+Need to marshal the packet into UDP packet using `Marshal` function in `json` package.
+
+```go title=Parameters
+type Params struct {
+	EpochLimit         int // default 5
+	EpochMillis        int // default 2000
+	WindowSize         int // default 1
+	MaxBackOffInterval int // default 0
+	MaxUnackedMEssages int // default 1
+}
+```
+
+```go title=Client
+// this blocks until a connection has been estabilished or returns error
+func NewClient(hostport string, initialSeqNum int, params *Params) (Client, error)
+
+// Client methods below
+ConnID() int
+Read() ([]byte, error)
+Write(payload []byte) error
+Close() error
+```
+
+- `Read` blocks until data has been received and is ready to be returned. Errors:
+	1. Connection has been closed
+	2. Has been lost
+	3. Server is closed (ok for it to never return)
+
+- If `Read` was called multiple times, it should return in order of `SeqNum`
+- `Write` **should not** block
+- `Close` should not forcefully close, should **block until all pending messages have been sent and acked**
+- No go routine should be left after `Close` has returned
+
+```go title=Server
+// Should not block, begin listening and spawn one or more goroutines to handle things.
+func NewServer(port int, params *Params) (Server, error)
+
+// Server methods
+Read() (int, []byte, error)
+Write(connID int, payload []byte) error
+CloseConn(connID int) error
+Close() error
+```
+- Read blocks until data has been received. Error if:
+	1. Connection has been closed
+	2. Connection has been lost due to epoch timeout and no messages are waiting to be returned
+	3. `Close()` has been called
+
+`Write` and `CloseConn` should not block.
+`Close` should block until all pending messages have been sent and acked.
+No go routine left after `Close`
+
+![[Distributed Systems P1.png]]
+
+![[Distributed Systems P1 client.png]]
+
+# Checkpoint
+
+For the checkpoint -> all packets arrive, no loss or corruption. Epoch events are not needed here. However it might be the messages are sent out of order.
+
