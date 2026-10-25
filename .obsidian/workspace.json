@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prompt.md",
+                "file": "Network Flows I.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Prompt"
+              "title": "Network Flows I"
             }
           }
         ]
@@ -167,19 +167,9 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "1f72207964c02e38",
-            "type": "leaf",
-            "state": {
-              "type": "tag-index-view",
-              "state": {},
-              "icon": "hash",
-              "title": "Tag Index"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -188,7 +178,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "tag-index:Open tag index": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -197,14 +186,13 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false,
-      "card-board:CardBoard": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "b0eda97b8214d0d8",
   "lastOpenFiles": [
-    "Interview Platform Engineer CMU.md",
     "Home.md",
+    "Interview Platform Engineer CMU.md",
     "Prompt.md",
     "Recitation 8.md",
     "Calculus Homework 7.md",

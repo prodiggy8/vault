@@ -5,7 +5,7 @@ author:
 description:
 aliases:
 date created: Saturday, April 11th 2026, 5:16:03 pm
-date modified: Tuesday, October 13th 2026, 11:53:00 am
+date modified: Saturday, October 24th 2026, 4:03:33 pm
 ---
 
 ### Tasks
@@ -18,12 +18,6 @@ date modified: Tuesday, October 13th 2026, 11:53:00 am
 - [ ] Distributed: P1 from scratch
 
 
-- [ ] Read one lecture from algorithms (AFTER)
-- [ ] Do two LeetCode problems (AFTER)
-- [ ] Finish presentation for Cognition (BOTH)
-- [ ] Reschedule interview (BEFORE)
-- [ ] Read chapters from book (BEFORE)
-- [ ] Do meetings, possibly having something to say about marketing with AI
 
 ### Undated Tasks
 - [ ] Document sleep articles on Obsidian
@@ -31,41 +25,8 @@ date modified: Tuesday, October 13th 2026, 11:53:00 am
 - [ ] Learn how to work with sessions in Vim and Tmux
 - [ ] Write scripts to change Git and GCP credentials
 - [x] Create Git repository for Obsidian
-### Past Tasks
-- [x] Study Calculus TODAY
-- [x] Take-Home Exam II
-- [x] Jamovi Analysis
-- [x] WebApps project
-- [x] 3D model
 
-- [x] Create new UI for Latent Intelligence Watcher
-- [x] Create server architecture for Latent Intelligence Watcher
-
-- [x] Finish Estudar evaluations
-
-- [x] Perception homework and notes 
-	- [x] Chapter 2 Part 1
-	- [x] Chapter 2 Part 2
-	- [x] Chapter 3 Part 1
-	- [ ] Chapter 6
-	- [x] Chapter 9 LO and Comprehension Questions
-	- [x] Chapter 9 and 10 Applying
-	- [x] Chapter 12
-	- [x] Somatosensory Receptors
-	- [x] Chapter 14 - Olfaction
-	- [x] Final Paper
-
-- [x] Eduardo's Research Progress
-
-- [x] Grading PP 10
-- [x] Grading check-in 12
-- [x] Grading PP 11
-
-- [x] Psychology of Sleep - Final Paper
-
-- [x] Pay or solve housing for registration purposes
 mb_xLIIgYzGgILdzdRM9coHJqzTOAlCyYWiCJbjGNa9WjE= metabase admin
-
 
 ##### Subs
 
