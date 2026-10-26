@@ -13,10 +13,10 @@ date modified: Saturday, October 17th 2026, 1:11:47 pm
 
 ### Flows
 
-A flow is a function $f: E \to \mathbb{R}$ that satisfies the following **conservation constraint** at every vertex:
-
-$$\sum_{u}f(u\to v)=\sum_{w}f(v \to w)$$
-
+A flow is a function $f: E \to \mathbb{R}$ that satisfies the following **conservation constraint** at every vertex except source $s$ and sink $t$.
+$$
+\sum_{u}f(u\to v)=\sum_{w}f(v \to w)
+$$
 The value of the flow $f$ denoted $|f|$ is the total net flow out of the source:
 
 $$|f|=\sum_{w}f(s\to w) - \sum_{u}f(u\to s)$$
