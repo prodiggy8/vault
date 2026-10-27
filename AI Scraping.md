@@ -45,17 +45,17 @@ The lower layers are capital-intensive and commoditizing; the upper layers depen
 
 The field splits into profitable incumbents that grew up on proxies, and venture-backed AI-native companies built around LLM-ready output and agents.
 
-|Company|Positioning|Scale / funding (latest public)|
-|---|---|---|
-|Bright Data|Proxies, scrapers, datasets, MCP server for agents; the incumbent leader|>$300M ARR in 2025, 50%+ growth, guiding to $400M by mid-2026; PE-owned (EMK)|
-|Oxylabs|Proxies, scraper APIs, AI parsing, datasets; bought ScrapingBee (2025)|~$350M ARR; $130M from Warburg Pincus (Jul 2026) at a reported $3.6B group valuation|
-|Firecrawl|Developer API turning sites into LLM-ready data; open source|$75M Series B (Sep 2026); 1.5M+ users, 150K companies, ~40K in Brazil; ~180K GitHub stars|
-|Exa|AI-native search engine and web retrieval API|$250M Series C at $2.2B (May 2026, a16z); 5,000+ companies|
-|Tavily|Search API for LLM/RAG workflows|Acquired by Nebius, Feb 2026, reported $275M (some reports up to $400M)|
-|Apify|Scraping platform plus marketplace of 75K+ “Actors” built by developers|~$40M ARR end-2025 (from $15M), 25K customers, profitable, minimal VC|
-|Browserbase|Cloud headless browsers for agents; Stagehand SDK; Director no-code|$40M Series B at $300M (Jun 2025); $67.5M total|
-|Zyte|Managed scraping and Zyte API; long-standing (ex-Scrapinghub)|Top performer in a late-2025 third-party unblocking benchmark|
-|Browse AI, Bardeen, Nimble|No-code and agentic scraping for business users and sales teams|Seed to growth stage|
+| Company                    | Positioning                                                              | Scale / funding (latest public)                                                           |
+| -------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Bright Data                | Proxies, scrapers, datasets, MCP server for agents; the incumbent leader | >$300M ARR in 2025, 50%+ growth, guiding to $400M by mid-2026; PE-owned (EMK)             |
+| Oxylabs                    | Proxies, scraper APIs, AI parsing, datasets; bought ScrapingBee (2025)   | ~$350M ARR; $130M from Warburg Pincus (Jul 2026) at a reported $3.6B group valuation      |
+| Firecrawl                  | Developer API turning sites into LLM-ready data; open source             | $75M Series B (Sep 2026); 1.5M+ users, 150K companies, ~40K in Brazil; ~180K GitHub stars |
+| Exa                        | AI-native search engine and web retrieval API                            | $250M Series C at $2.2B (May 2026, a16z); 5,000+ companies                                |
+| Tavily                     | Search API for LLM/RAG workflows                                         | Acquired by Nebius, Feb 2026, reported $275M (some reports up to $400M)                   |
+| Apify                      | Scraping platform plus marketplace of 75K+ “Actors” built by developers  | ~$40M ARR end-2025 (from $15M), 25K customers, profitable, minimal VC                     |
+| Browserbase                | Cloud headless browsers for agents; Stagehand SDK; Director no-code      | $40M Series B at $300M (Jun 2025); $67.5M total                                           |
+| Zyte                       | Managed scraping and Zyte API; long-standing (ex-Scrapinghub)            | Top performer in a late-2025 third-party unblocking benchmark                             |
+| Browse AI, Bardeen, Nimble | No-code and agentic scraping for business users and sales teams          | Seed to growth stage                                                                      |
 
 # Technology trends
 
@@ -121,42 +121,22 @@ Ratings are qualitative judgments from the research above. “Fit” refers to t
 |Self-healing extraction for companies running fragile in-house scrapers|Medium|Low|Medium|High|
 |Compliance and provenance layer (licensing, pay-per-crawl integration, audit trails)|Low–medium|Low|Medium–high|Medium|
 |Enterprise “bring your own web data” agents for internal workflows|Medium|Medium|Medium|High|
-# 3. Review of Six Medical Data Platforms
+# About the data platforms
 
-## 3.1 Overview
-
-| Platform | Core asset | Accessible for scraping? |
-|---|---|---|
-| UWorld | Board-prep question bank with answer-level performance data from millions of students | No: paywalled, copyrighted, performance data is internal |
-| AMBOSS | Integrated knowledge library and question bank, plus learner and clinician search data | No: login-gated, search data is internal |
-| Figure 1 | Crowdsourced clinical images with physician comments and diagnostic discussion | No: login-gated, patient image consent and privacy risk |
-| Radiopaedia | Tens of thousands of curated radiology cases with annotated imaging and diagnoses | Publicly viewable but licensed CC BY-NC-SA (no commercial use); commercial licensing is available |
-| VisualDx | Diagnostic image library (strong in dermatology) tagged with clinical metadata | No: paid product, licensed images |
-| Sermo | Physician-only forum with case discussions and large-scale physician polling | No: restricted to verified physicians, polling data is their commercial product |
-
-## 3.2 Platform notes
-
-**UWorld.** The most valuable asset isn't the questions, which are copyrighted, but the performance data: which distractors mislead which learners, and how often. That data never appears publicly.
-
-**AMBOSS.** Besides its curated content, AMBOSS has behavioral data on what clinicians and learners search for. That's a signal of real-world information needs, and it's entirely internal.
-
-**Figure 1.** Clinical images are high-risk even when de-identified. Consent was given for use on the platform, not for redistribution or training third-party models.
-
-**Radiopaedia.** The most "open" platform on the list, but its non-commercial license rules out direct commercial reuse. It has licensed data commercially before, so a partnership is a realistic route.
-
-**VisualDx.** A commercial product built on licensed images and expert tagging. The tagging and clinical metadata are the value, and they're proprietary.
-
-**Sermo.** Its physician polling and discussion data is sold to pharma and research firms. Scraping it would mean taking the company's core revenue product.
-
-## 3.3 Risks of scraping these platforms
+| Platform    | Core asset                                                                             | Accessible for scraping?                                                                          |
+| ----------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| UWorld      | Board-prep question bank with answer-level performance data from millions of students  | No: paywalled, copyrighted, performance data is internal                                          |
+| AMBOSS      | Integrated knowledge library and question bank, plus learner and clinician search data | No: login-gated, search data is internal                                                          |
+| Figure 1    | Crowdsourced clinical images with physician comments and diagnostic discussion         | No: login-gated, patient image consent and privacy risk                                           |
+| Radiopaedia | Tens of thousands of curated radiology cases with annotated imaging and diagnoses      | Publicly viewable but licensed CC BY-NC-SA (no commercial use); commercial licensing is available |
+| VisualDx    | Diagnostic image library (strong in dermatology) tagged with clinical metadata         | No: paid product, licensed images                                                                 |
+| Sermo       | Physician-only forum with case discussions and large-scale physician polling           | No: restricted to verified physicians, polling data is their commercial product                   |
 
 - **Contractual:** violating terms of service, particularly for login-gated content.
 - **Copyright:** commercial use of copyrighted questions, text and images.
 - **Licensing:** violating the non-commercial terms of Creative Commons content.
 - **Privacy and consent:** redistributing clinical images and patient-related content outside the consent under which they were shared.
 - **Business:** healthcare buyers and investors run data-provenance diligence. Data obtained improperly can block sales, fundraising and acquisition.
-
-# 4. The Core Lesson: Product-Generated Data Moats
 
 Each platform's defensibility comes from data its own users generate:
 
@@ -171,13 +151,7 @@ Each platform's defensibility comes from data its own users generate:
 
 Content brings users in, and users produce data no competitor can copy. A new company should aim for the same loop and not try to copy the content.
 
-# 5. Viable Strategic Paths
-
-## 5.1 License or partner
-
-Some of these platforms (for example Radiopaedia, VisualDx and Sermo) already license or sell data. A startup can add value on top through structuring, benchmarking or building AI evaluation sets, under a licensing or revenue-share agreement. The partnership itself becomes a barrier to entry.
-
-## 5.2 Build on open data, then generate proprietary data
+##### Build on open data, then generate proprietary data
 
 Start with openly licensed sources to launch a product, then capture usage data from it. Sources with friendlier licensing:
 
@@ -191,7 +165,7 @@ Check the license for each dataset, and each subset, before commercial use.
 
 Examples: a case-based learning tool, a diagnostic reasoning trainer, or a clinical AI evaluation workbench. In each, user interactions become the proprietary dataset over time.
 
-## 5.3 Clinician-validated evaluation data for AI companies
+##### Clinician-validated evaluation data for AI companies
 
 Model developers and health-AI startups increasingly need clinically validated benchmarks and expert-graded responses. A possible pipeline:
 
@@ -199,4 +173,4 @@ Model developers and health-AI startups increasingly need clinically validated b
 2. Have paid, credentialed clinicians review, correct and grade them.
 3. Sell the validated evaluation sets, or run evaluations as a service.
 
-The moat is the expert-validation pipeline and the accumulated grading data, which parallels UWorld's performance data. This path fits an "LLM + datasets" thesis best and avoids the legal risks above.
+Same applies to what we are doing wit
