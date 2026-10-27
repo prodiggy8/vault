@@ -45,17 +45,15 @@ The lower layers are capital-intensive and commoditizing; the upper layers depen
 
 The field splits into profitable incumbents that grew up on proxies, and venture-backed AI-native companies built around LLM-ready output and agents.
 
-| Company                    | Positioning                                                              | Scale / funding (latest public)                                                           |
-| -------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| Bright Data                | Proxies, scrapers, datasets, MCP server for agents; the incumbent leader | >$300M ARR in 2025, 50%+ growth, guiding to $400M by mid-2026; PE-owned (EMK)             |
-| Oxylabs                    | Proxies, scraper APIs, AI parsing, datasets; bought ScrapingBee (2025)   | ~$350M ARR; $130M from Warburg Pincus (Jul 2026) at a reported $3.6B group valuation      |
-| Firecrawl                  | Developer API turning sites into LLM-ready data; open source             | $75M Series B (Sep 2026); 1.5M+ users, 150K companies, ~40K in Brazil; ~180K GitHub stars |
-| Exa                        | AI-native search engine and web retrieval API                            | $250M Series C at $2.2B (May 2026, a16z); 5,000+ companies                                |
-| Tavily                     | Search API for LLM/RAG workflows                                         | Acquired by Nebius, Feb 2026, reported $275M (some reports up to $400M)                   |
-| Apify                      | Scraping platform plus marketplace of 75K+ “Actors” built by developers  | ~$40M ARR end-2025 (from $15M), 25K customers, profitable, minimal VC                     |
-| Browserbase                | Cloud headless browsers for agents; Stagehand SDK; Director no-code      | $40M Series B at $300M (Jun 2025); $67.5M total                                           |
-| Zyte                       | Managed scraping and Zyte API; long-standing (ex-Scrapinghub)            | Top performer in a late-2025 third-party unblocking benchmark                             |
-| Browse AI, Bardeen, Nimble | No-code and agentic scraping for business users and sales teams          | Seed to growth stage                                                                      |
+| Company                    | Positioning                                                                 | Scale / funding (latest public)                                                           |
+| -------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Bright Data                | Proxies, scrapers, datasets, MCP server for agents; the incumbent leader    | >$300M ARR in 2025, 50%+ growth, guiding to $400M by mid-2026; PE-owned (EMK)             |
+| Oxylabs                    | Proxies, scraper APIs, AI parsing, datasets; bought ScrapingBee (2025)      | ~$350M ARR; $130M from Warburg Pincus (Jul 2026) at a reported $3.6B group valuation      |
+| Firecrawl                  | Developer API turning sites into LLM-ready data; open source                | $75M Series B (Sep 2026); 1.5M+ users, 150K companies, ~40K in Brazil; ~180K GitHub stars |
+| Exa                        | AI-native search engine and web retrieval API                               | $250M Series C at $2.2B (May 2026, a16z); 5,000+ companies                                |
+| Apify                      | Scraping platform plus marketplace of 75K+ “Actors” **built by developers** | ~$40M ARR end-2025 (from $15M), 25K customers, profitable, minimal VC                     |
+| Browserbase                | Cloud headless browsers for agents; Stagehand SDK; Director no-code         | $40M Series B at $300M (Jun 2025); $67.5M total                                           |
+| Browse AI, Bardeen, Nimble | No-code and agentic scraping for business users and sales teams             | Seed to growth stage                                                                      |
 
 # Technology trends
 
@@ -173,4 +171,4 @@ Model developers and health-AI startups increasingly need clinically validated b
 2. Have paid, credentialed clinicians review, correct and grade them.
 3. Sell the validated evaluation sets, or run evaluations as a service.
 
-Same applies to what we are doing wit
+Same applies to what we are doing with DecGPT! Build the legal LLM training dataset.
