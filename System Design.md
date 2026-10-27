@@ -116,4 +116,40 @@ So on.
 - Box diagram with key components
 - Ask for feedback, treat interviewer as a teammate
 - Database schema and API endpoints **only if the problem is tiny**
-- 
+
+1. **Deep dive**
+___
+**Rate limiting**
+
+# Rate Limiting
+- Token bucket
+	- Places tokens, requests consumes
+	- Supports bursty traffic
+- Token queue
+	- Requests placed in limited-size queue and processed at a fixed rate
+	- Does not support bursty traffic
+- Fixed window
+	- Almost like token bucket, time window number of requests per window
+	- Allows bursty traffic (send before reset, can double rate effectively)
+- Sliding window
+	- Consumes lots of memory to keep track of requests’ timestamps
+- Sliding window counter (mix between previous 2)
+	- $\text{\# requests curr } + \text{\# requests prev } * \text{ overlap \% of rolling and prev window}$
+	- Smooths out spikes, memory efficient
+
+Store counters in cache (supports time based expiration)
+
+- Return to client in API headers that tell how many requests are left.
+- Just describe in API docs and let client figure it out
+
+In distributed environment:
+- Race conditions on counter can happen
+- Just use transactions
+- Sticky sessions also work
+
+##### Consistent Hashing
+
+Definition: if table is resized, only $\frac{n}{m}$ keys need to be remapped.
+
+# KV-store
+
