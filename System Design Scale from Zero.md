@@ -11,6 +11,7 @@ aliases:
 date created: Sunday, October 25th 2026, 1:40:05 pm
 date modified: Sunday, October 25th 2026, 1:40:20 pm
 ---
+# Concepts
 ##### Database
 With a growing user base, one server is not enough. Usually the next step is a database server.
 
@@ -63,3 +64,56 @@ It’s just a cache of static content (CSS, JS, images, videos, etc) replicated 
 	- Hash function finds the shard
 	- **Sharding key:** determines how data is distributed
 
+
+# Estimates
+
+**Mean times:**
+- L1 cache reference -> 0.5 ns
+- L2 cache reference -> 7 ns
+- Mutex lock/unlock -> 100 ns
+- Memory reference -> 100 ns
+- Compress 1 KB -> 10 $\mu$s
+- Send 2 KB over 2 Gbps network -> 20 $\mu$s
+- Read 1 MB from memory -> 250 $\mu$s
+- Round trip same datacenter -> 500 $\mu$s
+- Disk read -> 10 ms
+- Read 1 MB from network -> 30 ms
+- Read 1 MB from disk -> 30 ms
+- Send packet CA to Netherlands round trip -> 150 ms
+
+1. Cache -> memory -> disk
+2. Compress before sending anything, it’s fast
+3. Network is horribly slow, don’t send data between data centers
+
+**Availability:**
+
+99% -> 14 minutes down per day
+99.9% -> 1 minute
+99.99% -> 8 seconds
+So on.
+
+**Practice:**
+- QPS
+- Peak QPS
+- Storage
+- Cache
+- Number of servers
+
+# Framework
+
+1. **Understand the problem and establish design scope**
+
+- Not a trivia contest, don’t give out answers too quickly
+- Ask questions to clarify requirements
+- Functional and non-functional requirements
+	- How many users?
+	- How fast to scale up? Anticipated scale in 3 months and 1 year
+	- Current tech stack of the company?
+	- Existing services that can simplify the design
+
+2. **Propose high level design and get buy-in**
+
+- Box diagram with key components
+- Ask for feedback, treat interviewer as a teammate
+- Database schema and API endpoints **only if the problem is tiny**
+- 
