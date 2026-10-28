@@ -153,3 +153,8 @@ Definition: if table is resized, only $\frac{n}{m}$ keys need to be remapped.
 
 # KV-store
 
+API types
+- Rest: HTTP methods to manipulate resources IDed by URL. Default
+- GraphQL: single endpoint with query language — when variation like dashboard vs. mobile app to avoid many requests
+- RPC: marshalling, distributed systems
+
