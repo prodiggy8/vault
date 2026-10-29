@@ -1,0 +1,133 @@
+## 1. Summary
+
+We assessed whether data could be scraped from six medical platforms: **UWorld, AMBOSS, Figure 1, Radiopaedia, VisualDx and Sermo**.
+
+**Conclusion: scraping is not a viable route for any of the six.**
+
+- **Technically:** Figure 1, Radiopaedia and Sermo block plain automated requests outright. UWorld, AMBOSS and VisualDx only expose marketing pages. Their valuable data is behind paid or verified logins.
+- **Legally:** Getting the valuable data would require either getting around bot defenses or scraping from inside a paid or verified account. The first is legally risky. The second clearly breaches the terms of service and may violate anti-hacking, copyright or privacy law.
+- **The headline datasets aren't on the web anyway.** UWorld's answer-level performance data and AMBOSS's search-behavior data are internal analytics. Neither is published on any page, so no scraper could collect them.
+
+**Recommended path:** license the data directly, or use open datasets that cover the same ground (Section 6).
+
+---
+
+## 2. Target platforms
+
+| # | Platform | Data of interest | Access model |
+|---|---|---|---|
+| 1 | **UWorld** | Board-prep question bank; answer-level performance data from millions of students | Paid subscription |
+| 2 | **AMBOSS** | Knowledge library and question bank; learner and clinician search data | Paid subscription (German company) |
+| 3 | **Figure 1** | Crowdsourced clinical images with physician comments | App or account; patient images |
+| 4 | **Radiopaedia** | Tens of thousands of annotated radiology cases | Largely public; CC BY-NC-SA; commercial licensing program |
+| 5 | **VisualDx** | Diagnostic image library (dermatology-heavy) with clinical metadata | Paid subscription |
+| 6 | **Sermo** | Physician-only forum; case discussions; polling data | Verified-physician login |
+
+---
+
+## 3. Light technical check
+
+**Method:** one HTTPS request to each homepage and one to each site's `robots.txt`, sent with a standard browser user-agent. No logins, no probing beyond that, and no attempt to get around any block. Run on 2026-10-29.
+
+| Site | Homepage HTTP status | Bot blocking | `robots.txt` highlights |
+|---|---|---|---|
+| UWorld | 200 OK | None at the front door | Disallows demo pages, question-bank pages, `/terms.asp`, `/subscribe.asp` |
+| AMBOSS | 302 redirect | None at the front door | Disallows `/api/`, `/search`, `/account/`, and `?format=json` variants |
+| Figure 1 | **403 Forbidden** | Yes (Cloudflare-managed) | `Content-Signal: search=yes, ai-train=no`; blocks AI training crawlers |
+| Radiopaedia | **406 Not Acceptable** | Yes (Cloudflare-managed) | `Content-Signal: search=yes, ai-train=no`; blocks AI training crawlers |
+| VisualDx | 200 OK | None at the front door | Disallows `/articles/`, `/account/`, `/purchase/` |
+| Sermo | **403 Forbidden** | Yes | Only disallows `/wp-admin/`; publishes a sitemap of its marketing pages |
+
+### What this shows
+- **Three of the six sites block simple automated clients before showing any content.**
+- The three that load serve only **public marketing pages**. Their question banks, image libraries and analytics need a paid login.
+- Figure 1 and Radiopaedia **explicitly reserve their rights against AI training** under Article 4 of the EU copyright directive (2019/790).
+- **The answer to "would scraping work?" is no for all six**, unless the scraper either (a) gets around bot defenses or (b) collects data from inside an account. Both raise the legal problems below.
+
+We deliberately did not try headless browsers, spoofed headers, rotating proxies or logged-in sessions. Each of those means actively getting around a site's protections.
+
+---
+
+## 4. Legal analysis
+
+### 4.1 Risk by approach (US law)
+
+| Approach | Risk | Key authority |
+|---|---|---|
+| Scraping **public, logged-out pages** without getting around blocks | **Low** | *hiQ Labs v. LinkedIn* (9th Cir. 2022): scraping publicly accessible data likely isn't "without authorization" under the CFAA. *Meta v. Bright Data* (N.D. Cal. 2024): terms of service didn't bind a logged-out scraper. |
+| **Getting around bot blocks** (Cloudflare, IP bans, spoofed headers, headless browsers) | **Medium to high** | *Craigslist v. 3Taps* (N.D. Cal. 2013): continuing to scrape after an IP block and a cease-and-desist was unauthorized access under the CFAA. Deliberate evasion is evidence you knew you lacked permission. |
+| Scraping **from inside a paid or verified account** | **High** | Clear **breach of contract**, since the terms were accepted at signup (hiQ ultimately lost on this point in 2022). Possible CFAA exposure. Possible **DMCA §1201** anti-circumvention claims for getting past access controls on copyrighted works. |
+
+*Van Buren v. United States* (2021) narrowed the CFAA's "exceeds authorized access" clause. That helps scrapers of public data, but it does not protect anyone who gets around technical barriers or misuses an account.
+
+### 4.2 Other legal exposure
+
+- **Copyright.** Questions, explanations, curated image collections and annotations are copyrighted. Even if collecting them were lawful, reusing, redistributing or training on them may infringe. Radiopaedia's CC BY-NC-SA license **prohibits commercial use**.
+- **EU text and data mining.** AMBOSS is German. The `ai-train=no` declarations by Figure 1 and Radiopaedia are formal Article 4 reservations under the EU copyright directive, which removes the EU text-and-data-mining exception for those sites.
+- **Privacy and health data.** Figure 1's patient images and Sermo's physician posts are personal data, and the images are health data. HIPAA probably doesn't apply to a third-party scraper, but **GDPR, CCPA/CPRA and state biometric and health-privacy laws** can. Health data and identifiable images are the highest-risk categories to collect.
+- **Trespass to chattels.** This is a civil claim if scraping burdens a site's servers.
+
+### 4.3 Realistic consequences
+
+The usual outcome is a civil one: **cease-and-desist letters, account bans, and lawsuits** for breach of contract or copyright infringement. Criminal CFAA prosecution is uncommon but possible. All six companies make money from this data and have reason to enforce their rights.
+
+### 4.4 Institutional considerations (CMU)
+
+- Doing this through a university project or a CMU account exposes the **institution** as well as the individuals.
+- Research involving human data, such as patient images or physician communications, usually needs **IRB review**.
+- CMU's **Office of General Counsel** can advise affiliates at no cost.
+
+---
+
+## 5. Why scraping companies can still be worth billions
+
+Companies like Bright Data, Oxylabs, Zyte, Apify and Firecrawl operate openly because:
+
+1. **They mostly sell access to public data:** e-commerce prices, search results for SEO, travel and real-estate listings, ad verification, brand monitoring, and public web pages for AI training. No login is involved.
+2. **They've fought and won in court.** Bright Data defeated **Meta (2024)** and **X (2024)** on logged-out scraping.
+3. **They draw a line at logins.** After the Meta case, Bright Data publicly committed to collecting only public, logged-out data. Most of these companies run know-your-customer checks and ban customers from scraping behind logins or collecting sensitive personal data.
+4. **Their terms put the risk on the customer.** They sell proxies, browsers and APIs, and the customer is responsible for how they're used.
+5. **The penalties are mostly civil.** A well-funded company can treat legal costs as a cost of doing business. A student team or early-stage startup can't.
+
+### Companies that crossed the line
+
+| Company | What happened |
+|---|---|
+| **Clearview AI** | Scraped facial images. Fined tens of millions across several EU countries; large US class-action settlement. |
+| **Proxycurl** | Shut down in 2025 after LinkedIn sued it over scraping through fake logged-in accounts. |
+| **hiQ Labs** | Won the CFAA fight but lost on breach of contract; went out of business. |
+
+**What this means for us:** UWorld, AMBOSS, VisualDx and Sermo hold their valuable content behind logins, the exact line these companies avoid. Figure 1 and Radiopaedia explicitly forbid AI training and block bots. Even Bright Data's own acceptable-use policy would rule out most of this project.
+
+---
+
+## 6. Legitimate alternatives
+
+### 6.1 Licensing and partnerships
+- **Radiopaedia** runs a licensing program aimed at commercial and AI use.
+- **VisualDx** and **AMBOSS** have business-development and enterprise teams.
+- **Sermo** sells physician polling and market research as a service.
+- **UWorld** may discuss academic or research partnerships.
+- Academic affiliation (CMU) may get better terms.
+
+### 6.2 Open datasets by category
+
+| Need (replaces) | Open alternatives |
+|---|---|
+| Board-style questions (UWorld, AMBOSS) | **MedQA** (USMLE), **MedMCQA**, **PubMedQA**, free **NBME/USMLE sample questions** |
+| Radiology cases (Radiopaedia) | **MIMIC-CXR**, **CheXpert**, **NIH ChestX-ray14**, **RSNA challenge datasets**, **The Cancer Imaging Archive (TCIA)** |
+| Dermatology images (VisualDx) | **ISIC Archive**, **HAM10000**, **Fitzpatrick17k**, **DDI** (Stanford), **SCIN** (Google) |
+| Clinical case discussion (Figure 1) | **PMC Open Access case reports**, available through the NCBI API and licensed for reuse |
+| Physician opinion (Sermo) | Published physician surveys; running our own panel (with IRB approval) |
+
+Some datasets (e.g., MIMIC-CXR) require credentialed access and a data use agreement through PhysioNet. That's routine for academic users.
+
+---
+
+## 7. Recommendations
+
+1. **Don't scrape** any of the six platforms.
+2. **Define the end goal** (e.g., a medical QA model, a diagnostic imaging model, or market analysis) so we can match it to the right open datasets.
+3. **Start with open datasets** for prototyping. They cover most of the same ground.
+4. **Contact licensing teams** (Radiopaedia, VisualDx, AMBOSS, Sermo) if proprietary data turns out to be essential.
+5. **Involve CMU legal and the IRB** early for any work touching patient images or physician communications.

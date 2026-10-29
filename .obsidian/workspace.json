@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework 6 - 36200.md",
+                "file": "Distributed Systems P1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Homework 6 - 36200"
+              "title": "Distributed Systems P1"
             }
           }
         ]
@@ -191,8 +191,8 @@
   },
   "active": "2b940a2f0a098407",
   "lastOpenFiles": [
-    "Homework 6 - 36200.md",
     "Home.md",
+    "Homework 6 - 36200.md",
     "AI_sc.md",
     "AI Scraping.md",
     "System Design.md",

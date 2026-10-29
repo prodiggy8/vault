@@ -187,3 +187,150 @@ No go routine left after `Close`
 
 For the checkpoint -> all packets arrive, no loss or corruption. Epoch events are not needed here. However it might be the messages are sent out of order.
 
+## Implementation
+
+Client:
+- Connection (`DialUDP`)
+- ConnID
+- ConnState
+- `*Message` channel inbound
+
+```go title=common.go
+const maxPacketSize = 2000
+
+func decode(b []byte) {
+	msg := new(Message)
+	json.Unmarshal(b, msg)
+	return msg
+}
+
+// this is for clients
+// socket created with DialUDP, which fixes the remote address
+// socket only receives from that one peer
+// conn.Read(buf) returns just the message
+func readMessage(conn *lspnet.UDPConn) {
+	buf := make([]byte, maxPacketSize)
+	n, err := conn.Read(buf)
+	return decode(buf[:n])
+}
+
+// this is for server
+// socket created with ListenUDP and is unconnected
+// returns address too!
+func readMessageFrom(conn *lspnet.UDPConn) {
+	buf := make([]byte, maxPacketSize)
+	n, addr, err := conn.ReadFromUDP(buf)
+	return decode(buf[:n]), addr
+}
+
+func ValidData (msg *Message) {
+	if len(msg.Payload) < msg.Size {
+		return false
+	} // bytes missing
+	msg.Payload = msg.Payload[:msg.Size] // extra bytes
+	return CalculateChecksum(msg.ConnID, msg.SeqNum, msg.Payload)
+		== msg.Checksum
+}
+
+type connState struct {
+	connID int
+	conn   *lspnet.UDPConn
+	addr   *lspnet.UDPAddr // nil on client
+	params *Params
+	
+	sendSeq int        // seq num of next new data message
+	unacked *list.List // *Message sent but not acked, ascending seq
+	pending *list.List // *Message waiting for window to open
+	
+	recvSeq int // next sequence number to deliver
+	early map[int]*Message // received ahead of recvSeq
+	ready *list.List // []byte payloads deliverable by read
+	
+	closing bool // no new writes accepted; drop once everything sent is acked
+}
+
+```
+
+
+```go title=client_impl.go
+func newClient(hostport string, initialSeqNum int, params *Params) {
+	raddr := lspnet.ResolveUDPAddr("udp", hostport)
+	conn := lspnet.DialUDP("udp", nil, raddr)
+	
+	// create client c
+	
+	go c.readRoutine() // one per client
+	c.connect(initialSeqNum, params)
+	
+	if err != nil {
+		close(c.done)
+		conn.Close()
+		<-c.readerDone
+	}
+	
+	// connection was succesful
+	c.connID = connID
+	c.cs = newConnState(connID, initialSeqNum, conn, nil, params)
+	
+	go c.eventLoop()
+}
+
+func (c *client) connect(isn int, params *Params) {
+	// we create a dummy with 0 to use send!
+	cs := newConnState(0, isn, c.conn, nil, params)
+	
+	ticker := time.NewTicker(params.EpochMillis)
+	defer ticker.Stop()
+	
+	for epochs := 0; ; {
+		cs.send(NewConnect(isn))
+		select {
+			case msg := <-c.inbound:
+				if msg.Type == MsgAck && 
+				   msg.SeqNum == isn &&
+				   msg.ConnID != 0 {
+					return msg.ConnID, nil
+				}
+			
+			// this is a channel that sends a value on every EpochMillis
+			case <-ticker.C:
+				epoch++
+				if epoch >= params.EpochLimit {
+					return 0, errors.New("connection timed out")
+				}
+		}
+	}
+}
+
+func (c *client) readRoutine() {
+	defer close(c.readerDone)
+	for {
+		msg, err := readMessage(c.conn)
+		select {
+			case c.inbound <- msg:
+			case c.done:
+				return
+		}
+	}
+}
+
+// this owns the connection state
+func (c *client) eventLoop() {
+	defer close(c.done)
+	closing := false
+	
+	for {
+		if closing && c.cs.drainedForClose() {
+			return
+		}
+		
+		var readCh chan []byte
+		var head []byte
+		
+		if c.cs.ready.Len() > 0 {
+			readCh = c.readCh
+			head = c.cs.ready.Front().Value.([]byte)
+		}
+	}
+}
+```
