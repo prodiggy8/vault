@@ -39,3 +39,13 @@ Standard deviation $$\sigma_{\overline{x}}=\frac{\sigma}{\sqrt{ n }}$$
 2. If it’s large then it’s normal ($\geq 30$)
 
 
+$\mu$ to $p$
+$\overline{X}$ to $\hat{p}$
+
+$$\mu_{\hat{p}}=p$$
+$$\sigma_{\hat{p}}=\sqrt{ \frac{p(1-p)}{n} }$$
+CLT:
+if $np \geq 10$ and $n(1-p) \geq 10$
+
+Binomial conditions: sample size n, two outcomes, independent (or population >> n), fixed success proportion p
+
