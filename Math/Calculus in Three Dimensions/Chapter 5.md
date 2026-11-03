@@ -57,12 +57,43 @@ $$\iint_{D}f(x,y)dA=\int_{c}^d \left[ \int_{h_{1}(y)}^{h_{2}(y)}f(x,y)dx\right]d
 Sometimes it’s useful to divide $D$ into a type I and a type II non-overlapping regions.
 
 
-
+> [!Warning]
+> Hard topic, do exercises
+> SPECIALLY regarding changing the order of integration
 
 
 # 5.3 Polar Integrals
-We work with a **polar rectangle** instead of Cartesian ones to define the sum.
-$$R=\{(r,\theta) | a \leq r \leq b, \alpha \leq \theta \leq \beta\}$$
-# 5.4 Triple Integrals
 
+We work with **polar rectangles** with sides of size $r$ and $\theta$ and integrate over them.
+$$R=\{(r,\theta)| a \leq r \leq b,\alpha \leq \theta \leq \beta\}$$
+$$\iint_{R}f(r,\theta)dA = \int_{\alpha}^\beta \int_{a}^b f(r,\theta)\; r \; dr \, d\theta$$
 
+- Remember there’s an extra $r$
+
+**General Region of Integration**
+
+Also has types. It is more common to have $r=f(\theta)$ than otherwise.
+$$D=\{(r,\theta)|\alpha \leq \theta \leq \beta, h_{1}(\theta) \leq r \leq h_{2}(\theta)\}$$
+
+> [!Warning]
+> Do exercises especially with solids and volumes
+> Do one exercise with improper integrals
+
+# 5.4 Triple Integral
+
+- Same story: $\sum_{i=1}^l \sum_{j=1}^m \sum_{k=1}^n f(x^*_{ijk}, y^*_{ijk}, z^*_{ijk}) \Delta x \Delta y \Delta z$
+- $\iiint_{B}f(x,y,z)dV = \int_{r}^s \int_{c}^d \int_{a}^b f(x,y,z) dx \; dy \; dz$
+
+**General Region**
+
+We consider a projection of the bounded region of interest onto a plane. 
+
+1. Say the $xy$-plane so that $E=\{(x,y,z)|(x,y) \in D, u\}$
+$$
+\iiint_{E} f(x,y,z)dV = \iint_{D}\left[\int_{u_{1}(x,y)}^{u_{2}(x,y)} f(x,y,z) dz\right]
+$$
+# 5.5 Triple Integral in Spherical and Cylindrical
+
+# 5.6 Center of Mass and Moments of Inertia
+
+If object has uniform density, it’s the object’s geometric center.
