@@ -1,0 +1,8 @@
+- One new idea every week
+- Improve decgpt:
+	- General purpose projects
+	- Legal memory
+	- daily reports and workflows -> cron job, list of actions to perform (like a skill), generate a report, girlfriend uses that a lot
+	- Outlook integration
+	- Word integration
+	- iManage integration (mock)
