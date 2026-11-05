@@ -43,17 +43,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Max Flows and Min Cuts.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Max Flows and Min Cuts"
+              "title": "Home"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,10 +220,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6e96f3ad98fb72a4",
+  "active": "76a73f338801ce55",
   "lastOpenFiles": [
-    "Max Flows and Min Cuts.md",
     "Home.md",
+    "Max Flows and Min Cuts.md",
     "Work/Fundação Estudar/Letter Q2 2026.md",
     "Work/Fundação Estudar/Fundação Estudar - Avaliação Líderes.md",
     "Untitled.md",

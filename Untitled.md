@@ -7,10 +7,5 @@
 	- Word integration
 	- iManage integration (mock)
 
-TOMORROW:
-- Get home, sleep
-- Then: GPT algo homework
-- STUDY ALGO: finish AT THE VERY FUCKING LEAST 3 LECTURES ON FLOW AND CUTS!!!!!!
-- THURSDAY: ALGO HOMEWORK, GPT DISTRIBUTED
-- FRIDAY: GAMES
+
 
