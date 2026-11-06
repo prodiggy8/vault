@@ -59,8 +59,24 @@ The maximum flow value is exactly $k$. The edge out of $s$ has capacity $k$, and
 # Problem 2
 
 We first pick a point for the searcher. The obvious choice is the centroid, but it doesn’t work. We try the circumcenter, which is equidistant from $a, b, c$.
+$$
+\begin{align}
+\|O-a\|^2 &= \|O-b\|^2 \\
+(x+1)^2 + y^2 &= (x-1)^2 + y^2 \\
+x &= 0 \\
+ \\
+\|O-a\|^2 &= \|O-c\|^2 \\
+1 + y^2 &= (y-2)^2 \\
+y &= \frac{3}{4} \\
+ \\
+X &= \left( 0, \frac{3}{4} \right)
+\end{align}
+$$
+$$\begin{align}
+\|O-a\|^2 = \|O-b\|^2 = 1 + \tfrac{9}{16} = \tfrac{25}{16} \\ \|O-c\|^2 = \left(\tfrac54\right)^2 = \tfrac{25}{16}
+\end{align}$$
 
-$\|O-a\|^2 = \|O-b\|^2$ gives $(x+1)^2 + y^2 = (x-1)^2 + y^2$, so $x = 0$. Setting $\|O-a\|^2 = \|O-c\|^2$ with $x = 0$ gives $$1 + y^2 = (y-2)^2 = y^2 - 4y + 4 \quad\Longrightarrow\quad y = \tfrac34.$$ So $O = (0, \tfrac34)$ and $$R^2 = \|O-a\|^2 = \|O-b\|^2 = 1 + \tfrac{9}{16} = \tfrac{25}{16}, \qquad \|O-c\|^2 = \left(\tfrac54\right)^2 = \tfrac{25}{16}.$$ Also $O \in T$: at height $\tfrac34$ the triangle spans $|x| \le \tfrac58$. (Equivalently, $T$ is acute, since $(c-a)\cdot(c-b) = 3 > 0$ and the base angles are clearly acute, so the circumcenter lies inside.)
+
 
 **Upper bound: searcher's strategy.** Let $q$ be the pure strategy $Y = O$. By Claim 2 (a pure response is optimal), the evader's best reply is a pure point, so
 $$\text{ub}(q) = \max_{x \in T} \|x - O\|^2.$$
