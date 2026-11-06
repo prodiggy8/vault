@@ -78,11 +78,14 @@ $$\begin{align}
 
 
 
-**Upper bound: searcher's strategy.** Let $q$ be the pure strategy $Y = O$. By Claim 2 (a pure response is optimal), the evader's best reply is a pure point, so
+**Searcher's strategy.** 
+Let $q$ be the pure strategy $Y = O$.
+By Claim 2 (a pure response is optimal), the evader's best reply is a pure point, so
 $$\text{ub}(q) = \max_{x \in T} \|x - O\|^2.$$
-The disk $\{z : \|z-O\| \le R\}$ is convex and contains $a, b, c$, hence contains their convex hull $T$. So $\|x - O\|^2 \le R^2$ for all $x \in T$, and $\text{ub}(q) = \tfrac{25}{16}$ (attained at any corner).
+The disk $\{z : \|z-O\| \le R\}$ is convex and contains $a, b, c$, hence contains their convex hull $T$. So $\|x - O\|^2 \le R^2$ for all $x \in T$, and $\text{ub}(q) = \tfrac{25}{16}$.
 
-**Lower bound: evader's strategy.** Let $p$ put probability $\tfrac{5}{16}, \tfrac{5}{16}, \tfrac{6}{16}$ on $a, b, c$. Then
+**Evader's strategy.** 
+Let $p$ put probability $\tfrac{5}{16}, \tfrac{5}{16}, \tfrac{6}{16}$ on $a, b, c$. Then
 $$\mathbb{E}_p[X] = \tfrac{5}{16}(-1,0) + \tfrac{5}{16}(1,0) + \tfrac{6}{16}(0,2) = (0, \tfrac34) = O.$$
 By Claim 2 the searcher's best reply to $p$ is a pure point $y$, so $\text{lb}(p) = \min_{y \in T} \mathbb{E}_p\|X - y\|^2$. For any $y \in T$, write $X - y = (X - O) + (O - y)$ and expand:
 $$\mathbb{E}_p\|X-y\|^2 = \mathbb{E}_p\|X-O\|^2 + 2\,\mathbb{E}_p[X-O]\cdot(O-y) + \|O-y\|^2 = R^2 + 0 + \|O-y\|^2 \ \ge\ \tfrac{25}{16}.$$
