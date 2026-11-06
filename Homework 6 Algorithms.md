@@ -33,7 +33,7 @@ We build a network shaped like a grid. Each row is a location, each column is a 
 Run min-cost max flow from $s$ to $t$ on this network. Maximum profit is $-(\text{min cost})$.
 
 **Flow → schedule.** 
-Take an integral optimal flow; one exists by the integrality theorem. The graph is a DAG, so the flow splits into $k$ paths. Give one path to each worker and read it edge by edge:
+Take an integral optimal flow. The graph is a DAG, so the flow splits into $k$ paths. Give one path to each worker and read it edge by edge:
 
 - waiting edge: wait one minute,
 - travel edge: move empty-handed,
@@ -42,23 +42,18 @@ Take an integral optimal flow; one exists by the integrality theorem. The graph 
 1. Worker carries something only while on an order edge, so they hold **one order at a time**.
 2. Order edges have **capacity 1**, so **no order is done twice**.
 
-**Schedule → flow.** Take a valid schedule and one worker, and list their orders in delivery order. Say the worker is at node $(u, \sigma)$: either $(0,0)$ at the start, or the drop-off point of their previous order. The next order $j$ is still feasible, and by the triangle inequality,
-
+**Schedule → flow.**
+Take a valid schedule and one worker, and list their orders in delivery order. Say the worker is at node $(u, \sigma)$ and the next order is $j$. 
 $$\sigma + d(u, a_j) + d(a_j, b_j) \le t_j .$$
+So the path can do this: **travel** to $a_j$, then **wait** until minute $t_j - d(a_j, b_j)$, then take **order edge $j$** to $(b_j, t_j)$. After the last order, wait until minute $T$ and go to $t$. 
 
-So the path can do this: **travel** to $a_j$, then **wait** until minute $t_j - d(a_j, b_j)$ (the inequality says this wait is not negative), then take **order edge $j$** to $(b_j, t_j)$. After the last order, wait until minute $T$ and go to $t$. An idle worker just waits at location $0$. Each order is done at most once, so every capacity is respected, and the result is a flow of value $k$ with **cost $= -$profit**.
+Each order is done at most once, so every capacity is respected, and the result is a flow of value $k$ with **cost $= -$profit**.
 
-[IMPORTANT]
+Runtime: $n(T+1) + 2$ nodes and $O(n^2 T + m)$ edges. This is **polynomial in $n$, $m$, $T$**.
 
-Both directions together give: min cost $= -$max profit.
-
-Runtime: $n(T+1) + 2$ nodes and $O(n^2 T + m)$ edges, each built in $O(1)$. This is **polynomial in $n$, $m$, $T$**.
-
-Detail:
-The maximum flow value is exactly $k$. The edge out of $s$ has capacity $k$, and the path that waits at location $0$ from minute $0$ to minute $T$ and then goes to $t$ can carry all $k$ units by itself. So the algorithm returns a flow of value $k$ with the least cost. Asking for a maximum flow costs us nothing: any flow of smaller value can be increased to value $k$ by sending the missing units along that waiting path, which has cost $0$.
 # Problem 2
 
-We first pick a point for the searcher. The obvious choice is the centroid, but it doesn’t work. We try the circumcenter, which is equidistant from $a, b, c$.
+You want a spot that's close to everywhere in the triangle, because the evader will go to wherever is farthest from you. And where is farthest from a fixed point? Always a corner.
 $$
 \begin{align}
 \|O-a\|^2 &= \|O-b\|^2 \\
@@ -79,20 +74,34 @@ $$\begin{align}
 
 
 **Searcher's strategy.** 
-Let $q$ be the pure strategy $Y = O$.
-By Claim 2 (a pure response is optimal), the evader's best reply is a pure point, so
-$$\text{ub}(q) = \max_{x \in T} \|x - O\|^2.$$
-The disk $\{z : \|z-O\| \le R\}$ is convex and contains $a, b, c$, hence contains their convex hull $T$. So $\|x - O\|^2 \le R^2$ for all $x \in T$, and $\text{ub}(q) = \tfrac{25}{16}$.
+ Searcher's strategy: stand at $O$.
+ Circle around circumcenter is convex. circle's interior is convex. 
+ 
+ Every point the evader could pick is within distance $R$ of $O$. The payoff is at most $R^2 = \tfrac{25}{16}$, always.
 
 **Evader's strategy.** 
-Let $p$ put probability $\tfrac{5}{16}, \tfrac{5}{16}, \tfrac{6}{16}$ on $a, b, c$. Then
-$$\mathbb{E}_p[X] = \tfrac{5}{16}(-1,0) + \tfrac{5}{16}(1,0) + \tfrac{6}{16}(0,2) = (0, \tfrac34) = O.$$
-By Claim 2 the searcher's best reply to $p$ is a pure point $y$, so $\text{lb}(p) = \min_{y \in T} \mathbb{E}_p\|X - y\|^2$. For any $y \in T$, write $X - y = (X - O) + (O - y)$ and expand:
-$$\mathbb{E}_p\|X-y\|^2 = \mathbb{E}_p\|X-O\|^2 + 2\,\mathbb{E}_p[X-O]\cdot(O-y) + \|O-y\|^2 = R^2 + 0 + \|O-y\|^2 \ \ge\ \tfrac{25}{16}.$$
-The first term is $R^2$ because $X$ is always a corner, each at distance $R$ from $O$; the cross term vanishes because $\mathbb{E}_p[X] = O$. Equality holds at $y = O$, so $\text{lb}(p) = \tfrac{25}{16}$.
+A corner is the farthest from wherever the searcher is so we go there.
+ 
+Say the evader point has an average position $\mu$. Then:
+$$
+\mathbb{E}\|X - y\|^2 = \mathbb{E}\|X - \mu\|^2 + \|\mu - y\|^2
+$$
+ The squared distance from searcher is the evader's spread around his own average, plus the searcher's distance from that average. 
+ 
+ The second term is the searcher's choice,best he can do is make it zero.
+ 
+ The evader wants to maximize his spread around his own average. **Choosing the probabilities.** Here's the trick. Use the same identity with $y = O$: 
+ 
+  The left side is at most $R^2$, because everything is within $R$ of $O$. So the spread is at most $R^2 - \|\mu - O\|^2$. To get the spread all the way up to $R^2$ you need two things: the average $\mu$ must be exactly $O$, and $X$ must always sit at distance exactly $R$ from $O$, which inside the triangle means only the corners. So we solve for weights on the corners whose average is $O$: $$p_a(-1,0) + p_b(1,0) + p_c(0,2) = (0, \tfrac34), \qquad p_a + p_b + p_c = 1.$$ The $x$-coordinate says $p_a = p_b$. The $y$-coordinate says $2p_c = \tfrac34$, so $p_c = \tfrac{6}{16}$. The rest is split evenly: $p_a = p_b = \tfrac{5}{16}$. Notice the top corner gets a bit more than a third. That's because $O$ sits above the center of mass of the triangle, so the top needs extra weight to pull the average up to it. **The evader's floor.** Evader's strategy: $a$ with probability $\tfrac{5}{16}$, $b$ with $\tfrac{5}{16}$, $c$ with $\tfrac{6}{16}$. The average is $O$. Every corner is at distance $R$ from $O$, so the spread is exactly $R^2$. By the identity, against any searcher point $y$, $$\mathbb{E}\|X - y\|^2 = \tfrac{25}{16} + \|O - y\|^2 \ge \tfrac{25}{16}.$$ Even if the searcher stands right on $O$, he can't push it below $\tfrac{25}{16}$. If he randomizes, every one of his possible points gives at least $\tfrac{25}{16}$, so the average does too. That's our floor.
 
-**Conclusion.** $\text{lb}(p) = \text{ub}(q) = \tfrac{25}{16}$, so the value of the game is $v = \tfrac{25}{16}$, with minimax-optimal strategies $p = (\tfrac{5}{16}, \tfrac{5}{16}, \tfrac{6}{16})$ on $(a,b,c)$ for the evader and $Y = O$ for the searcher.
-
+Formula:
+$$X - y = (X - \mu) + (\mu - y).$$
+$$u = X - \mu$$
+$$w = \mu - y$$
+$$\|u + w\|^2 = \|u\|^2 + 2\,u\cdot w + \|w\|^2$$
+$$\|X - y\|^2 = \|X - \mu\|^2 + 2\,(X - \mu)\cdot(\mu - y) + \|\mu - y\|^2$$
+$$\mathbb{E}\|X - y\|^2 = \mathbb{E}\|X - \mu\|^2 + 2\,\mathbb{E}[X - \mu]\cdot(\mu - y) + \|\mu - y\|^2$$
+$$E[X − μ] = E[X] − E[μ]$$
 # Problem 3
 
 **Variables:**
