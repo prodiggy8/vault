@@ -14,7 +14,7 @@ Want to maximize: $|f|=\sum_{u} f(s \to u) - \sum_{u}f(u \to s)$
 
 The **net flow** of a cut is the sum of flows from $S$ to $T$ minus flows from $T$ to $S$:
 $$f(S \to T) = \sum_{u \in S} \sum_{v \in T} f(u \to v) - \sum_{u \in S} \sum_{v \in T} f(v \to u)$$
-$|f|$ is equivalent to the net flow across **any cut**.
+$|f|$ is equivalent to the net flow across **any cut**. No matter where you cut the graph, there’s still the same amount of flow making it from $s$ to $t$.
 
 - The value of any s-t flow is $\leq$ value of any s-t cut.
 - Hence, max flow $\leq$ minimum cut.
@@ -36,10 +36,11 @@ We define **residual capacity** which accounts for both the remaining capacity o
 
 Residual graph: $G_{f}$ is directed graph with edges of positive residual capacity. This might include reverse-edges of original graph $G$!
 
-### Ford-Fulkerson 
+- **Augmenting path:** path from $s$ to $t$ of non-zero residual capacity in the network.
+#### Ford-Fulkerson 
 
 ```
-while (there exists an s-t path P of positive residual capacity)
+while (there exists augmenting path):
 	push the maximum possible flow along P
 ```
 
@@ -48,3 +49,6 @@ It might be some graphs have anti-parallel edges (both u, v and v, u). We can:
 - combine both into a single edge with sum of capacities
 - include pair of parallel edges in the residual graph
 
+### Proof
+
+Final residual graph must have no augmenting path from
