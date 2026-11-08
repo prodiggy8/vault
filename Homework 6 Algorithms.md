@@ -86,13 +86,26 @@ Say the evader point has an average position $\mu$. Then:
 $$
 \mathbb{E}\|X - y\|^2 = \mathbb{E}\|X - \mu\|^2 + \|\mu - y\|^2
 $$
+$$\mathbb{E}\|X - O\|^2 = \mathbb{E}\|X - \mu\|^2 + \|\mu - O\|^2$$
+$$R^2 \geq \mathbb{E}\|X - \mu\|^2 + \|\mu - O\|^2$$
+$$E||X - \mu||^2 \leq R^2 - ||\mu - O||^2$$
  The squared distance from searcher is the evader's spread around his own average, plus the searcher's distance from that average. 
  
- The second term is the searcher's choice,best he can do is make it zero.
+ - The second term is the searcher's choice,best he can do is make it zero.
+ - The evader wants to maximize his spread around his own average.
  
- The evader wants to maximize his spread around his own average. **Choosing the probabilities.** Here's the trick. Use the same identity with $y = O$: 
- 
-  The left side is at most $R^2$, because everything is within $R$ of $O$. So the spread is at most $R^2 - \|\mu - O\|^2$. To get the spread all the way up to $R^2$ you need two things: the average $\mu$ must be exactly $O$, and $X$ must always sit at distance exactly $R$ from $O$, which inside the triangle means only the corners. So we solve for weights on the corners whose average is $O$: $$p_a(-1,0) + p_b(1,0) + p_c(0,2) = (0, \tfrac34), \qquad p_a + p_b + p_c = 1.$$ The $x$-coordinate says $p_a = p_b$. The $y$-coordinate says $2p_c = \tfrac34$, so $p_c = \tfrac{6}{16}$. The rest is split evenly: $p_a = p_b = \tfrac{5}{16}$. Notice the top corner gets a bit more than a third. That's because $O$ sits above the center of mass of the triangle, so the top needs extra weight to pull the average up to it. **The evader's floor.** Evader's strategy: $a$ with probability $\tfrac{5}{16}$, $b$ with $\tfrac{5}{16}$, $c$ with $\tfrac{6}{16}$. The average is $O$. Every corner is at distance $R$ from $O$, so the spread is exactly $R^2$. By the identity, against any searcher point $y$, $$\mathbb{E}\|X - y\|^2 = \tfrac{25}{16} + \|O - y\|^2 \ge \tfrac{25}{16}.$$ Even if the searcher stands right on $O$, he can't push it below $\tfrac{25}{16}$. If he randomizes, every one of his possible points gives at least $\tfrac{25}{16}$, so the average does too. That's our floor.
+  The left side is at most $R^2$. So the spread is at most $R^2 - \|\mu - O\|^2$. To get the spread all the way up to $R^2$ you need two things: the average $\mu$ must be exactly $O$, and $X$ must always sit at distance exactly $R$ from $O$, which inside the triangle means only the corners.
+  
+  So we solve for weights on the corners whose average is $O$: $$p_a(-1,0) + p_b(1,0) + p_c(0,2) = (0, \tfrac34), \qquad p_a + p_b + p_c = 1.$$
+  Solve to get $\frac{5}{16}$ for $p_{a}, p_{b}$ and then $\frac{6}{16}$ for $p_c$.
+  
+Even if the searcher stands right on $O$, he can't push it below $\tfrac{25}{16}$. If he randomizes, every one of his possible points gives at least $\tfrac{25}{16}$, so the average does too. That's our floor.
+
+**Evader.** Play $a, b, c$ with probabilities $\tfrac{5}{16}, \tfrac{5}{16}, \tfrac{6}{16}$. Then
+$$\mathbb{E}[X] = \tfrac{5}{16}(-1,0) + \tfrac{5}{16}(1,0) + \tfrac{6}{16}(0,2) = (0,\tfrac34) = O.$$
+For any $y \in T$, expanding $X - y = (X - O) + (O - y)$,
+$$\mathbb{E}\|X-y\|^2 = \underbrace{\mathbb{E}\|X-O\|^2}_{=R^2} + 2\underbrace{\mathbb{E}[X-O]}_{=0}\cdot(O-y) + \|O-y\|^2 \ge R^2 = \tfrac{25}{16}.$$
+The first term is $R^2$ since every corner is at distance $R$ from $O$; the second vanishes since $\mathbb{E}[X] = O$. A randomizing searcher averages over $y$, so the bound still holds. Hence $\text{lb}(p) \ge \tfrac{25}{16}$.
 
 Formula:
 $$X - y = (X - \mu) + (\mu - y).$$
@@ -127,3 +140,9 @@ $$
 - The LP has $k|E| + \ell$ variables and $|E| + k|V|$ constraints.
 - Its size is polynomial in the input, so it can be solved in polynomial time.
 
+
+$$\begin{aligned}  
+p_b - p_a &= 0 &&\text{($x$-coordinate)}\  
+2p_c &= \tfrac34 &&\text{($y$-coordinate)}\  
+p_a + p_b + p_c &= 1 &&\text{(probabilities sum to 1)}  
+\end{aligned}$$
