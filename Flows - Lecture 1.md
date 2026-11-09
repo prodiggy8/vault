@@ -51,4 +51,37 @@ It might be some graphs have anti-parallel edges (both u, v and v, u). We can:
 
 ### Proof
 
-Final residual graph must have no augmenting path from
+Runs in $O(mF)$ time where $F$ is the value of maximum $s-t$ flow and each iteration does a DFS in $O(m + n)$, with $m \geq n - 1$ so $O(m)$.
+
+- In the final residual graph, $s$ and $t$ must be disconnected.
+- Let $S$ be vertices reachable from $s$ and $T$ otherwise. $t$ must be in $T$ since disconnected so it’s a valid cut.
+- $|f| = f(S, T) \leq cap(S, T)$
+
+Claim: edges that cross the cut in $S \to T$ direction are at maximum capacity. Otherwise, then we could reach $T$ in the residual graph, which contradicts construction.
+
+Claim: edges that cross the cut in $T \to S$ are empty. Otherwise, there would be a reverse edge with positive residual capacity from $S$ to $T$, contradicting construction.
+
+- Hence, the net flow across the cut is equal to the capacity of the cut. **Hence the flow is maximum and the cut is minimum.**
+
+**Integrality theorem:**
+If all capacities are integer, there exists a maximum flow in which the flow on every edge is integer. The algorithm finds this one.
+
+### Bipartite Matchings
+
+**Bipartite graph** is a graph with vertices divided in two disjoint sets L and R such that so that every edge has one endpoint in L and the other in R.
+
+**Matching** is a set of edges with no endpoints in common.
+
+**Perfect matching** is if every point in L is connected to every point in R. **Maximum matching** is a matching with maximum possible number of edges.
+
+```pseudo title="Matching Algorithm"
+set source node s connected to all vertices in L
+set sink node t connected to all vertices in R
+give each edge capacity 1
+run ford fulkerson
+output edges with non-zero flow as the matching
+```
+
+**Proof reduction is correct:**
+- Show that one way corresponds to another and vice versa.
+
