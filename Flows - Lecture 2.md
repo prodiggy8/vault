@@ -7,59 +7,57 @@ aliases:
 date created: Sunday, November 8th 2026, 6:52:22 pm
 date modified: Sunday, November 8th 2026, 6:52:27 pm
 ---
+We assume every vertex is reachable from $s$, so DFS and BFS are both $O(m)$.
 ### Edmonds-Karp
 
-This algorithm runs Ford-Fulkerson by selecting the **shortest** augmenting path each time.
-It makes it at most $mn$ iterations, and hence $O(nm^2)$.
+Ford-Fulkerson but selecting the **shortest** augmenting path each time.
+At most $mn$ iterations, $O(nm^2)$.
+
+*Proof:*
 
 - distance $d$ from $s$ to $t$ in the residual graph never decreases.
 
 Since shortest path, then $d_{v_{i}} = d_{v_{i-1}} + 1$.
-Algorithm can do two things:
-1. Saturate one edge and it disappears from the residual graph. This doesn’t decrease $d$.
-2. We can add reverse edges $(v, u)$. Since $d_{v} = d_{u} + 1$, such edge doesn’t create a shorter path either.
+Augmenting does:
+1. Saturate one edge, disappears from residual graph. This can never decrease $d$.
+2. We can add reverse edges $(v, u)$. Since $d_{v} = d_{u} + 1$, it doesn’t decrease $d$ either.
 
 - every $m$ iterations, $d$ has to increase at least 1
 
-Each iteration fills at least one edge. For it to be used again, it must be the reverse edge was used, which means that edge is part of the shortest path. Since $d_{v} = d_{u} + 1$ a reverse edge can only be in the shortest path if $d$ increases. Since there are $m$ edges, it follows the claim.
+Each iteration saturates one edge.
+For it to be used again, only if its residual edge is used too.
+But residual edge can only be part of shortest path if $d$ increased since $d_{v} = d_{u} + 1$.
+Since there are $m$ edges, after $m$ iterations $d$ must have increased.
 
-Since each $m$ iterations it increases, it can only increase $n$ (max distance is n). So $nm$ iterations.
+We can only increase $d$ up to $n$ times, so total $mn$.
 
 ### Dinic’s
 
-**Layered graph**
+**Layered graph:** Run BFS to find all distances $d_{v}$ from $s$ to $v \in V$. Lay them out in layers $0, 1, \dots, d$.
+- Read original but ignore all edges that don’t satisfy $d_{v} = d_{u} + 1$
 
-Run BFS to find all distances $d_{v}$ from $s$ to $v \in V$.
-Lay them out in layers $0, 1, \dots, d$ 
-- There can’t be an edge from layer $i$ to $> i + 1$ otherwise the distance is wrong
-- There can be edges that go back, but they are never part of shortest path
+**Blocking Flow:** a flow such that every $s-t$ path has at least one edge that gets saturated.
+- Maximum flow implies blocking but the opposite is not true.
+- Think of as “maximal” flow
 
-**Blocking Flow**
+> [!Theorem] 
+> Blocking flow can be found in $O(nm)$ time
 
-It’s a **flow in network $H$ such that every path in $H$ has at least one edge that gets saturated**
+Strategy:
+- Find distances with BFS in $O(n+m)$
+- Find augmenting paths with DFS
+- Ignore dead ends for all future DFS runs
 
-- A collection of paths that saturate at least one edge of every possible path in the network.
-- Can be thought informally as a “maximal” flow
-
-
-
-
-
-
+-> need to finish tomorrow
+### Dinic’s on unit-capacity graphs
 
 
 
 
-
-
-Edmonds-Karp
-- Always augment along a shortest $s-t$ path in the residual graph
-- Iterations become $\leq n \cdot m$
-
-*Proof:*
-- 
-
-
+## Questions for tomorrow
+- Why sometimes we use $O(m)$ and sometimes $O(m + n)$ for BFS and DFS
+- Why exactly blocking flows?
+- Read note on implementation
 
 
 
