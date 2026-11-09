@@ -42,3 +42,24 @@ It’s a **flow in network $H$ such that every path in $H$ has at least one edge
 - Can be thought informally as a “maximal” flow
 
 
+
+
+
+
+
+
+
+
+
+
+Edmonds-Karp
+- Always augment along a shortest $s-t$ path in the residual graph
+- Iterations become $\leq n \cdot m$
+
+*Proof:*
+- 
+
+
+
+
+
