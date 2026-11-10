@@ -5,8 +5,9 @@ author:
 description:
 aliases:
 date created: Thursday, October 22nd 2026, 12:30:03 pm
-date modified: Thursday, October 22nd 2026, 12:30:06 pm
+date modified: Tuesday, November 10th 2026, 10:49:26 am
 ---
+
 ## Lecture 1
 
 - $x_{1}, \dots, x_{n} \in \mathbb{R}$ 
@@ -22,10 +23,13 @@ ___
 #### Maximum flow
 
 **Variables:**
+
 Set up variable $f_{u,v}$ for each edge’s flow
 
 Maximize: $\sum_{u} f_{s,u} - \sum_{u} f_{u,s}$
+
 Subject to:
+
 - $0 \leq f_{u,v} \leq c(u,v)$ for all $f_{u,v}$
 - $\sum_{v} f_{u,v} = \sum_{v} f(v, u)$ for all $f_{u,v}$ such that $u \neq s, v \neq t$
 
@@ -148,16 +152,21 @@ They’re the same thing!
 #### Matchings
 
 FOR TOMORROW:
-- Finish LP geometry lecture/slides
-	- 1h
-- Look up game theory example in lecture 2
-	- 30 min
-- Game theory: review section 4.3 and read lower bound sections
-	- 30 min
 - Read Dinic’s -> invest **most time here**
 	- 1.5h
 - Finish minimum cost maximum flow
 	- 1h
 - Do all exercises: lecture and recitation
 	- 3h
+
+- Finish LP geometry lecture/slides
+	- 1h
+- Look up game theory example in lecture 2
+	- 30 min
+- Game theory: review section 4.3 and read lower bound sections
+	- 30 min
+
+Review homeworks?
+Practice exam?
+Claude exam?
 

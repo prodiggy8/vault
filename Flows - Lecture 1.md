@@ -54,7 +54,8 @@ It might be some graphs have anti-parallel edges (both u, v and v, u). We can:
 Runs in $O(mF)$ time where $F$ is the value of maximum $s-t$ flow and each iteration does a DFS in $O(m + n)$, with $m \geq n - 1$ so $O(m)$.
 
 - In the final residual graph, $s$ and $t$ must be disconnected.
-- Let $S$ be vertices reachable from $s$ and $T$ otherwise. $t$ must be in $T$ since disconnected so it’s a valid cut.
+- Let $S$ be vertices reachable from $s$ and $T$ otherwise
+- e. $t$ must be in $T$ since disconnected so it’s a valid cut.
 - $|f| = f(S, T) \leq cap(S, T)$
 
 Claim: edges that cross the cut in $S \to T$ direction are at maximum capacity. Otherwise, then we could reach $T$ in the residual graph, which contradicts construction.
