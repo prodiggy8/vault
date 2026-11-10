@@ -87,3 +87,28 @@ The feasible region $Ax \leq b, x \geq 0$ is a convex set
 
 ## Lecture 2
 
+Each $n$ variable constraint divides $R^n$ in half, we call **half space**.
+
+The intersection of all half spaces is called a **convex polytope**.
+
+> [!Dual]
+> maximize $c^T$x
+> subject to $Ax \leq b$
+> $x \geq 0$
+> 
+> minimize $b^Ty$
+> subject to $A^Ty \geq c$
+> $y \geq 0$
+
+If the primal has $n$ variables and $m$ constraints, the dual has $m$ variables and $n$ constraints
+
+>[!theorem] Weak Duality
+>If $x$ is any feasible solution to the primal LP and $y$ is any feasible solution to the dual LP
+>$$c^Tx \leq b^T y$$
+
+> [!theorem] Strong duality
+> If primal is feasible and bounded, then dual is feasible and bounded.
+> If $x^*$ is optimal solution to primal, and $y^*$ is optimal solution to dual:
+> $$c^T x^*=b^Ty^*$$
+
+
