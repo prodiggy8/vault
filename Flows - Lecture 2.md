@@ -7,7 +7,6 @@ aliases:
 date created: Sunday, November 8th 2026, 6:52:22 pm
 date modified: Sunday, November 8th 2026, 6:52:27 pm
 ---
-We assume every vertex is reachable from $s$, so DFS and BFS are both $O(m)$.
 ### Edmonds-Karp
 
 Ford-Fulkerson but selecting the **shortest** augmenting path each time.
@@ -33,31 +32,40 @@ We can only increase $d$ up to $n$ times, so total $mn$.
 
 ### Dinic’s
 
-**Layered graph:** Run BFS to find all distances $d_{v}$ from $s$ to $v \in V$. Lay them out in layers $0, 1, \dots, d$.
-- Read original but ignore all edges that don’t satisfy $d_{v} = d_{u} + 1$
+Layered graph: every edge satisfies $d_{v} = d_{u} + 1$
 
-**Blocking Flow:** a flow such that every $s-t$ path has at least one edge that gets saturated.
-- Maximum flow implies blocking but the opposite is not true.
-- Think of as “maximal” flow
+```pseudo title="Dinic's"
+repeat:
+	run BFS on residual graph
+	if t unreachable:
+		return
+	
+	build layered graph
+	push blocking flow with DFS
+		kill dead edges
+		no need to consider newly introduced back edges
+```
 
-> [!Theorem] 
-> Blocking flow can be found in $O(nm)$ time
+**Line 1:** $O(n)$ iterations
+**Line 5:** $O(n + m)$
+**Line 6:** $O(nm)$
 
-Strategy:
-- Find distances with BFS in $O(n+m)$
-- Find augmenting paths with DFS
-- Ignore dead ends for all future DFS runs
+An augmenting path must contain at most $n-1$ edges otherwise we **repeat a vertex** which is pointless.
 
--> need to finish tomorrow
-### Dinic’s on unit-capacity graphs
+DFS takes $O(n+m)$ because we might visit **dead end edges** that don’t take us to $t$. We remove those forever when we see them. 
+
+Cost for DFS with no dead edges to find $m$ augmenting paths because each augmentation saturates at least one edge.
+$$
+\begin{align}
+=&\sum_{i = 0}^m n + \text{new edges marked dead} \\
+=&nm + \sum_{i = 0}^m \text{new edges marked dead} \\
+=&nm + m \\
+=&O(nm)
+\end{align}
+$$
+Since we can have at most
 
 
-
-
-## Questions for tomorrow
-- Why sometimes we use $O(m)$ and sometimes $O(m + n)$ for BFS and DFS
-- Why exactly blocking flows?
-- Read note on implementation
 
 
 
