@@ -7,28 +7,35 @@ aliases:
 date created: Monday, November 9th 2026, 1:49:45 am
 date modified: Monday, November 9th 2026, 1:49:49 am
 ---
-Same as normal flow but each edge has a cost $\$(e)$.
 $$\operatorname{cost}(f)= \sum_{e \in E}\$(e)f(e)$$
+
 **Residual graph**
-- Same capacity as original
+- Same capacity
 - Cost $\$(e)$ on forward edge and $-\$(e)$ for backward ones
 
 **Augmenting path**
-- Use Bellman-Ford to find paths since we allow negative edges
-- Implement Ford-Fulkerson by selecting cheapest augmenting path
+- We want the cheapest one
+	- BFS doesn’t work with weights
+	- Dijkstra doesn’t work with negative edge weights
+	- Use Bellman-Ford
 
-The shortest path only exists if there is no negative cycles, so we must prove the algorithm creates none.
+#### Does the algorithm terminate?
+Only if no negative cycles.
 
-**Lemma:** the cheapest path never gets cheaper
-- Assume there’s a cheaper one
-- $v$ is the first place where it’s cheaper, $c'(v) < c(v)$
-- $u$ comes before, so $c'(v) = c'(u) + \$_{f'}(u, v)$
-- $v$ is earliest, so $c'(u) \geq c(u)$ and $c'(v) \geq c(u) + \$_{f'}(u, v)$
+> [!Lemma] The cheapest path never gets cheaper when augmenting
 
-Hence it must be that the residual cost $\$_{f'}(u,v)$ changed, otherwise we get contradiction.
-If it changed, then the algorithm used the reverse edge and $\$_{f'}(u,v)=-\$_{f}(u,v)$.
-$$
-\begin{align}
-c'(v) \geq c(u) - \$_{f}(u,v) \text{ but } 
-\end{align}
-$$
+If it does, it starts being cheaper at $v$, so $c'(v) < c(v)$.
+Pick $u$ that comes before:
+- $c'(v) = c'(u) + \$'(u, v)$
+- $c'(u) \geq c(u)$
+
+Hence $c'(v) \geq c(u) + \$'(u, v)$.
+
+Hence it must be that $\$'(u,v)$ changed. The only way the cost changes is if we used that path with a reverse edge. By definition:
+
+- $\$'(u, v) = -\$(v, u)$
+- $c'(v) \geq c(u) - \$(u, v)$
+- Since we used the reverse edge
+
+
+#### Does it output the minimum?
