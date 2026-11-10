@@ -22,4 +22,16 @@ Whatever value of $p$ the opponent will pick the **lowest** of the lines. The lo
 
 - Find highest point in envelope: this is the lower bound.
 
-Lower bound on algorithms needs to be read.
+___
+Lower bounds: us coming up with algorithms and the adversary coming up with hard inputs
+
+- Columns are all deterministic algorithms for sorting $n$ elements
+	- This is finite if no redundancy
+	- We must know the answer after ${n \choose 2}$ steps
+- Rows are all possible inputs
+- $R_{ij}$ is cost of algorithm $j$ on input $i$
+
+- A deterministic algorithm with good worst-case is a column that performs well against all rows
+- A randomized algorithm is a distribution $q$ over deterministic algorithms, such that the expected cost for each row is small. Mixed strategy for column player.
+
+

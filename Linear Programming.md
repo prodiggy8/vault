@@ -112,3 +112,52 @@ If the primal has $n$ variables and $m$ constraints, the dual has $m$ variables 
 > $$c^T x^*=b^Ty^*$$
 
 
+### Feasibility and boundedness
+
+- If primal feasible and bounded -> dual must be too
+- If primal (maximization) unbounded, since $c^Tx \leq b^T y$, we have $\infty \leq b^T y$ so the dual is infeasible.
+- If dual (minimization) unbounded, $c^Tx \leq -\infty$, so the primal is infeasible.
+- Only one of the two can be unbounded.
+
+![[Linear Programming.png]]
+
+#### Example with Zero-Sum Games
+
+NEED TO DO TOMORROW!! UNDERSTAND MATRIX
+
+## Lecture 3
+
+A linear inequality in $n$ divides $R^n$ in two, we call **half space**.
+The points that satisfy all inequalities in LP is called **convex polytope**.
+
+**Convexity:** $\operatorname{Conv}(a, b) = \{\alpha a + (1 - \alpha)b | 0 \leq \alpha \leq 1\}$
+All the points on the straight line in $R^n$ between $a$ and $b$.
+
+A set of points $S$ in $R^d$ is **convex** iff for all $a,b \in S$ we have that $\operatorname{Conv}(a, b) \subseteq  S$.
+- The straight line between points is inside the same set!
+
+**Vertex:** if it’s unique optimal point for some objective function
+	- The furthest point for some direction
+	- “Corner points”
+**Extreme point:** for any $v \neq 0$, at least one of $q + v$ or $q-v$ is not in $P$.
+	- You can’t move in a direction and stay in $P$
+	- A point that can’t be written as the average of two other points in $P$
+
+They’re the same thing!
+
+#### Matchings
+
+FOR TOMORROW:
+- Finish LP geometry lecture/slides
+	- 1h
+- Look up game theory example in lecture 2
+	- 30 min
+- Game theory: review section 4.3 and read lower bound sections
+	- 30 min
+- Read Dinic’s -> invest **most time here**
+	- 1.5h
+- Finish minimum cost maximum flow
+	- 1h
+- Do all exercises: lecture and recitation
+	- 3h
+
