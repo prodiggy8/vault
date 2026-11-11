@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Linear Programming.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Linear Programming"
             }
           }
         ]
@@ -191,8 +191,8 @@
   },
   "active": "71c49dce04dc7200",
   "lastOpenFiles": [
-    "LP.md",
     "Home.md",
+    "LP.md",
     "Game Theory.md",
     "Recitation 7.md",
     "Flows - Lecture 3.md",
