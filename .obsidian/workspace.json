@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flows - Lecture 3.md",
+                "file": "Linear Programming.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Flows - Lecture 3"
+              "title": "Linear Programming"
             }
           },
           {
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -235,13 +235,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "51910d52e086317c",
+  "active": "b08382516e7e14e5",
   "lastOpenFiles": [
-    "Game Theory.md",
     "Flows - Lecture 3.md",
     "Recitation 7.md",
-    "Untitled 2.md",
     "Flows - Lecture 2.md",
+    "Game Theory.md",
+    "Untitled 2.md",
     "Linear Programming.md",
     "LP.md",
     "Flows - Lecture 1.md",

@@ -135,7 +135,7 @@ A linear inequality in $n$ divides $R^n$ in two, we call **half space**.
 The points that satisfy all inequalities in LP is called **convex polytope**.
 
 **Convexity:** $\operatorname{Conv}(a, b) = \{\alpha a + (1 - \alpha)b | 0 \leq \alpha \leq 1\}$
-All the points on the straight line in $R^n$ between $a$ and $b$.
+- All the points on the straight line in $R^n$ between $a$ and $b$ 
 
 A set of points $S$ in $R^d$ is **convex** iff for all $a,b \in S$ we have that $\operatorname{Conv}(a, b) \subseteq  S$.
 - The straight line between points is inside the same set!
@@ -151,22 +151,30 @@ They’re the same thing!
 
 #### Matchings
 
-FOR TOMORROW:
-- Read Dinic’s -> invest **most time here**
-	- 1.5h
-- Finish minimum cost maximum flow
-	- 1h
-- Do all exercises: lecture and recitation
-	- 3h
+For each edge we define $0 \leq x_{u,v} \leq 1$ 
+Maximize: 
+$\sum_{(u,v) \in E} x_{u,v}$
+Subject to:
+$\sum_{v \in \operatorname{out}(u)} x_{u,v} \leq 1$ for all $u$
 
-- Finish LP geometry lecture/slides
-	- 1h
+This LP has a maximum $Z_{G}$. For a graph $G$ the maximum matching $M_{G}$ solves this LP, but it might be less than $Z_{G}$.
+- The integer solutions are a subset of the space being considered. We call this **relaxation**.
+
+
+
+FOR TOMORROW:
 - Look up game theory example in lecture 2
 	- 30 min
 - Game theory: review section 4.3 and read lower bound sections
 	- 30 min
+- Exercises:
+	- Game theory recitation
+	- LP recitation
+	- Practice exam
+	- Practice Claude exam
+	- Cheat Sheet
 
-Review homeworks?
-Practice exam?
-Claude exam?
+Perception
 
+Reasoning with data only after exam
+Distributed only after exam
