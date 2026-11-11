@@ -84,6 +84,6 @@ Since each blocking flow adds one unit of flow we can add $\frac{m}{k}$ to a tot
 
 Minimizing this expression (one term grows with $k$ and the other decreases with $k$), a method is to find when they are equal, so $k = \sqrt{ m }$ and number of blocking flows $2\sqrt{ m }$.
 
-Dinic’s runs in $O(m\sqrt{ m })$. For sparse graphs ($m=O(n)$) it runs in $O(nm)$.
+Dinic’s runs in $O(m\sqrt{ m })$. For sparse graphs ($m=O(n)$) it runs in $O(n^2)$.
 
 
