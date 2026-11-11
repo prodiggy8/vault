@@ -160,13 +160,32 @@ $\sum_{v \in \operatorname{out}(u)} x_{u,v} \leq 1$ for all $u$
 This LP has a maximum $Z_{G}$. For a graph $G$ the maximum matching $M_{G}$ solves this LP, but it might be less than $Z_{G}$.
 - The integer solutions are a subset of the space being considered. We call this **relaxation**.
 
+>> $G$ is bipartite graph, $\text{MP}_{G}$ is a polytope. If $q$ is extreme point, then it has integer coordinates.
+
+- Consider $G'$ subset of only non-integer values
+
+- If cycle and add and subtract $\epsilon$ alternating to preserve sum. It’s so small all variables still less than 1. So it’s in the polytope and we can move in both directions. Not extreme point.
+
+- If no cycle then it’s a tree. Endpoints don’t cancel out. Since endpoints in $G’$ (non-integer), they have only one edge touching them that is fractional (also in $G’$). The others must be 0 (if fractional should have been in $G'$, if integer, breaks constraint that says $\leq {1}$). So we have slack to add $\epsilon$ without breaking. Can move again, not extreme point.
+
+### Algebraic
+
+Another way to see LP solutions is to see **which subset** of constraints is tight (equal to something).
+
+A **basic solution** is the intersection of $n$ linearly independent tight constraints.
+It might not be feasible
+
+___
+We can select a set $R$ of linearly independent rows and solve $A_{R}x = b_{R}$!
+
+**Cramer’s rule:** $x_{i}=\frac{\det(A^i_{R})}{\det(A_{R})}$
+where $A_{R}^i$ means substitute column $i$ with the vector $b_{R}$.
+
 
 
 FOR TOMORROW:
-- Look up game theory example in lecture 2
-	- 30 min
-- Game theory: review section 4.3 and read lower bound sections
-	- 30 min
+- Min cost max flow lecture!
+- Game theory: lower bound and example
 - Exercises:
 	- Game theory recitation
 	- LP recitation
