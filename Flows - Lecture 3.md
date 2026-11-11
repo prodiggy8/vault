@@ -24,18 +24,17 @@ Only if no negative cycles.
 
 > [!Lemma] The cheapest path never gets cheaper when augmenting
 
-If it does, it starts being cheaper at $v$, so $c'(v) < c(v)$.
-Pick $u$ that comes before:
-- $c'(v) = c'(u) + \$'(u, v)$
-- $c'(u) \geq c(u)$
+[Proof if time later]
 
-Hence $c'(v) \geq c(u) + \$'(u, v)$.
+> [!Corollary]
+> If no negative cycles before, no negative cycles after.
 
-Hence it must be that $\$'(u,v)$ changed. The only way the cost changes is if we used that path with a reverse edge. By definition:
-
-- $\$'(u, v) = -\$(v, u)$
-- $c'(v) \geq c(u) - \$(u, v)$
-- Since we used the reverse edge
-
-
+The algorithm terminates!
+Runtime:
+- Every iteration, one unit of flow is augmented. Every iteration runs the Bellman-Ford algorithm that takes $O(nm)$.
+- $O(nmF)$.
 #### Does it output the minimum?
+
+Claim: we can add flow to a cycle in the graph without affecting feasibility.
+Augmenting cycles: $\Delta$ units of flow and $W$ cost of cycle. If $\Delta W$ negative, flow wasn’t optimal.
+

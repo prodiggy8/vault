@@ -170,16 +170,31 @@ This LP has a maximum $Z_{G}$. For a graph $G$ the maximum matching $M_{G}$ solv
 
 ### Algebraic
 
+Vertices are intersections of constraints.
+
 Another way to see LP solutions is to see **which subset** of constraints is tight (equal to something).
 
 A **basic solution** is the intersection of $n$ linearly independent tight constraints.
 It might not be feasible
 
 ___
-We can select a set $R$ of linearly independent rows and solve $A_{R}x = b_{R}$!
+Let $R$ be the subset of rows we want to intersect.
 
 **Cramer’s rule:** $x_{i}=\frac{\det(A^i_{R})}{\det(A_{R})}$
 where $A_{R}^i$ means substitute column $i$ with the vector $b_{R}$.
+
+**When is this guaranteed to be an integer?**
+- All entries of $A$ and $b$ to be integers
+- $\det(A_{R})=\pm 1$
+
+**Unimodular:** square integer-valued with determinant $1$ or $-1$
+
+We want $A_R$ to be unimodular for **any choice of rows R**
+
+**Totally unimodular:** if every square submatrix determinant is 1, -1, 0
+
+>> A linear program with polytope $Ax \leq b, x \geq 0$ where $A$ is totally unimodular and b is integral has only integral vertices.
+
 
 
 

@@ -4,71 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "5ada5faa9928a49e",
+        "id": "21dd2da77ba1c9e3",
         "type": "tabs",
         "children": [
           {
-            "id": "6fe8755032ef4b0d",
+            "id": "71c49dce04dc7200",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Game Theory.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Game Theory"
-            }
-          },
-          {
-            "id": "b08382516e7e14e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linear Programming.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Linear Programming"
-            }
-          },
-          {
-            "id": "86a9de08449f9035",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recitation 7.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Recitation 7"
-            }
-          },
-          {
-            "id": "51910d52e086317c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flows - Lecture 2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Flows - Lecture 2"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -235,17 +184,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b08382516e7e14e5",
+  "active": "71c49dce04dc7200",
   "lastOpenFiles": [
-    "Flows - Lecture 3.md",
-    "Recitation 7.md",
-    "Flows - Lecture 2.md",
     "Game Theory.md",
-    "Untitled 2.md",
+    "Recitation 7.md",
+    "Flows - Lecture 3.md",
+    "Flows - Lecture 2.md",
     "Linear Programming.md",
+    "Home.md",
+    "Untitled 2.md",
     "LP.md",
     "Flows - Lecture 1.md",
-    "Home.md",
     "_assets/Linear Programming.png",
     "Untitled 1.md",
     "Flows and Cuts.md",
