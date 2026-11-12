@@ -71,7 +71,7 @@ Total: $O(n^2m)$.
 
 - If every edge in the graph has capacity one, then we can find a blocking flow in $O(m)$ time.
 
-Since the edges have capacity one, no edge can be used in multiple augmenting paths, so the total length of all augmenting paths is at most $m$. 
+cSince the edges have capacity one, no edge can be used in multiple augmenting paths, so the total length of all augmenting paths is at most $m$. 
 
 The cost of finding a blocking flow is $\text{length of all augmenting paths} + \text{ dead end edges } \leq m + m = O(m)$.
 
