@@ -1,5 +1,6 @@
 {
   "cssTheme": "",
   "accentColor": "#6bb6ef",
-  "textFontFamily": "Inter,Open Sans"
+  "textFontFamily": "Inter,Open Sans",
+  "showRibbon": true
 }
