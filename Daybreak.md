@@ -36,5 +36,3 @@ date modified: Monday, November 16th 2026, 4:03:33 pm
 Keep track of thoughts, ramp card
 
 - Infrastructure from zero
-
-
