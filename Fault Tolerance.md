@@ -9,28 +9,27 @@ description:
 aliases:
   - Distributed Systems Lecture 13
 date created: Monday, November 16th 2026, 2:45:04 pm
-date modified: Monday, November 16th 2026, 2:56:19 pm
+date modified: Tuesday, November 17th 2026, 3:07:12 pm
 ---
 
-Failure can be **transient**, **intermittent**, or **permanent**.
-
-**Examples**: crash, omission, response, response, or Byzantine (adversarial, arbitrary).
-
-### Addressing failure
-
-Either through recovery algorithm or through redundancy.
+We can address failure through either recovery algorithm or through redundancy.
 
 - **Backward** recovery: return to previous correct state and continue
-- **Forward** recovery: bring system to new correct state
-	- Faster but harder
+- **Forward** recovery: bring system to new correct state (faster but harder)
 
 ### Checkpoints
 
-##### Independent
+Independent checkpoint is when each node does arbitrary shit with their checkpoints with no coordination or global policy. It’s not consistent.
 
-Each node independently records local state
-- can be inconsistent
-- 
+##### Chandy-Lamport
 
-##### Coordinated: Chandy-Lamport
+We define channel states $C_{xy}$ as messages sent but not yet received between $x$ and $y$.
+
+**Requirements:**
+
+- Global state changes **only** when something happens (not naturally or randomly)
+- Channels are FIFO
+
+1. Processes record locally their own state
+2. Process work together with 
 
