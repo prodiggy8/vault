@@ -9,6 +9,7 @@ aliases:
 date created: Thursday, November 19th 2026, 12:15:13 am
 date modified: Thursday, November 19th 2026, 2:53:50 pm
 ---
+[[Daybreak]]
 
 Goal: 
 
@@ -109,7 +110,7 @@ Goal:
 
 ---
 
-### 1.4 Student groups, hackathons, fellowships (rank 4)
+### 1.4 Student groups, hackathons, fellowships
 
 **Why.** Undergrads and master's students who run entrepreneurship clubs, win hackathons, or get into fellowships (Z Fellows, Neo Scholars, Thiel, Contrary, a16z speedrun applicants, and so on) are very likely to become founders, and they show up here years early. This complements the lab map, which covers PhDs and postdocs.
 
@@ -213,6 +214,7 @@ Entity resolution runs in three passes:
 ### 2.3 Scoring
 
 See Data Driven VC’s research.
+- We need a feedback loop as well: adjust weights based on reviews
 
 ### 2.4 Estimated running costs
 
@@ -236,12 +238,15 @@ Each step ends with something usable. Steps marked ⟂ can run in parallel with 
 
 1. **Foundations:** repo, database, connector base class.
 2. **Seed lists:** the “who to watch part”.
-3. **University talent map:** OpenAlex, then lab pages, then people. Per-university pages for partners.
-4. **Student groups & hackathons:** and the **manual intake form**. These extend the talent map to undergrads.
-5. **GitHub.**
-6. **LinkedIn:** needs more research before settling on an approach.
-7. **X follow graph:** this is likely the most complicated code.
-8. **Scoring and send**
-9. Discord & communities watch list
+	- 
+___
+
+1. **University talent map:** OpenAlex, then lab pages, then people. Per-university pages for partners.
+2. **Student groups & hackathons:** and the **manual intake form**. These extend the talent map to undergrads.
+3. **GitHub.**
+4. **LinkedIn:** needs more research before settling on an approach.
+5. **X follow graph:** this is likely the most complicated code.
+6. **Scoring and send**
+7. Discord & communities watch list
 
 ---

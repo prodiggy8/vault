@@ -1,3 +1,13 @@
+---
+tags:
+type:
+author:
+description:
+aliases:
+date created: Thursday, November 19th 2026, 11:23:12 am
+date modified: Thursday, November 19th 2026, 3:45:06 pm
+---
+
 Goal:
 
 > A Carnegie Mellon instructor should be able to turn an existing course into a public CS Learn course in an afternoon: import their materials, review what was imported, publish it on a rolling schedule, and keep improving it from semester to semester. 
@@ -29,7 +39,6 @@ Grades can currently be forged, and the database is open to the public anon key.
 
 ### Quizzes and grading
 
-
 | ID  | Urgent | Item                                                                                                                                             | Effort |
 | --- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
 | 12  | ✓      | **Question versioning and regrade policy.** Important for courses that will change.                                                              | 6      |
@@ -47,6 +56,7 @@ Grades can currently be forged, and the database is open to the public anon key.
 ### Programming assignments
 
 Autolab’s current integration:
+
 - OAuth connection
 - Database schemas
 - API client with token refresh
