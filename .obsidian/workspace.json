@@ -21,8 +21,39 @@
               "icon": "lucide-file",
               "title": "Assessments and Integrations Roadmap 2"
             }
+          },
+          {
+            "id": "2ed84f72c57b81fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "fd23bfd815699e69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 8.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 8"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,8 +220,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "89660d05d868a9ff",
+  "active": "2ed84f72c57b81fe",
   "lastOpenFiles": [
+    "Untitled 8.md",
+    "Work/Latent Intelligence/DecGPT.md",
+    "Untitled 7.md",
+    "Assessments and Integrations Roadmap 2.md",
     "Assessments and Integrations Roadmap.md",
     "Home.md",
     "Untitled 5.md",
@@ -200,7 +235,6 @@
     "_assets/Pasted image 20261119145212.png",
     "_assets/Daybreak Sourcing Engine-1.png",
     "_assets/Daybreak Sourcing Engine.png",
-    "Assessments and Integrations Roadmap 2.md",
     "RWD - Homework 8.md",
     "Homework 7 Algorithms.md",
     "Untitled 4.md",
@@ -221,8 +255,6 @@
     "LP.md",
     "Game Theory.md",
     "Recitation 7.md",
-    "Flows - Lecture 2.md",
-    "Untitled 2.md",
     "_assets/Linear Programming.png",
     "_assets/h51b.png",
     "_assets/hw52b.png",
