@@ -118,4 +118,15 @@ Example:
 - Prepare(n)
 - Promise(n, ni, vi) where ni, vi are value already accepted previously
 	- or NACK(Ni) where Ni is highest seen so far
-- 
+	- also write n to persistent storage if it’s highest
+
+If receives a majority of promises:
+- Enter phase 2 with nk, vk where nk is highest
+Else:
+- Restart phase 1 with higher n
+
+Phase 2
+
+Proposer accepts n, v
+Either:
+- Accept_OK(n) or NACK(Ni)
