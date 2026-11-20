@@ -8,37 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "89660d05d868a9ff",
+            "id": "ff85ef47f0c96deb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assessments and Integrations Roadmap 2.md",
+                "file": "Replication.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Assessments and Integrations Roadmap 2"
-            }
-          },
-          {
-            "id": "c486c0c0acbfb33e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calculus Homework 11.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Calculus Homework 11"
+              "title": "Replication"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,14 +189,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c486c0c0acbfb33e",
+  "active": "ff85ef47f0c96deb",
   "lastOpenFiles": [
+    "_assets/Replication.png",
+    "Replication.md",
+    "Home.md",
+    "Concepts/Minimum Spanning Trees.md",
+    "Concepts/Mental Ability.md",
+    "Concepts/Learning.md",
     "_assets/Calculus Homework 11-1.png",
     "_assets/Pasted image 20261119202506.png",
     "_assets/Calculus Homework 11.png",
     "Untitled 8.md",
     "Calculus Homework 11.md",
-    "Home.md",
     "Work/Latent Intelligence/DecGPT.md",
     "Untitled 7.md",
     "Assessments and Integrations Roadmap 2.md",
@@ -238,11 +227,6 @@
     "Computer Science/Distributed Systems/Logging and Checkpoints.md",
     "Untitled 3.md",
     "Linear Programming.md",
-    "Reasoning with Data Homework 7.md",
-    "Flows - Lecture 1.md",
-    "Flows - Lecture 3.md",
-    "LP.md",
-    "_assets/Linear Programming.png",
     "Work/Latent Intelligence/Softwar Round Table (Ch 1-3).md.tmp.324457.e59fa93f4279",
     "Computer Science/Computational Perception",
     "Computer Science/Algorithms/451/Homeworks",
