@@ -23,33 +23,18 @@
             }
           },
           {
-            "id": "2ed84f72c57b81fe",
+            "id": "c486c0c0acbfb33e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Calculus Homework 11.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
-            }
-          },
-          {
-            "id": "fd23bfd815699e69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 8.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 8"
+              "title": "Calculus Homework 11"
             }
           }
         ],
@@ -220,14 +205,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2ed84f72c57b81fe",
+  "active": "c486c0c0acbfb33e",
   "lastOpenFiles": [
+    "_assets/Calculus Homework 11-1.png",
+    "_assets/Pasted image 20261119202506.png",
+    "_assets/Calculus Homework 11.png",
     "Untitled 8.md",
+    "Calculus Homework 11.md",
+    "Home.md",
     "Work/Latent Intelligence/DecGPT.md",
     "Untitled 7.md",
     "Assessments and Integrations Roadmap 2.md",
     "Assessments and Integrations Roadmap.md",
-    "Home.md",
     "Untitled 5.md",
     "Untitled 6.md",
     "Daybreak Sourcing Engine.md",
@@ -253,11 +242,7 @@
     "Flows - Lecture 1.md",
     "Flows - Lecture 3.md",
     "LP.md",
-    "Game Theory.md",
-    "Recitation 7.md",
     "_assets/Linear Programming.png",
-    "_assets/h51b.png",
-    "_assets/hw52b.png",
     "Work/Latent Intelligence/Softwar Round Table (Ch 1-3).md.tmp.324457.e59fa93f4279",
     "Computer Science/Computational Perception",
     "Computer Science/Algorithms/451/Homeworks",
